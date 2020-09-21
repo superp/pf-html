@@ -1,0 +1,12 @@
+.content-wrap {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.orange {
+  @include button("medium", "orange");
+}
+
+.orange_border {
+  @include button("medium", "orange-border");
+}
