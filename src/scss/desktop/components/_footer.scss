@@ -1,0 +1,70 @@
+.footer {
+  .content-wrap {
+    @include flexbox();
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    padding: 32px 0;
+  }
+
+  .logo {
+    margin-bottom: 8px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    line-height: 16px;
+    color: #c4c4c4;
+  }
+
+  .button {
+    width: 177px;
+    margin-bottom: 8px;
+  }
+
+  .socials {
+    margin-top: 24px;
+
+    strong {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 12px;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+      color: #fd8324;
+      margin-right: 16px;
+    }
+  }
+
+  &_right {
+    max-width: 370px;
+  }
+
+  .user_block {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+  }
+}
+
+.pages_list {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: #000;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

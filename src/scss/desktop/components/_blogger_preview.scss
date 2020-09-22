@@ -1,0 +1,127 @@
+.blogger-preview {
+  &_item {
+    padding: 32px;
+    background-color: #fff;
+    margin-bottom: 24px;
+    clear: both;
+    overflow: hidden;
+
+    @include border-radius(4px);
+  }
+
+  .photo {
+    position: relative;
+    float: left;
+    margin-right: 32px;
+
+    @include border-radius(4px);
+  }
+
+  .rating {
+    background-color: #5bd467;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 36px;
+    width: 76px;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 0;
+
+    @include flexbox();
+    @include border-radius(4px);
+
+    span {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 4px;
+    }
+  }
+
+  &_content {
+    @include flexbox();
+
+    &__top {
+      margin-bottom: 16px;
+    }
+  }
+
+  &_name {
+    margin-right: 32px;
+    max-width: 450px;
+
+    span {
+      display: block;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+  }
+
+  .tags {
+    a {
+      display: inline-block;
+      vertical-align: top;
+      background-color: #fff3e9;
+      color: #fd8324;
+      padding: 8px 16px;
+      margin-right: 8px;
+
+      @include border-radius(4px);
+    }
+  }
+
+  &_socials {
+    margin-left: auto;
+
+    > span {
+      background-color: #f9f9f9;
+      padding: 16px 8px;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 12px;
+      width: 99px;
+
+      @include border-radius(4px);
+
+      &:last-child {
+        margin: 0;
+      }
+
+      img {
+        margin-bottom: 14px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &_description {
+    max-width: 450px;
+    margin-right: 32px;
+  }
+
+  &_links {
+    margin-left: auto;
+    max-width: 321px;
+
+    a {
+      width: 321px;
+      margin: 8px 0;
+    }
+
+    .orange {
+      @include button("big", "orange");
+    }
+
+    .orange-border {
+      @include button("big", "orange-border");
+    }
+  }
+}
