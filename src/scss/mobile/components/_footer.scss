@@ -1,0 +1,37 @@
+.footer {
+  padding: 0 16px;
+
+  .content-wrap {
+    padding: 16px 0;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 8px;
+  }
+
+  &_right {
+    max-width: 40%;
+  }
+
+  .user_block {
+    position: absolute;
+    left: 0;
+    bottom: 46px;
+
+    .button {
+      display: none;
+    }
+  }
+}
+
+.pages_list {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
+  li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

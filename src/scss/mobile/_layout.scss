@@ -1,0 +1,28 @@
+.content-wrap {
+  width: 100%;
+  padding: 0 16px;
+}
+
+// .menu-opened {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+// }
+
+.container {
+  padding-top: 90px;
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  padding: 20px 0;
+
+  > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  @import "layout";
+
+  @import "components/_header";
+  @import "components/footer";
+
+  @import "components/_slogan";
+  @import "components/blogger_preview";
+  @import "components/blogs_count";
+  // @import "components/bloggers_info";
+}

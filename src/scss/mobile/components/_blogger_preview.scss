@@ -1,0 +1,92 @@
+.blogger-preview {
+  &_item {
+    padding: 16px;
+  }
+
+  .photo {
+    margin-right: 8px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .rating {
+    top: 5px;
+    left: 5px;
+    height: 25px;
+    width: 47px;
+    padding: 6px 0;
+
+    span {
+      font-size: 9px;
+      margin: 0 2.5px;
+    }
+
+    img {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  &_content {
+    @include flexbox();
+    flex-wrap: wrap;
+
+    &__top {
+      margin-bottom: 16px;
+    }
+  }
+
+  &_name {
+    margin-right: 0;
+    max-width: calc(100% - 158px);
+
+    span {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .tags {
+    a {
+      padding: 4px 8px;
+      margin: 0 8px 8px 0;
+    }
+  }
+
+  &_socials {
+    width: 100%;
+    margin-top: 16px;
+
+    > span {
+      margin-right: 7px;
+      width: 99px;
+    }
+  }
+
+  &_description {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  &_links {
+    margin-left: auto;
+    max-width: 100%;
+    width: 100%;
+
+    @include flexbox();
+    justify-content: space-between;
+
+    a {
+      width: 32%;
+
+      &.orange {
+        width: 65%;
+      }
+    }
+  }
+}
+
+.read_more {
+  display: block;
+}

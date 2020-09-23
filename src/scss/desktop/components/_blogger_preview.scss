@@ -40,16 +40,16 @@
   }
 
   &_content {
-    @include flexbox();
-
-    &__top {
-      margin-bottom: 16px;
+    &__bottom {
+      margin-top: 16px;
+      float: left;
     }
   }
 
   &_name {
     margin-right: 32px;
     max-width: 450px;
+    float: left;
 
     span {
       display: block;
@@ -74,7 +74,7 @@
   }
 
   &_socials {
-    margin-left: auto;
+    float: right;
 
     > span {
       background-color: #f9f9f9;
@@ -123,5 +123,17 @@
     .orange-border {
       @include button("big", "orange-border");
     }
+  }
+}
+
+.read_more {
+  display: none;
+  margin-top: 4px;
+
+  a {
+    color: #fd8324;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
   }
 }

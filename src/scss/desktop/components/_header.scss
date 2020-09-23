@@ -31,6 +31,10 @@
     color: inherit;
     font-weight: 700;
   }
+
+  .user_block {
+    display: none;
+  }
 }
 
 .user_block {
@@ -41,4 +45,8 @@
   .orange_border {
     @include button("medium", "orange-border");
   }
+}
+
+.menu_btn {
+  display: none;
 }
