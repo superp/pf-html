@@ -1,12 +1,15 @@
 .blogger-preview {
   &_item {
-    padding: 16px;
+    padding: 16px 16px 89px;
+    position: relative;
+    display: block;
   }
 
   .photo {
     margin-right: 8px;
     width: 150px;
     height: 150px;
+    float: left;
   }
 
   .rating {
@@ -34,11 +37,16 @@
     &__top {
       margin-bottom: 16px;
     }
+
+    &__right {
+      clear: both;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &_name {
     margin-right: 0;
-    max-width: calc(100% - 158px);
 
     span {
       font-size: 18px;
@@ -56,7 +64,7 @@
 
   &_socials {
     width: 100%;
-    margin-top: 16px;
+    margin: 16px 0;
 
     > span {
       margin-right: 7px;
@@ -70,9 +78,12 @@
   }
 
   &_links {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
     margin-left: auto;
-    max-width: 100%;
     width: 100%;
+    padding: 0 16px;
 
     @include flexbox();
     justify-content: space-between;

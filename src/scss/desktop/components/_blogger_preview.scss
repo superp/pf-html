@@ -7,12 +7,16 @@
     overflow: hidden;
 
     @include border-radius(4px);
+
+    display: grid;
+    grid-template-columns: 241px 32px auto 32px 321px;
+    grid-template-rows: auto auto;
   }
 
   .photo {
     position: relative;
-    float: left;
-    margin-right: 32px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
 
     @include border-radius(4px);
   }
@@ -42,14 +46,17 @@
   &_content {
     &__bottom {
       margin-top: 16px;
-      float: left;
+    }
+
+    &__right {
+      grid-column: 5 / span 1;
+      grid-row: 1 / span 2;
     }
   }
 
   &_name {
-    margin-right: 32px;
-    max-width: 450px;
-    float: left;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
 
     span {
       display: block;
@@ -68,14 +75,13 @@
       color: #fd8324;
       padding: 8px 16px;
       margin-right: 8px;
+      margin-bottom: 8px;
 
       @include border-radius(4px);
     }
   }
 
   &_socials {
-    float: right;
-
     > span {
       background-color: #f9f9f9;
       padding: 16px 8px;
@@ -103,13 +109,12 @@
   }
 
   &_description {
-    max-width: 450px;
-    margin-right: 32px;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
   }
 
   &_links {
-    margin-left: auto;
-    max-width: 321px;
+    align-self: start;
 
     a {
       width: 321px;
