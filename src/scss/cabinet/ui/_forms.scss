@@ -114,6 +114,11 @@
     padding: 0 40px 0 20px;
 
     @include border-radius(8px);
+
+    &.search {
+      padding-left: 52px;
+      background: url(../images/cabinet/search_icon.svg) 20px center no-repeat;
+    }
   }
 
   label {

@@ -1,0 +1,44 @@
+.filter_popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  width: 45%;
+  height: 100%;
+  margin-left: 0;
+  overflow: scroll;
+  padding-top: 32px;
+}
+
+.hide-filter {
+  color: #828282;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-item {
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
+
+  &.form-item__search-results {
+    display: flex;
+    align-items: center;
+
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      color: #000;
+      font-size: 18px;
+    }
+  }
+}

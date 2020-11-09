@@ -67,7 +67,8 @@ body {
 .top-block {
   border-bottom: 1px solid #c4c4c4;
   width: 100%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: flex; }
 
 .page-title {
   font-size: 24px;
@@ -432,6 +433,9 @@ body {
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px; }
+    .form-item input.search {
+      padding-left: 52px;
+      background: url(../images/cabinet/search_icon.svg) 20px center no-repeat; }
   .form-item label {
     display: block;
     width: 100%;
@@ -1280,6 +1284,41 @@ body {
       font-size: 14px;
       line-height: 20px; }
 
+.filter_popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  width: 45%;
+  height: 100%;
+  margin-left: 0;
+  overflow: scroll;
+  padding-top: 32px; }
+
+.hide-filter {
+  color: #828282;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.form-item .buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
+  .form-item .buttons > * {
+    flex-shrink: 0; }
+
+.form-item.form-item__search-results {
+  display: flex;
+  align-items: center; }
+  .form-item.form-item__search-results > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: #000;
+    font-size: 18px; }
+
 .steps {
   align-items: flex-end;
   flex-shrink: 0;
@@ -1417,7 +1456,7 @@ body {
 .form-item__budget input {
   width: calc(100% - 178px); }
 
-.form-item__name input[type="text"], .form-item__influencers input[type="text"], .form-item__audience input[type="text"], .form-item__categories input[type="text"] {
+.form-item__search input[type="text"], .form-item__name input[type="text"], .form-item__influencers input[type="text"], .form-item__audience input[type="text"], .form-item__categories input[type="text"] {
   width: 100%; }
 
 .form-item__preview .preview {
@@ -1677,8 +1716,6 @@ body {
   color: #c4c4c4;
   text-align: center;
   line-height: 52px; }
-  .content .message:before {
-    font-size: 20px; }
 
 .about_info {
   margin-right: 40px;
@@ -1822,7 +1859,6 @@ body {
           min-width: 85px;
           max-width: 128px; }
         .influencers_table_row .influencers_table_cell__action .button-orange {
-          width: 128px;
           height: 56px;
           line-height: 56px;
           margin-right: 16px; }
@@ -1947,8 +1983,129 @@ body {
         margin-top: 8px; }
 
 .content__influencers {
-  border-right: none;
-  border-left: none; }
+  clear: both;
+  border-width: 0 0 1px 0; }
+  .content__influencers .influencers_table_row:after {
+    left: -48px;
+    width: calc(100% + 96px); }
+  .content__influencers .influencers_table_head .influencers_table_cell__influencer,
+  .content__influencers .influencers_table_row .influencers_table_cell__influencer {
+    width: 33.9%; }
+  .content__influencers .influencers_table_head .influencers_table_cell__reach,
+  .content__influencers .influencers_table_row .influencers_table_cell__reach {
+    width: 12.6%; }
+  .content__influencers .influencers_table_head .influencers_table_cell__engagement,
+  .content__influencers .influencers_table_row .influencers_table_cell__engagement {
+    width: 12.5%; }
+  .content__influencers .influencers_table_head .influencers_table_cell__publications,
+  .content__influencers .influencers_table_row .influencers_table_cell__publications {
+    width: 10%; }
+  .content__influencers .influencers_table_head .influencers_table_cell__price,
+  .content__influencers .influencers_table_row .influencers_table_cell__price {
+    width: 10%; }
+  .content__influencers .influencers_table_head .influencers_table_cell__action,
+  .content__influencers .influencers_table_row .influencers_table_cell__action {
+    width: 21%; }
+    .content__influencers .influencers_table_head .influencers_table_cell__action button,
+    .content__influencers .influencers_table_row .influencers_table_cell__action button {
+      min-width: 110px; }
+
+.apply-button,
+.filter-button {
+  height: 56px;
+  line-height: 56px;
+  background-color: #5bd467;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0 15px auto;
+  width: 164px;
+  cursor: pointer;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  .apply-button span,
+  .filter-button span {
+    margin: 0 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold; }
+
+.apply-button {
+  margin: 0 0 0 5vw; }
+  .apply-button span {
+    margin: 0; }
+  .apply-button .icon {
+    margin: 0 11px 0 0; }
+    .apply-button .icon:before {
+      font-size: 17px; }
+
+.content__campaigns-info {
+  border: none; }
+  .content__campaigns-info .influencers_filter {
+    margin-bottom: 32px; }
+
+.campaigns-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.campaigns-item {
+  border: 1px solid #e5e5e5;
+  padding: 32px;
+  width: calc(50% - 12px);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px; }
+  .campaigns-item .photo {
+    width: 136px;
+    height: 136px;
+    margin-right: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; }
+  .campaigns-item_info {
+    width: 100%; }
+    .campaigns-item_info_main {
+      padding-bottom: 16px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid #e5e5e5; }
+      .campaigns-item_info_main p {
+        line-height: 20px;
+        margin-top: 8px; }
+    .campaigns-item_info_cantact {
+      display: flex;
+      align-items: center;
+      width: 100%; }
+      .campaigns-item_info_cantact .links {
+        display: inline-flex;
+        align-items: center; }
+      .campaigns-item_info_cantact a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+        border: 2px solid #c4c4c4;
+        width: 56px;
+        height: 56px;
+        color: #000; }
+        .campaigns-item_info_cantact a span {
+          font-size: 0;
+          line-height: 0; }
+      .campaigns-item_info_cantact .message .icon:before {
+        color: #000;
+        font-size: 20px;
+        line-height: 24px; }
+
+.campaign-state {
+  margin-left: auto;
+  font-weight: bold;
+  color: #5bd467; }
 
 .cabinet-navigation {
   background-color: #272727;

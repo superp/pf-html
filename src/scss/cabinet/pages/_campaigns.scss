@@ -1,0 +1,96 @@
+.content {
+  &__campaigns-info {
+    border: none;
+
+    .influencers_filter {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.campaigns {
+  &-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-item {
+    border: 1px solid #e5e5e5;
+    padding: 32px;
+    width: calc(50% - 12px);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+
+    @include border-radius(16px);
+
+    .photo {
+      width: 136px;
+      height: 136px;
+      margin-right: 32px;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      @include border-radius(8px);
+    }
+
+    &_info {
+      width: 100%;
+
+      &_main {
+        padding-bottom: 16px;
+        margin-bottom: 22px;
+        border-bottom: 1px solid #e5e5e5;
+
+        span {
+        }
+
+        p {
+          line-height: 20px;
+          margin-top: 8px;
+        }
+      }
+
+      &_cantact {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .links {
+          display: inline-flex;
+          align-items: center;
+        }
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 16px;
+          border: 2px solid #c4c4c4;
+          width: 56px;
+          height: 56px;
+          color: #000;
+
+          span {
+            font-size: 0;
+            line-height: 0;
+          }
+        }
+
+        .message {
+          .icon:before {
+            color: #000;
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.campaign-state {
+  margin-left: auto;
+  font-weight: bold;
+  color: #5bd467;
+}

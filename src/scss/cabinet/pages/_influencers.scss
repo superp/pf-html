@@ -1,6 +1,83 @@
 .content {
   &__influencers {
-    border-right: none;
-    border-left: none;
+    clear: both;
+    border-width: 0 0 1px 0;
+
+    .influencers_table_row {
+      &:after {
+        left: -48px;
+        width: calc(100% + 96px);
+      }
+    }
+
+    .influencers_table_head,
+    .influencers_table_row {
+      .influencers_table_cell {
+        &__influencer {
+          width: 33.9%;
+        }
+
+        &__reach {
+          width: 12.6%;
+        }
+
+        &__engagement {
+          width: 12.5%;
+        }
+
+        &__publications {
+          width: 10%;
+        }
+
+        &__price {
+          width: 10%;
+        }
+
+        &__action {
+          width: 21%;
+
+          button {
+            min-width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.apply-button,
+.filter-button {
+  height: 56px;
+  line-height: 56px;
+  background-color: #5bd467;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0 15px auto;
+  width: 164px;
+  cursor: pointer;
+
+  @include border-radius(4px);
+
+  span {
+    margin: 0 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.apply-button {
+  margin: 0 0 0 5vw;
+
+  span {
+    margin: 0;
+  }
+
+  .icon {
+    margin: 0 11px 0 0;
+
+    &:before {
+      font-size: 17px;
+    }
   }
 }
