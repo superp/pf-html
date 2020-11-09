@@ -1,0 +1,104 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  &:before {
+    color: inherit;
+    font-family: "pf-html";
+  }
+
+  &__globe {
+    &:before {
+      content: "C";
+    }
+  }
+
+  &__briefcase {
+    &:before {
+      content: "A";
+    }
+  }
+
+  &__mail {
+    &:before {
+      content: "E";
+    }
+  }
+
+  &__database {
+    &:before {
+      content: "B";
+    }
+  }
+
+  &__user {
+    &:before {
+      content: "G";
+    }
+  }
+
+  &__exit {
+    &:before {
+      content: "D";
+    }
+  }
+
+  &__done {
+    &:before {
+      content: "K";
+    }
+  }
+
+  &__arrow {
+    &:before {
+      content: "F";
+      font-size: 12px;
+      display: block;
+
+      @include transform(rotate(180deg));
+      @include transition(ease 0.3s transform);
+    }
+  }
+
+  &__code {
+    &:before {
+      content: "I";
+      font-size: 18px;
+    }
+  }
+
+  &__envelope {
+    &:before {
+      content: "J";
+      font-size: 20px;
+    }
+  }
+
+  &__close {
+    &:before {
+      content: "H";
+      font-size: 18px;
+    }
+  }
+
+  &__instagram {
+    &:before {
+      content: "M";
+      font-size: 20px;
+    }
+  }
+
+  &__youtube {
+    &:before {
+      content: "N";
+      font-size: 20px;
+    }
+  }
+
+  &__check {
+    &:before {
+      content: "O";
+    }
+  }
+}

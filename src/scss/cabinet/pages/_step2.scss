@@ -1,0 +1,148 @@
+.form-item {
+  > span {
+    display: block;
+    margin-bottom: 24px;
+    font-weight: bold;
+    color: #c4c4c4;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__budget {
+    .select2-container {
+      min-width: 138px;
+      font-size: 18px;
+      margin-right: 40px;
+    }
+
+    .form-item_subitem {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    input {
+      width: calc(100% - 178px);
+    }
+  }
+
+  &__name,
+  &__influencers,
+  &__audience,
+  &__categories {
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+
+  &__preview {
+    .preview {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #c4c4c4;
+      position: relative;
+      cursor: pointer;
+
+      @include border-radius(8px);
+
+      &:before {
+        font-family: "pf-html";
+        content: "L";
+        color: #fd8324;
+        font-size: 18px;
+        position: absolute;
+        left: calc(50% - 9px);
+        top: calc(50% - 9px);
+      }
+    }
+
+    input {
+      width: 0;
+      height: 0;
+      position: absolute;
+      opacity: 0;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+
+  &__age {
+    input {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 134px;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 9px 0 14px;
+      font-weight: normal;
+      color: #000;
+    }
+  }
+
+  &__placement {
+    display: flex;
+    flex-wrap: wrap;
+
+    // > label {
+    //   width: 100%;
+    // }
+
+    .form-item_subitem {
+      .checkbox {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .form-item_subitem {
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      label {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        font-weight: normal;
+        margin: 0 0 0 16px;
+      }
+    }
+
+    .sub-checks {
+      padding: 16px 0 0 64px;
+    }
+
+    .placement-item {
+      width: 50%;
+
+      &:nth-child(3) {
+        .form-item_subitem {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  &__gender {
+    .form-item_subitem {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 23px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      label {
+        font-weight: normal;
+        margin: 0 0 0 24px;
+        width: 100%;
+      }
+    }
+  }
+}

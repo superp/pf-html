@@ -1,0 +1,95 @@
+extends ../_layout
+
+block content
+  .top-block
+
+  .main-content
+    .content.content__influencers
+    
+      .influencers_table
+        .influencers_table_head
+          .influencers_table_cell.influencers_table_cell__influencer
+            span Influencer
+          .influencers_table_cell.influencers_table_cell__price
+            span Price
+          .influencers_table_cell.influencers_table_cell__reach
+            span Reach/Subsctibers
+          .influencers_table_cell.influencers_table_cell__engagement
+            span Engegament
+          .influencers_table_cell.influencers_table_cell__action
+            span Action
+          
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/nasa_img.png", alt="")
+            .info
+              strong NASA | nasa
+              p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+          .influencers_table_cell.influencers_table_cell__price
+            p $ 1,500.00
+          .influencers_table_cell.influencers_table_cell__reach
+            p 1,914,128
+          .influencers_table_cell.influencers_table_cell__engagement
+            p 24%
+          .influencers_table_cell.influencers_table_cell__action
+            a.message(href="#")
+              span.icon.icon__mail
+            .state.approved Approved
+        
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/reynolds_img.png", alt="")
+            .info
+              strong Ryan Reynolds | vancityreynolds
+              p Owner: @aviationgin and @mintmobile
+          .influencers_table_cell.influencers_table_cell__price
+            p $ 5,500.00
+          .influencers_table_cell.influencers_table_cell__reach
+            p 4,128,880
+          .influencers_table_cell.influencers_table_cell__engagement
+            p 66%
+          .influencers_table_cell.influencers_table_cell__action
+            a.message(href="#")
+              span.icon.icon__mail
+            button.button-orange Accept
+            button.button-border Decline
+
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/table_img_preview.svg", alt="")
+            .info
+              strong MALUMA | maluma
+              p MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa
+          .influencers_table_cell.influencers_table_cell__price
+            p $ 5,500.00
+          .influencers_table_cell.influencers_table_cell__reach
+            p 4,128,880
+          .influencers_table_cell.influencers_table_cell__engagement
+            p 66%
+          .influencers_table_cell.influencers_table_cell__action
+            a.message(href="#")
+              span.icon.icon__mail
+            button.button-orange Accept
+            button.button-border Decline
+
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/nasa_img.png", alt="")
+            .info
+              strong NASA | nasa
+              p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+          .influencers_table_cell.influencers_table_cell__price
+            p $ 1,500.00
+          .influencers_table_cell.influencers_table_cell__reach
+            p 1,914,128
+          .influencers_table_cell.influencers_table_cell__engagement
+            p 24%
+          .influencers_table_cell.influencers_table_cell__action
+            a.message(href="#")
+              span.icon.icon__mail
+            .state.rejected Rejected
+

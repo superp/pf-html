@@ -1,0 +1,69 @@
+extends ../_layout
+
+block content
+  .top-block
+    .page-title
+      span Create a new campaign
+  .main-content
+    .steps
+      .steps_item.active
+        span Campaign
+        span.icon.icon__done
+      .steps_item
+        span Campaign set
+        span.icon.icon__done
+      .steps_item
+        span Campaign bief
+        span.icon.icon__done
+      .steps_item
+        span Tracking
+        span.icon.icon__done
+    .content
+      .step-title
+        span Step 1
+        p Lets specify campaign category
+        a.button-next(href="#") Next
+      .categories
+        .categories_item
+          .categories_title
+            span Awareness
+            .tooltipster(title="The process of changing or causing something to change from one form to another.")
+          .categories_subitem
+            input#radio_1.radio_button(type="radio" checked="checked" name="radio1")
+            label(for="radio_1") Brand awareness
+          .categories_subitem
+            input#radio_2.radio_button(type="radio" name="radio1")
+            label(for="radio_2") Reach
+
+        .categories_item
+          .categories_title
+            span Consideration
+            .tooltipster(title="The process of changing or causing something to change from one form to another.")
+          .categories_subitem
+            input#radio_3.radio_button(type="radio" name="radio2")
+            label(for="radio_3") Traffic
+          .categories_subitem
+            input#radio_4.radio_button(type="radio" name="radio2")
+            label(for="radio_4") Installs
+          .categories_subitem
+            input#radio_5.radio_button(type="radio" name="radio2")
+            label(for="radio_5") Conversions
+
+        .categories_item
+          .categories_title
+            span Creativities
+            .tooltipster(title="The process of changing or causing something to change from one form to another.")
+          .categories_subitem
+            input#radio_6.radio_button(type="radio" name="radio3")
+            label(for="radio_6") Video tutorial
+          .categories_subitem
+            input#radio_7.radio_button(type="radio" name="radio3")
+            label(for="radio_7") Video Review
+          .categories_subitem
+            input#radio_8.radio_button(type="radio" name="radio3")
+            label(for="radio_8") Vertical video for the ad (up to 15 sec)
+          .categories_subitem
+            input#radio_9.radio_button(type="radio" name="radio3")
+            label(for="radio_9") Image
+
+

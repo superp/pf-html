@@ -1,0 +1,136 @@
+// RADIOBUTTONS
+.radio_button {
+  background: none;
+  position: relative;
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+
+  @include border-radius(50%);
+
+  &:before {
+    position: absolute;
+    display: none;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #fd8324;
+    left: calc(50% - 8px);
+    top: calc(50% - 8px);
+
+    @include border-radius(50%);
+  }
+
+  &:checked {
+    &:before {
+      display: block;
+    }
+  }
+}
+// RADIOBUTTONS END
+
+// Checkbox
+.form-item .checkbox {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  border: 1px solid #c4c4c4;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  @include border-radius(4px);
+
+  & + label {
+    cursor: pointer;
+  }
+
+  &:checked {
+    border-color: #fd8324;
+    background-color: #fd8324;
+    background-image: url(../images/cabinet/check_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__mini {
+    width: 24px;
+    height: 24px;
+
+    &:checked {
+      background-size: 12px;
+    }
+  }
+}
+// Checkbox END
+
+.tooltipster {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/cabinet/tooltip.svg) center no-repeat;
+  cursor: pointer;
+
+  @include border-radius(50%);
+}
+
+.form-item {
+  margin-bottom: 40px;
+  padding: 0 40px;
+
+  textarea {
+    min-height: 160px;
+    line-height: 24px;
+    border: 1px solid #c4c4c4;
+    padding: 32px 24px 20px;
+    width: 100%;
+    resize: none;
+    font-family: "helvetica";
+
+    @include border-radius(8px);
+  }
+
+  input,
+  textarea {
+    color: #000;
+    font-size: 18px;
+
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-moz-placeholder,
+    &:-ms-input-placeholder {
+      color: #828282;
+    }
+  }
+
+  // input:not([type="file"])
+  input {
+    height: 64px;
+    line-height: 62px;
+    border: 1px solid #c4c4c4;
+    padding: 0 40px 0 20px;
+
+    @include border-radius(8px);
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  &_subitem {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

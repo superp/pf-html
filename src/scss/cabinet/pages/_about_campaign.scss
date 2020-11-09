@@ -1,0 +1,456 @@
+.content {
+  &__campaign {
+    padding: 40px;
+
+    .tab_title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
+
+    .tabs_item {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__analitics,
+      &__publications {
+        justify-content: space-between;
+      }
+
+      .item-title {
+        font-weight: bold;
+        line-height: 26px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #202020;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .message {
+    margin-right: 16px;
+    border: 2px solid #c4c4c4;
+    width: 56px;
+    height: 56px;
+    color: #c4c4c4;
+    text-align: center;
+    line-height: 52px;
+
+    &:before {
+      font-size: 20px;
+    }
+  }
+}
+
+.about {
+  &_info {
+    margin-right: 40px;
+    flex-shrink: 0;
+
+    .photo {
+      overflow: hidden;
+      margin-bottom: 23px;
+
+      @include border-radius(8px);
+    }
+  }
+
+  &_text {
+    ul {
+      list-style-position: inside;
+      list-style-type: "- ";
+    }
+
+    &_item {
+      margin-bottom: 24px;
+
+      .tag {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin-right: 16px;
+        padding: 9px 48px 9px 16px;
+        border: 1px solid #fd8324;
+
+        @include border-radius(4px);
+
+        .icon {
+          position: absolute;
+          z-index: 5;
+          right: 10px;
+          top: 9px;
+          cursor: pointer;
+
+          &:before {
+            font-size: 18px;
+            color: #fd8324;
+          }
+        }
+      }
+    }
+
+    .link {
+      color: #349eff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.platforms {
+  &_item {
+    margin-bottom: 16px;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    color: #fd8324;
+    font-weight: bold;
+    padding: 10px 16px;
+    background-color: rgba($color: #fd8324, $alpha: 0.1);
+
+    @include border-radius(4px);
+
+    .icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+// Influencer table
+
+.influencers_filter {
+  width: 100%;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+
+    a {
+      font-weight: bold;
+      color: #828282;
+      line-height: 26px;
+
+      &:hover,
+      &.active {
+        color: #fd8324;
+      }
+    }
+  }
+}
+
+.influencers_table {
+  width: 100%;
+  margin-top: 32px;
+
+  .facebook-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+
+  &_head {
+    display: flex;
+
+    .influencers_table_cell {
+      &__influencer {
+      }
+      &__price {
+      }
+      &__reach {
+      }
+      &__engagement {
+      }
+      &__action {
+        text-align: right;
+      }
+
+      span {
+        color: #828282;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &_cell {
+    flex-shrink: 0;
+
+    &__influencer {
+      width: 33.9%;
+    }
+    &__price {
+      width: 15%;
+    }
+    &__reach {
+      width: 16.5%;
+    }
+    &__engagement {
+      width: 6.7%;
+    }
+    &__action {
+      width: 27.9%;
+    }
+  }
+
+  &_row {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: -40px;
+      bottom: 0;
+      width: calc(100% + 80px);
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .influencers_table_cell {
+      padding: 16px 0;
+
+      &__influencer {
+        display: flex;
+        align-items: center;
+        padding-right: 3%;
+
+        .photo {
+          flex-shrink: 0;
+          width: 72px;
+          height: 72px;
+          margin-right: 24px;
+          overflow: hidden;
+          @include border-radius(4px);
+        }
+
+        .info {
+          strong {
+            line-height: 26px;
+          }
+
+          p {
+            color: #5f5f5f;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      &__price {
+      }
+      &__reach {
+      }
+      &__engagement {
+      }
+      &__action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+          width: 30%;
+          min-width: 85px;
+          max-width: 128px;
+        }
+
+        .button-orange {
+          width: 128px;
+          height: 56px;
+          line-height: 56px;
+          margin-right: 16px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        .state {
+          width: 128px;
+          line-height: 26px;
+          font-weight: bold;
+          text-align: center;
+
+          &.approved {
+            color: #5bd467;
+          }
+
+          &.rejected {
+            color: #ff3434;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button-border {
+  border: 2px solid #c4c4c4;
+  font-size: 18px;
+  height: 56px;
+  line-height: 52px;
+  font-weight: bold;
+  width: 128px;
+  text-align: center;
+
+  @include border-radius(4px);
+}
+// Influencer table END
+
+.publication_item {
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  display: flex;
+
+  .photo {
+    background-color: #000;
+    min-height: 264px;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
+
+  .paid_text {
+    display: none;
+    padding: 6px 8px;
+    background-color: rgba($color: #5bd467, $alpha: 0.1);
+    color: #5bd467;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 8px;
+
+    @include border-radius(4px);
+
+    .icon {
+      margin-right: 6px;
+    }
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #0078e5;
+    text-decoration: underline;
+  }
+
+  &_info {
+    &__paid {
+      .paid_text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .name {
+    font-size: 24px;
+    line-height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .message {
+    margin: 0;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+  }
+
+  .stats {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    &_item {
+      width: 50%;
+      margin: 20px 0;
+
+      img {
+        margin-right: 8px;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #828282;
+      }
+
+      p {
+        line-height: 26px;
+        margin-top: 9px;
+      }
+    }
+  }
+}
+
+// Analitics
+.analitics-item {
+  width: 48%;
+
+  > strong {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .stats {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+
+    &_item {
+      width: 30%;
+      margin: 20px 0;
+
+      &__cpm,
+      &__cpe {
+        width: 20%;
+      }
+
+      &__all,
+      &__avg {
+        width: 37%;
+      }
+
+      img {
+        margin-right: 8px;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 26px;
+        color: #828282;
+      }
+
+      p {
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+// Analitics END

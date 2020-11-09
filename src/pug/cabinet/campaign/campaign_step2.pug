@@ -1,0 +1,122 @@
+extends ../_layout
+
+block content
+  .top-block
+    .page-title
+      span Create a new campaign
+  .main-content
+    .steps
+      .steps_item.done
+        span Campaign
+        span.icon.icon__done
+      .steps_item.active
+        span Campaign set
+        span.icon.icon__done
+      .steps_item
+        span Campaign bief
+        span.icon.icon__done
+      .steps_item
+        span Tracking
+        span.icon.icon__done
+    .content
+      .step-title
+        span Step 2
+        p Campaign Details
+        a.button-next(href="#") Next
+      .company-info
+        form
+          .form-item.form-item__name
+            span Campaign Name
+            input(type="text" placeholder="Campaign Number One")
+          .form-item.form-item__preview
+            span Campaign Preview
+            label.preview(for="preview_input")
+              input#preview_input(type="file")
+          .form-item.form-item__budget
+            span Campaign budget
+            .form-item_subitem
+              label Total budget
+              select
+                option(value="") USD ($)
+                option(value="") EUR (€)
+                option(value="") CAD ($)
+              input(type="text" placeholder="0.00")
+            .form-item_subitem
+              label Price per influencer collaboration
+              select
+                option(value="") USD ($)
+                option(value="") EUR (€)
+                option(value="") CAD ($)
+              input(type="text" placeholder="0.00")
+          .form-item.form-item__audience
+            span Audience
+            .form-item_subitem
+              label Country
+              input.input_tag(type="text")
+            .form-item_subitem
+              label City
+              input.input_tag(type="text")
+          .form-item.form-item__gender
+            label Gender
+            
+            .form-item_subitem
+              input#gender_checkbox1.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox1") Male
+            .form-item_subitem
+              input#gender_checkbox2.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox2") Female
+            .form-item_subitem
+              input#gender_checkbox3.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox3") Transgender
+            .form-item_subitem
+              input#gender_checkbox4.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox4") LGBT
+
+          .form-item.form-item__age
+            label Age
+            input(type="text" placeholder="10")
+            span -
+            input(type="text" placeholder="13")
+          .form-item.form-item__categories
+            label Categories
+            input.input_tag(type="text")
+          .form-item.form-item__placement
+            label Placement
+            .placement-item
+              .form-item_subitem
+                input#placement_check1.checkbox(type="checkbox")
+                label(for="placement_check1") Instagram
+                .sub-checks
+                  .form-item_subitem
+                    input#placement_check1_1.checkbox.checkbox__mini(type="checkbox")
+                    label(for="placement_check1_1") Story
+                  .form-item_subitem
+                    input#placement_check1_2.checkbox.checkbox__mini(type="checkbox")
+                    label(for="placement_check1_2") Post
+              .form-item_subitem
+                input#placement_check2.checkbox(type="checkbox")
+                label(for="placement_check2") Youtube
+                .sub-checks
+                  .form-item_subitem
+                    input#placement_check2_1.checkbox.checkbox__mini(type="checkbox")
+                    label(for="placement_check2_1") Mention
+                  .form-item_subitem
+                    input#placement_check2_2.checkbox.checkbox__mini(type="checkbox")
+                    label(for="placement_check2_2") Dedicated video
+            .placement-item
+              .form-item_subitem
+                input#placement_check3.checkbox(type="checkbox")
+                label(for="placement_check3") Facabook
+              .form-item_subitem
+                input#placement_check4.checkbox(type="checkbox")
+                label(for="placement_check4") Twitter
+              .form-item_subitem
+                input#placement_check4.checkbox(type="checkbox")
+                label(for="placement_check4") Linkedin
+              .form-item_subitem
+                input#placement_check4.checkbox(type="checkbox")
+                label(for="placement_check4") VK
+              .form-item_subitem
+                input#placement_check4.checkbox(type="checkbox")
+                label(for="placement_check4") Telegram
+

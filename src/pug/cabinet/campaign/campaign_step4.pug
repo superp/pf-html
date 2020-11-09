@@ -1,0 +1,90 @@
+extends ../_layout
+
+block content
+  .top-block
+    .page-title
+      span Create a new campaign
+  .main-content
+    .steps
+      .steps_item.done
+        span Campaign
+        span.icon.icon__done
+      .steps_item.done
+        span Campaign set
+        span.icon.icon__done
+      .steps_item.done
+        span Campaign bief
+        span.icon.icon__done
+      .steps_item.active
+        span Tracking
+        span.icon.icon__done
+    .content
+      .step-title
+        span Step 4
+        p Campaign Tracking
+        a.button-green(href="#") Create Campaign
+        //- a.button-next(href="#") Skip
+      .tabs.tabs__tracking
+        span Connect Website Activity Using Pixel
+        .tabs_content
+          strong Choose how you want to install the pixel code
+          .tabs_list
+            ul
+              li
+                a.active(href="#tab-1")
+                  span.circle
+                    span.icon.icon__code
+                  span.text
+                    strong Add code using a Partner Integration
+                    span Follow guided installation instructions with detailed developer documentation
+              li
+                a(href="#tab-2")
+                  span.circle
+                    span.icon.icon__envelope
+                  span.text
+                    strong Manually add pixel code to website
+                    span If you don’t have direct access to your side’s code, send instruction and documentatiuon to your technical support.
+          .tabs_item#tab-1
+            .tracking-item
+              p 1. Instal base code on website
+              .code-block
+                strong Copy and  paste the pixel code into th ebottom of the header section of your site, just above the </head>tag. Install the base code on every page of your website.
+                .code-block_text
+                  p 
+                    | &lt;script type='text/javascript'&gt;(function(){var pf=document.createElement('script');pf.src='https://www.publicfast.com/assets/cpa/publicfast.js';pf.type='text/javascript';pf.async ='true';pf.onload=pf.onreadystatechange=function(){var rs=this.readyState;if(rs&&rs!='complete'&&rs!='loaded')return;try{window.__pf = new Publicfast({domain: 'https://www.publicfast.com'});}catch(e){}};var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(pf,s);})();&lt;/script&gt;
+              .code-block
+                strong Copy and  paste the pixel code  to the page where you want to track goals
+                .code-block_text
+                  p 
+                    | &lt;script type='text/javascript'&gt;(function(){var pf=document.createElement('script');pf.src='https://www.publicfast.com/assets/cpa/publicfast.js';pf.type='text/javascript';pf.async ='true';pf.onload=pf.onreadystatechange=function(){var rs=this.readyState;if(rs&&rs!='complete'&&rs!='loaded')return;try{window.__pf = new Publicfast({domain: 'https://www.publicfast.com'});}catch(e){}};var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(pf,s);})();&lt;/script&gt;
+            
+            .tracking-item
+              p 2. Test the base code 
+              .code-block
+                strong Make sure your pixel code was added correcty by sending test traffic to your site. If the status is shown as Active , your code has been installed correctly. This process may take several minutes. 
+                
+                .send-field
+                  form(action="")
+                    input(type="text" placeholder="Enter the URL for the website  ( ex. www.mywebsite.com)")
+                    button.button-orange Send Test Trafic
+
+          .tabs_item#tab-2(style="display:none;")
+            .tracking-item
+              p 1. 1. Enter email of the technical support 
+              .send-field
+                form(action="")
+                  input(type="text" placeholder="Enter the URL for the website  ( ex. www.mywebsite.com)")
+                  button.button-orange Send
+            
+            .tracking-item
+              p 2. Test the base code
+              .code-block
+                strong Make sure your pixel code was added correcty by sending test traffic to your site. If the status is shown as Active , your code has been installed correctly. This process may take several minutes. 
+                
+                .send-field
+                  form(action="")
+                    input(type="text" placeholder="Enter the URL for the website  ( ex. www.mywebsite.com)")
+                    button.button-orange Send Test Trafic
+          
+          
+

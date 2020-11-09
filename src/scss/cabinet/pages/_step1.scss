@@ -1,0 +1,154 @@
+// STEPS
+.steps {
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 400px;
+  margin-right: 40px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+
+  @include border-radius(4px);
+
+  .icon__done {
+    display: none;
+  }
+
+  &_item {
+    font-weight: bold;
+    color: #828282;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 21px 40px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    position: relative;
+
+    &:last-child {
+      border: none;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #fd8324;
+    }
+
+    &.done {
+      .icon__done {
+        display: block;
+        position: absolute;
+        right: 37px;
+        top: 25px;
+        font-size: 14px;
+        color: #5bd467;
+        line-height: 1em;
+      }
+    }
+  }
+}
+// STEPS END
+
+.step-title {
+  padding: 40px 40px 0;
+  position: relative;
+  margin-bottom: 32px;
+
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #fd8324;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  p {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 8px;
+  }
+
+  .button-next {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border: 1px solid #c4c4c4;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 38px;
+    width: 120px;
+    text-align: center;
+    color: #000;
+
+    @include border-radius(4px);
+  }
+
+  .button-green {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #5bd467;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+
+    @include border-radius(4px);
+  }
+}
+
+.categories {
+  display: flex;
+  align-items: start;
+
+  &_item {
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  &_title {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 34px 0 34px 40px;
+
+    > span {
+      font-weight: bold;
+      color: #c4c4c4;
+      font-size: 24px;
+      line-height: 32px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &_subitem {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 100px;
+    padding-left: 40px;
+    align-items: center;
+
+    .radio_button:checked {
+      + label {
+        color: #fd8324;
+      }
+    }
+
+    label {
+      font-weight: bold;
+      color: #000000;
+      font-size: 18px;
+      margin-left: 16px;
+      cursor: pointer;
+    }
+  }
+}

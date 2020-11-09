@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Publicfast Cabinet</title>
+    <meta charset="utf-8" content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/css/cabinet.css" rel="stylesheet">
+    <script src="vendor/js/jquery-1.11.3.min.js"></script>
+    <script src="vendor/js/tooltipster.min.js" type="text/javascript"></script>
+    <script src="vendor/js/tooltipster.bundle.js" type="text/javascript"></script>
+    <script src="vendor/js/jQuery.tagify.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="assets/js/accordion.js" type="text/javascript"></script>
+    <script src="assets/js/cabinet.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cabinet-navigation mob-hide">
+        <div class="logo-space">
+          <div class="logo"><a href="#"><img src="assets/images/cabinet/logo.svg" alt=""></a></div>
+        </div>
+        <div class="cabinet-navigation_menu">
+          <ul>
+            <li class="menu-drop active"><span> <span class="icon icon__globe"></span>Discovery<span class="icon icon__arrow"></span></span>
+              <ul class="drop-list">
+                <li class="active"><a href="#">Global influencers</a></li>
+                <li><a href="#">Request influencers</a></li>
+                <li><a href="#">Saved influencers</a></li>
+              </ul>
+            </li>
+            <li class="menu-drop"><span><span class="icon icon__briefcase"></span>Marketplace<span class="icon icon__arrow"></span></span>
+              <ul class="drop-list">
+                <li><a href="#">Create a new campaign</a></li>
+                <li><a href="#">Your campaigns</a></li>
+                <li><a href="#">Influencers at Publicfast</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="icon icon__mail"></span>Message</a></li>
+            <li><a href="#"><span class="icon icon__database"></span>Balance</a></li>
+            <li><a href="#"><span class="icon icon__user"></span>Your Profile</a></li>
+          </ul><a class="exit mob-hide" href="#"><span class="icon icon__exit"></span>Exit</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="top-block">
+          <div class="page-title"><span>Create a new campaign</span></div>
+        </div>
+        <div class="main-content">
+          <div class="steps">
+            <div class="steps_item active"><span>Campaign</span><span class="icon icon__done"></span></div>
+            <div class="steps_item"><span>Campaign set</span><span class="icon icon__done"></span></div>
+            <div class="steps_item"><span>Campaign bief</span><span class="icon icon__done"></span></div>
+            <div class="steps_item"><span>Tracking</span><span class="icon icon__done"></span></div>
+          </div>
+          <div class="content">
+            <div class="step-title"><span>Step 1</span>
+              <p>Lets specify campaign category</p><a class="button-next" href="#">Next</a>
+            </div>
+            <div class="categories">
+              <div class="categories_item">
+                <div class="categories_title"><span>Awareness</span>
+                  <div class="tooltipster" title="The process of changing or causing something to change from one form to another."></div>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_1" type="radio" checked="checked" name="radio1">
+                  <label for="radio_1">Brand awareness</label>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_2" type="radio" name="radio1">
+                  <label for="radio_2">Reach</label>
+                </div>
+              </div>
+              <div class="categories_item">
+                <div class="categories_title"><span>Consideration</span>
+                  <div class="tooltipster" title="The process of changing or causing something to change from one form to another."></div>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_3" type="radio" name="radio2">
+                  <label for="radio_3">Traffic</label>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_4" type="radio" name="radio2">
+                  <label for="radio_4">Installs</label>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_5" type="radio" name="radio2">
+                  <label for="radio_5">Conversions</label>
+                </div>
+              </div>
+              <div class="categories_item">
+                <div class="categories_title"><span>Creativities</span>
+                  <div class="tooltipster" title="The process of changing or causing something to change from one form to another."></div>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_6" type="radio" name="radio3">
+                  <label for="radio_6">Video tutorial</label>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_7" type="radio" name="radio3">
+                  <label for="radio_7">Video Review</label>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_8" type="radio" name="radio3">
+                  <label for="radio_8">Vertical video for the ad (up to 15 sec)</label>
+                </div>
+                <div class="categories_subitem">
+                  <input class="radio_button" id="radio_9" type="radio" name="radio3">
+                  <label for="radio_9">Image</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

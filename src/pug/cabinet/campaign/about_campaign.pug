@@ -1,0 +1,494 @@
+extends ../_layout
+
+block content
+  .top-block
+    .tabs.tabs__campaign
+      .tabs_list
+        ul
+          li
+            a.active(href="#tab-1") About campaing
+          li
+            a(href="#tab-2") Influencers in campaing
+          li
+            a(href="#tab-3") Messages
+          li
+            a(href="#tab-4") Analytics
+          li
+            a(href="#tab-5") Publicatins
+          li
+            a(href="#tab-6") Invite influencers
+
+  .main-content
+    .content.content__campaign
+      .tabs_content
+        .tabs_item#tab-1(style="display: none;")
+          .about_info
+            .photo
+              img(src="assets/images/cabinet/campaign_photo.jpg", alt="")
+            .platforms
+              .item-title Platforms
+              .platforms_item
+                a.instagram(href="#")
+                  span.icon.icon__instagram
+                  | Instagram
+              .platforms_item
+                a.youtube(href="#")
+                  span.icon.icon__youtube
+                  | Youtube
+          .about_text
+            .tab_title TEZ Tour Campaign
+            .about_text_item
+              .item-title About company
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+            .about_text_item
+              .item-title About company
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+              p Start with few sentences about your product/service
+            .about_text_item
+              .item-title Task to influencers
+              p Write brief for influencers.
+              ul
+                li
+                  | Specify the task of influencers. For example: test the service, try the product, visit the event and make a post
+                li
+                  | you can ask influencers to tag some friends in publication, take a photo in a certain style or write you a message to describe the future post
+                li
+                  | If necessary, add a link or hashtag to the fields below
+            .about_text_item
+              .item-title Country
+              span.tag(href="#") USA
+                span.icon.icon__close
+              span.tag(href="#") Canada
+                span.icon.icon__close
+              span.tag(href="#") Peru
+                span.icon.icon__close
+            .about_text_item
+              .item-title Categories
+              span.tag(href="#") Girls
+                span.icon.icon__close
+              span.tag(href="#") Cosmetics
+                span.icon.icon__close
+              span.tag(href="#") Beauty
+                span.icon.icon__close
+            .about_text_item
+              .item-title Hashtags
+              span.tag(href="#") #Google
+                span.icon.icon__close
+              span.tag(href="#") #Fire
+                span.icon.icon__close
+            .about_text_item
+              .item-title Stopwords
+              span.tag(href="#") Rasism
+                span.icon.icon__close
+              span.tag(href="#") Nigga
+                span.icon.icon__close
+              span.tag(href="#") BLM
+                span.icon.icon__close
+            .about_text_item
+              .item-title Link
+              a.link(href="#") https://whereby.com/publicfastm
+
+        .tabs_item#tab-2
+          .tab_title Influencers in campaing
+          .influencers_filter
+            ul
+              li
+                a.active(href="#") All
+              li
+                a(href="#") Waiting
+              li
+                a(href="#") Approved
+              li
+                a(href="#") Rejected
+          .influencers_table
+            .influencers_table_head
+              .influencers_table_cell.influencers_table_cell__influencer
+                span Influencer
+              .influencers_table_cell.influencers_table_cell__price
+                span Price
+              .influencers_table_cell.influencers_table_cell__reach
+                span Reach/Subsctibers
+              .influencers_table_cell.influencers_table_cell__engagement
+                span Engegament
+              .influencers_table_cell.influencers_table_cell__action
+                span Action
+              
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+                    a.facebook-link(href="#")
+                      img(src="assets/images/cabinet/facebook.svg", alt="")
+                  p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 24%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                .state.approved Approved
+            
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/reynolds_img.png", alt="")
+                .info
+                  strong Ryan Reynolds | vancityreynolds
+                    a.facebook-link(href="#")
+                      img(src="assets/images/cabinet/facebook.svg", alt="")
+                  p Owner: @aviationgin and @mintmobile
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 5,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 4,128,880
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 66%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                button.button-orange Accept
+                button.button-border Decline
+
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/table_img_preview.svg", alt="")
+                .info
+                  strong MALUMA | maluma
+                  p MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 5,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 4,128,880
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 66%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                button.button-orange Accept
+                button.button-border Decline
+
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+                  p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 24%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                .state.rejected Rejected
+
+        .tabs_item#tab-3(style="display: none;")
+          p 3
+        
+        .tabs_item.tabs_item__analitics#tab-4(style="display: none;")
+          .analitics-item
+            strong Overview
+            .stats
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/picture_icon.svg", alt="")
+                  | Publications
+                p 124
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/eye_icon.svg", alt="")
+                  | People reached
+                p 251
+              .stats_item
+                span
+                  | $ Total budget
+                p $0.00
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/link_icon.svg", alt="")
+                  | Link clicks
+                p 124
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/heart_icon.svg", alt="")
+                  | Engagements
+                p 65%
+              .stats_item.stats_item__cpm
+                span
+                  | $ CPM
+                p $0.00
+              .stats_item.stats_item__cpe
+                span
+                  | $ CPE
+                p $0.00
+            
+          .analitics-item
+            strong Engagement for all time
+            .stats
+              .stats_item.stats_item__all
+                span
+                  | All
+                p 251
+              .stats_item.stats_item__avg
+                span
+                  | AVG in publications
+                p 251
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/likes.svg", alt="")
+                  | Likes
+                p 1,223,412
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/comment_icon.svg", alt="")
+                  | Comments
+                p 13,781
+              .stats_item
+                span
+                  img(src="assets/images/cabinet/share_icon.svg", alt="")
+                  | Shares
+                p 13,781
+          
+          .analitics-graphic
+            //- TODO
+        
+        .tabs_item.tabs_item__publications#tab-5(style="display: none;")
+          .publication_item
+            .photo
+              img(src="assets/images/cabinet/publication_img.jpg", alt="")
+            .publication_item_info.publication_item_info__paid
+              a.message(href="#")
+                span.icon.icon__mail
+              .name
+                | Nikita Bykov
+                span.paid_text
+                  span.icon.icon__check
+                  | Paid
+              a.link(href="#") Link to the post
+              .stats
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/likes.svg", alt="")
+                    | Likes
+                  p 1,223,412
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/comment_icon.svg", alt="")
+                    | Comments
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/share_icon.svg", alt="")
+                    | Shares
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/target_icon.svg", alt="")
+                    | People reached
+                  p 813
+            
+          .publication_item
+            .photo
+              img(src="assets/images/cabinet/publication_img.jpg", alt="")
+            .publication_item_info.publication_item_info__paid
+              a.message(href="#")
+                span.icon.icon__mail
+              .name
+                | Nikita Bykov
+                span.paid_text
+                  span.icon.icon__check
+                  | Paid
+              a.link(href="#") Link to the post
+              .stats
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/likes.svg", alt="")
+                    | Likes
+                  p 1,223,412
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/comment_icon.svg", alt="")
+                    | Comments
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/share_icon.svg", alt="")
+                    | Shares
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/target_icon.svg", alt="")
+                    | People reached
+                  p 813
+            
+          .publication_item
+            .photo
+              img(src="assets/images/cabinet/publication_img.jpg", alt="")
+            .publication_item_info
+              a.message(href="#")
+                span.icon.icon__mail
+              .name
+                | Nikita Bykov
+                span.paid_text
+                  span.icon.icon__check
+                  | Paid
+              a.link(href="#") Link to the post
+              .stats
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/likes.svg", alt="")
+                    | Likes
+                  p 1,223,412
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/comment_icon.svg", alt="")
+                    | Comments
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/share_icon.svg", alt="")
+                    | Shares
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/target_icon.svg", alt="")
+                    | People reached
+                  p 813
+            
+          .publication_item
+            .photo
+              img(src="assets/images/cabinet/publication_img.jpg", alt="")
+            .publication_item_info
+              a.message(href="#")
+                span.icon.icon__mail
+              .name
+                | Nikita Bykov
+                span.paid_text
+                  span.icon.icon__check
+                  | Paid
+              a.link(href="#") Link to the post
+              .stats
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/likes.svg", alt="")
+                    | Likes
+                  p 1,223,412
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/comment_icon.svg", alt="")
+                    | Comments
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/share_icon.svg", alt="")
+                    | Shares
+                  p 13,781
+                .stats_item
+                  span
+                    img(src="assets/images/cabinet/target_icon.svg", alt="")
+                    | People reached
+                  p 813
+            
+        .tabs_item#tab-6(style="display: none;")
+          .tab_title Influencers by your filters
+          .influencers_table
+            .influencers_table_head
+              .influencers_table_cell.influencers_table_cell__influencer
+                span Influencer
+              .influencers_table_cell.influencers_table_cell__price
+                span Price
+              .influencers_table_cell.influencers_table_cell__reach
+                span Reach/Subsctibers
+              .influencers_table_cell.influencers_table_cell__engagement
+                span Engegament
+              .influencers_table_cell.influencers_table_cell__action
+                span Action
+              
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+                  p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 24%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                button.button-orange Invite
+            
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/reynolds_img.png", alt="")
+                .info
+                  strong Ryan Reynolds | vancityreynolds
+                  p Owner: @aviationgin and @mintmobile
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 5,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 4,128,880
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 66%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                button.button-orange Invite
+
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/table_img_preview.svg", alt="")
+                .info
+                  strong MALUMA | maluma
+                  p MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 5,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 4,128,880
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 66%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                button.button-orange Invite
+
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+                  p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .influencers_table_cell.influencers_table_cell__price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__reach
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                p 24%
+              .influencers_table_cell.influencers_table_cell__action
+                a.message(href="#")
+                  span.icon.icon__mail
+                button.button-orange Invite
+
+

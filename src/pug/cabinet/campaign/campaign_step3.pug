@@ -1,0 +1,56 @@
+extends ../_layout
+
+block content
+  .top-block
+    .page-title
+      span Create a new campaign
+  .main-content
+    .steps
+      .steps_item.done
+        span Campaign
+        span.icon.icon__done
+      .steps_item.done
+        span Campaign set
+        span.icon.icon__done
+      .steps_item.active
+        span Campaign bief
+        span.icon.icon__done
+      .steps_item
+        span Tracking
+        span.icon.icon__done
+    .content
+      .step-title
+        span Step 3
+        p Campaing Brief
+        a.button-next(href="#") Next
+      .company-info
+        form
+          .form-item.form-item__about-company
+            span About company
+            textarea Hey we are ! Here you need to tell a story about your brand and what are you doing.
+          
+          .form-item.form-item__about-product
+            span About product
+            textarea Start with few sentences about your product/service
+          
+          .form-item.form-item__influencers
+            span Task to influencers
+            .form-item_subitem
+              label Write a detailed comment so that influencers know how to better promote you.
+              textarea
+                | Write brief for influencers.
+                | - Specify the task of influencers. For example: test the service, try the product, visit the event and make a post
+                | - you can ask influencers to tag some friends in publication, take a photo in a certain style or write you a message to describe the future post
+                | - If necessary, add a link or hashtag to the fields below
+            .form-item_subitem
+              label Hashtags
+              input.input_tag(type="text")
+            .form-item_subitem
+              label Stopwords
+              input.input_tag(type="text")
+            .form-item_subitem
+              label Add link for influencers
+              input(type="text")
+          
+          
+
