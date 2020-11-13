@@ -23,7 +23,7 @@ block content
   .main-content
     .content.content__campaign
       .tabs_content
-        .tabs_item#tab-1
+        .tabs_item#tab-1(style="display: none;")
           .about_info
             .photo
               img(src="assets/images/cabinet/campaign_photo.jpg", alt="")
@@ -238,7 +238,7 @@ block content
         .tabs_item#tab-3(style="display: none;")
           p 3
         
-        .tabs_item.tabs_item__analitics#tab-4(style="display: none;")
+        .tabs_item.tabs_item__analitics#tab-4
           .analitics-item
             strong Overview
             .stats
@@ -303,7 +303,8 @@ block content
                 p 13,781
           
           .analitics-graphic
-            //- TODO
+            .chart-title Engagement by days
+            #analitics-chart
         
         .tabs_item.tabs_item__publications#tab-5(style="display: none;")
           .publication_item.publication_item__paid

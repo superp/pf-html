@@ -1238,6 +1238,38 @@ body {
 .tagify__dropdown__item:active {
   filter: brightness(105%); }
 
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 100%; }
+
+.highcharts-data-table table {
+  font-family: "helvetica", sans-serif;
+  border-collapse: collapse;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%; }
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #000; }
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em; }
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em; }
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #fff; }
+
+.highcharts-data-table tr:hover {
+  background: #fff; }
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -1996,6 +2028,24 @@ body {
         font-size: 32px;
         line-height: 44px;
         margin-top: 8px; }
+
+.analitics-graphic {
+  position: relative;
+  padding: 32px 0;
+  width: 100%; }
+  .analitics-graphic:before {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 1px solid #e5e5e5;
+    width: calc(100% + 80px);
+    left: -40px;
+    top: 0; }
+
+.chart-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px; }
 
 .content__influencers {
   clear: both;
