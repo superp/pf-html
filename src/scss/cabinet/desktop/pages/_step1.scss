@@ -48,6 +48,21 @@
 }
 // STEPS END
 
+.button-next {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border: 1px solid #c4c4c4;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 38px;
+  width: 120px;
+  text-align: center;
+  color: #000;
+
+  @include border-radius(4px);
+}
+
 .step-title {
   padding: 40px 40px 0;
   position: relative;
@@ -68,21 +83,6 @@
     font-weight: bold;
     color: #000;
     margin-top: 8px;
-  }
-
-  .button-next {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    border: 1px solid #c4c4c4;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 38px;
-    width: 120px;
-    text-align: center;
-    color: #000;
-
-    @include border-radius(4px);
   }
 
   .button-green {

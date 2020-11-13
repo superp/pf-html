@@ -1,0 +1,22 @@
+.filter_popup {
+  width: 100%;
+  padding: 20px 16px;
+}
+
+.form-item {
+  .buttons {
+    order: 1;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &.form-item__search-results {
+    flex-wrap: wrap;
+
+    > span {
+      order: 2;
+      margin-top: 32px;
+      width: 100%;
+    }
+  }
+}

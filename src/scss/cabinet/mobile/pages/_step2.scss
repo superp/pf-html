@@ -1,0 +1,17 @@
+.form-item {
+  &__budget {
+    .select2-container {
+      margin-right: 8px;
+    }
+
+    input {
+      width: calc(100% - 146px);
+    }
+  }
+
+  &__placement {
+    .sub-checks {
+      padding-left: 0;
+    }
+  }
+}

@@ -2,9 +2,5 @@
 
 @import "base/reset";
 
-@import "cabinet/layout";
-
-@import "cabinet/ui/main";
-@import "cabinet/popups/main";
-@import "cabinet/pages/main";
-@import "cabinet/components/main";
+@import "cabinet/desktop/main";
+@import "cabinet/mobile/main";

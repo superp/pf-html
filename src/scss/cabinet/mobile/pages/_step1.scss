@@ -1,0 +1,34 @@
+.back {
+  margin-right: auto;
+}
+
+.step-title {
+  padding: 0;
+
+  p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+// Categories
+.categories {
+  flex-wrap: wrap;
+
+  &_item,
+  &_title,
+  &_subitem {
+    border: none;
+  }
+
+  &_title {
+    padding: 16px 0;
+  }
+
+  &_subitem {
+    min-height: 1px;
+    padding: 20px 0;
+  }
+}
+// Categories END

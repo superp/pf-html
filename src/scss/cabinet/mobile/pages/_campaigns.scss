@@ -1,0 +1,102 @@
+.campaign-state {
+  margin-top: 22px;
+  position: static;
+}
+
+.campaigns {
+  &-item {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 16px 0 32px;
+    position: relative;
+
+    .photo {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      margin: 0;
+      width: 110px;
+      height: 110px;
+    }
+
+    &_info {
+      &_main {
+        padding-left: 142px;
+      }
+
+      &_contact .links {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.content {
+  .tab_item,
+  &__campaigns-info {
+    .influencers_filter {
+      margin: 32px 0 32px auto;
+      position: relative;
+      z-index: 10;
+      color: #000;
+      width: 160px;
+      height: 40px;
+      line-height: 38px;
+      border: 1px solid #c4c4c4;
+      padding: 0 45px 0 16px;
+
+      @include border-radius(4px);
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+
+      ul {
+        width: calc(100% + 2px);
+        background-color: #fff;
+        position: absolute;
+        top: 37px;
+        left: -1px;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #c4c4c4;
+        padding: 8px 16px;
+
+        @include border-radius(0 0 4px 4px);
+
+        li {
+          display: block;
+          margin: 3px 0;
+        }
+
+        a {
+          color: #000;
+          font-weight: normal;
+          display: block;
+          padding: 4px 0;
+        }
+      }
+
+      .current {
+        font-weight: bold;
+      }
+
+      .icon {
+        position: absolute;
+        right: 17px;
+        top: 0;
+
+        &:before {
+          font-size: 12px;
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}

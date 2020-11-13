@@ -1,75 +1,12 @@
 extends ../_layout
 
 block content
-  .top-block
+  .top-block.top-block__influencers
     .filter-button
       span
         img(src="assets/images/cabinet/filter_icon.svg", alt="")
       span Filter
-    .popup-overlay
-      .filter_popup
-        form(action="")
-
-          .form-item.form-item__search-results
-            span Finded 100,000 influencers
-            .buttons 
-              .hide-filter
-                | Hide
-              button.apply-button
-                span.icon.icon__check
-                span Apply
-          .form-item.form-item__search
-            input.search(type="text")
-          .form-item.form-item__budget
-            .form-item_subitem
-              label Total budget
-              select
-                option(value="") USD ($)
-                option(value="") EUR (€)
-                option(value="") CAD ($)
-              input(type="text" placeholder="0.00")
-            .form-item_subitem
-              label Price per influencer collaboration
-              select
-                option(value="") USD ($)
-                option(value="") EUR (€)
-                option(value="") CAD ($)
-              input(type="text" placeholder="0.00")
-                    
-          .form-item.form-item__age
-            label Age
-            input(type="text" placeholder="10")
-            span -
-            input(type="text" placeholder="13")
-
-          .form-item.form-item__audience
-            .form-item_subitem
-              label Country
-              input.input_tag(type="text")
-            .form-item_subitem
-              label City
-              input.input_tag(type="text")
-
-          .form-item.form-item__gender
-            label Gender
-            
-            .form-item_subitem
-              input#gender_checkbox1.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox1") Male
-            .form-item_subitem
-              input#gender_checkbox2.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox2") Female
-            .form-item_subitem
-              input#gender_checkbox3.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox3") Transgender
-            .form-item_subitem
-              input#gender_checkbox4.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox4") LGBT
-          
-          .form-item.form-item__categories
-            label Categories
-            input.input_tag(type="text")
-
+      
   .main-content
     .content.content__influencers
     
@@ -141,3 +78,66 @@ block content
             p 75K—150K
           .influencers_table_cell.influencers_table_cell__action
             button.button-orange Добавить
+
+    .popup-overlay
+      .filter_popup
+        form(action="")
+
+          .form-item.form-item__search-results
+            .buttons 
+              .hide-filter
+                | Hide
+              button.apply-button
+                span Apply
+            span Finded 100,000 influencers
+          .form-item.form-item__search
+            input.search(type="text")
+          .form-item.form-item__budget
+            .form-item_subitem
+              label Total budget
+              select
+                option(value="") USD ($)
+                option(value="") EUR (€)
+                option(value="") CAD ($)
+              input(type="text" placeholder="0.00")
+            .form-item_subitem
+              label Price per influencer collaboration
+              select
+                option(value="") USD ($)
+                option(value="") EUR (€)
+                option(value="") CAD ($)
+              input(type="text" placeholder="0.00")
+                    
+          .form-item.form-item__age
+            label Age
+            input(type="text" placeholder="10")
+            span -
+            input(type="text" placeholder="13")
+
+          .form-item.form-item__audience
+            .form-item_subitem
+              label Country
+              input.input_tag(type="text")
+            .form-item_subitem
+              label City
+              input.input_tag(type="text")
+
+          .form-item.form-item__gender
+            label Gender
+            
+            .form-item_subitem
+              input#gender_checkbox1.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox1") Male
+            .form-item_subitem
+              input#gender_checkbox2.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox2") Female
+            .form-item_subitem
+              input#gender_checkbox3.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox3") Transgender
+            .form-item_subitem
+              input#gender_checkbox4.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox4") LGBT
+          
+          .form-item.form-item__categories
+            label Categories
+            input.input_tag(type="text")

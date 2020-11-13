@@ -1,0 +1,22 @@
+.content {
+  &__influencers {
+    .influencers_table_row {
+      .influencers_table_cell {
+        &__influencer {
+          width: 100%;
+        }
+
+        &__engagement,
+        &__reach,
+        &__publications,
+        &__price {
+          width: 100%;
+        }
+
+        &__action {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

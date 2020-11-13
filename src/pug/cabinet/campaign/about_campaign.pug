@@ -2,6 +2,8 @@ extends ../_layout
 
 block content
   .top-block
+    .back.desk-hide
+      img(src="assets/images/cabinet/arrow_left.svg", alt="")
     .tabs.tabs__campaign
       .tabs_list
         ul
@@ -14,14 +16,14 @@ block content
           li
             a(href="#tab-4") Analytics
           li
-            a(href="#tab-5") Publicatins
+            a(href="#tab-5") Publications
           li
             a(href="#tab-6") Invite influencers
 
   .main-content
     .content.content__campaign
       .tabs_content
-        .tabs_item#tab-1(style="display: none;")
+        .tabs_item#tab-1
           .about_info
             .photo
               img(src="assets/images/cabinet/campaign_photo.jpg", alt="")
@@ -94,9 +96,12 @@ block content
               .item-title Link
               a.link(href="#") https://whereby.com/publicfastm
 
-        .tabs_item#tab-2
+        .tabs_item#tab-2(style="display: none;")
           .tab_title Influencers in campaing
+
           .influencers_filter
+            span.current.desk-hide All
+            span.icon.icon__arrow
             ul
               li
                 a.active(href="#") All
@@ -106,6 +111,7 @@ block content
                 a(href="#") Approved
               li
                 a(href="#") Rejected
+                
           .influencers_table
             .influencers_table_head
               .influencers_table_cell.influencers_table_cell__influencer
@@ -125,17 +131,25 @@ block content
                   img(src="assets/images/cabinet/nasa_img.png", alt="")
                 .info
                   strong NASA | nasa
-                    a.facebook-link(href="#")
+                    a.facebook-link.mob-hide(href="#")
                       img(src="assets/images/cabinet/facebook.svg", alt="")
                   p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
                 p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
                 p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
                 p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 .state.approved Approved
             
@@ -145,17 +159,25 @@ block content
                   img(src="assets/images/cabinet/reynolds_img.png", alt="")
                 .info
                   strong Ryan Reynolds | vancityreynolds
-                    a.facebook-link(href="#")
+                    a.facebook-link.mob-hide(href="#")
                       img(src="assets/images/cabinet/facebook.svg", alt="")
                   p Owner: @aviationgin and @mintmobile
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
                 p $ 5,500.00
               .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
                 p 4,128,880
               .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
                 p 66%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 button.button-orange Accept
                 button.button-border Decline
@@ -167,14 +189,22 @@ block content
                 .info
                   strong MALUMA | maluma
                   p MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
-                p $ 5,500.00
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
-                p 4,128,880
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
-                p 66%
+                .table-subtitle.desk-hide Engegament
+                p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 button.button-orange Accept
                 button.button-border Decline
@@ -186,14 +216,22 @@ block content
                 .info
                   strong NASA | nasa
                   p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
                 p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
                 p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
                 p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 .state.rejected Rejected
 
@@ -268,18 +306,18 @@ block content
             //- TODO
         
         .tabs_item.tabs_item__publications#tab-5(style="display: none;")
-          .publication_item
-            .photo
-              img(src="assets/images/cabinet/publication_img.jpg", alt="")
-            .publication_item_info.publication_item_info__paid
-              a.message(href="#")
-                span.icon.icon__mail
+          .publication_item.publication_item__paid
               .name
                 | Nikita Bykov
                 span.paid_text
                   span.icon.icon__check
                   | Paid
-              a.link(href="#") Link to the post
+                .link
+                  a(href="#") Link to the post
+              a.message(href="#")
+                span.icon.icon__mail
+              .photo
+                img(src="assets/images/cabinet/publication_img.jpg", alt="")
               .stats
                 .stats_item
                   span
@@ -301,19 +339,19 @@ block content
                     img(src="assets/images/cabinet/target_icon.svg", alt="")
                     | People reached
                   p 813
-            
-          .publication_item
-            .photo
-              img(src="assets/images/cabinet/publication_img.jpg", alt="")
-            .publication_item_info.publication_item_info__paid
-              a.message(href="#")
-                span.icon.icon__mail
+          
+          .publication_item.publication_item__paid
               .name
                 | Nikita Bykov
                 span.paid_text
                   span.icon.icon__check
                   | Paid
-              a.link(href="#") Link to the post
+                .link
+                  a(href="#") Link to the post
+              a.message(href="#")
+                span.icon.icon__mail
+              .photo
+                img(src="assets/images/cabinet/publication_img.jpg", alt="")
               .stats
                 .stats_item
                   span
@@ -334,20 +372,21 @@ block content
                   span
                     img(src="assets/images/cabinet/target_icon.svg", alt="")
                     | People reached
-                  p 813
-            
-          .publication_item
-            .photo
-              img(src="assets/images/cabinet/publication_img.jpg", alt="")
-            .publication_item_info
-              a.message(href="#")
-                span.icon.icon__mail
+                  p 813 
+        
+          
+          .publication_item.publication_item__paid
               .name
                 | Nikita Bykov
                 span.paid_text
                   span.icon.icon__check
                   | Paid
-              a.link(href="#") Link to the post
+                .link
+                  a(href="#") Link to the post
+              a.message(href="#")
+                span.icon.icon__mail
+              .photo
+                img(src="assets/images/cabinet/publication_img.jpg", alt="")
               .stats
                 .stats_item
                   span
@@ -368,44 +407,15 @@ block content
                   span
                     img(src="assets/images/cabinet/target_icon.svg", alt="")
                     | People reached
-                  p 813
-            
-          .publication_item
-            .photo
-              img(src="assets/images/cabinet/publication_img.jpg", alt="")
-            .publication_item_info
-              a.message(href="#")
-                span.icon.icon__mail
-              .name
-                | Nikita Bykov
-                span.paid_text
-                  span.icon.icon__check
-                  | Paid
-              a.link(href="#") Link to the post
-              .stats
-                .stats_item
-                  span
-                    img(src="assets/images/cabinet/likes.svg", alt="")
-                    | Likes
-                  p 1,223,412
-                .stats_item
-                  span
-                    img(src="assets/images/cabinet/comment_icon.svg", alt="")
-                    | Comments
-                  p 13,781
-                .stats_item
-                  span
-                    img(src="assets/images/cabinet/share_icon.svg", alt="")
-                    | Shares
-                  p 13,781
-                .stats_item
-                  span
-                    img(src="assets/images/cabinet/target_icon.svg", alt="")
-                    | People reached
-                  p 813
-            
+                  p 813 
+        
         .tabs_item#tab-6(style="display: none;")
-          .tab_title Influencers by your filters
+          .tab_title
+            span Influencers by your filters
+            .filter-button
+              span
+                img(src="assets/images/cabinet/filter_icon.svg", alt="")
+              span Filter
           .influencers_table
             .influencers_table_head
               .influencers_table_cell.influencers_table_cell__influencer
@@ -426,14 +436,22 @@ block content
                 .info
                   strong NASA | nasa
                   p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
                 p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
                 p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
                 p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 button.button-orange Invite
             
@@ -444,14 +462,22 @@ block content
                 .info
                   strong Ryan Reynolds | vancityreynolds
                   p Owner: @aviationgin and @mintmobile
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
-                p $ 5,500.00
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
-                p 4,128,880
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
-                p 66%
+                .table-subtitle.desk-hide Engegament
+                p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 button.button-orange Invite
 
@@ -462,14 +488,22 @@ block content
                 .info
                   strong MALUMA | maluma
                   p MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
-                p $ 5,500.00
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
-                p 4,128,880
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
-                p 66%
+                .table-subtitle.desk-hide Engegament
+                p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 button.button-orange Invite
 
@@ -480,14 +514,22 @@ block content
                 .info
                   strong NASA | nasa
                   p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+                .links.desk-hide
+                  a.facebook-link(href="#")
+                    img(src="assets/images/cabinet/facebook.svg", alt="")
+                  a.message(href="#")
+                    | Message
               .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
                 p $ 1,500.00
               .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
                 p 1,914,128
               .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
                 p 24%
               .influencers_table_cell.influencers_table_cell__action
-                a.message(href="#")
+                a.message.mob-hide(href="#")
                   span.icon.icon__mail
                 button.button-orange Invite
 

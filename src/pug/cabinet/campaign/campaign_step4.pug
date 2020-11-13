@@ -2,10 +2,13 @@ extends ../_layout
 
 block content
   .top-block
+    .back.desk-hide
+      img(src="assets/images/cabinet/arrow_left.svg", alt="")
+    a.button-next.desk-hide(href="#") Next
     .page-title
       span Create a new campaign
   .main-content
-    .steps
+    .steps.mob-hide
       .steps_item.done
         span Campaign
         span.icon.icon__done
@@ -22,8 +25,8 @@ block content
       .step-title
         span Step 4
         p Campaign Tracking
-        a.button-green(href="#") Create Campaign
-        //- a.button-next(href="#") Skip
+        a.button-green.mob-hide(href="#") Create Campaign
+        //- a.button-next.mob-hide(href="#") Skip
       .tabs.tabs__tracking
         span Connect Website Activity Using Pixel
         .tabs_content

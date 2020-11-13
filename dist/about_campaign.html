@@ -42,8 +42,31 @@
           </ul><a class="exit mob-hide" href="#"><span class="icon icon__exit"></span>Exit</a>
         </div>
       </div>
+      <div class="cabinet-navigation-mobile desk-hide">
+        <ul>
+          <li class="menu-drop-mob" data-menu="menu-list-1"><a class="active" href="#"><span class="icon icon__globe"></span>Discovery</a></li>
+          <li class="menu-drop-mob" data-menu="menu-list-2"><a href="#"><span class="icon icon__briefcase"></span>Marketplace</a></li>
+          <li><a href="#"><span class="icon icon__mail"></span>Message</a></li>
+          <li><a href="#"><span class="icon icon__database"></span>Balance</a></li>
+          <li><a href="#"><span class="icon icon__user"></span>Your Profile</a></li>
+        </ul>
+      </div>
+      <div class="cabinet-navigation-list desk-hide">
+        <div class="close"><img src="assets/images/cabinet/arrow_left.svg" alt=""></div>
+        <ul data-item="menu-list-2">
+          <li><a class="active" href="#">Create a new campaign<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Your campaigns<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Influencers at Publicfast<span class="icon icon__arrow"></span></a></li>
+        </ul>
+        <ul data-item="menu-list-1">
+          <li><a href="#">Global influencers<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Request influencers<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Saved influencers<span class="icon icon__arrow"></span></a></li>
+        </ul>
+      </div>
       <div class="container">
         <div class="top-block">
+          <div class="back desk-hide"><img src="assets/images/cabinet/arrow_left.svg" alt=""></div>
           <div class="tabs tabs__campaign">
             <div class="tabs_list">
               <ul>
@@ -51,7 +74,7 @@
                 <li><a href="#tab-2">Influencers in campaing</a></li>
                 <li><a href="#tab-3">Messages</a></li>
                 <li><a href="#tab-4">Analytics</a></li>
-                <li><a href="#tab-5">Publicatins</a></li>
+                <li><a href="#tab-5">Publications</a></li>
                 <li><a href="#tab-6">Invite influencers</a></li>
               </ul>
             </div>
@@ -60,7 +83,7 @@
         <div class="main-content">
           <div class="content content__campaign">
             <div class="tabs_content">
-              <div class="tabs_item" id="tab-1" style="display: none;">
+              <div class="tabs_item" id="tab-1">
                 <div class="about_info">
                   <div class="photo"><img src="assets/images/cabinet/campaign_photo.jpg" alt=""></div>
                   <div class="platforms">
@@ -112,9 +135,9 @@
                   </div>
                 </div>
               </div>
-              <div class="tabs_item" id="tab-2">
+              <div class="tabs_item" id="tab-2" style="display: none;">
                 <div class="tab_title">Influencers in campaing</div>
-                <div class="influencers_filter">
+                <div class="influencers_filter"><span class="current desk-hide">All</span><span class="icon icon__arrow"></span>
                   <ul>
                     <li><a class="active" href="#">All</a></li>
                     <li><a href="#">Waiting</a></li>
@@ -133,40 +156,48 @@
                   <div class="influencers_table_row">
                     <div class="influencers_table_cell influencers_table_cell__influencer">
                       <div class="photo"><img src="assets/images/cabinet/nasa_img.png" alt=""></div>
-                      <div class="info"><strong>NASA | nasa<a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a></strong>
+                      <div class="info"><strong>NASA | nasa<a class="facebook-link mob-hide" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a></strong>
                         <p>Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
                       <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
                       <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
                       <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <div class="state approved">Approved</div>
                     </div>
                   </div>
                   <div class="influencers_table_row">
                     <div class="influencers_table_cell influencers_table_cell__influencer">
                       <div class="photo"><img src="assets/images/cabinet/reynolds_img.png" alt=""></div>
-                      <div class="info"><strong>Ryan Reynolds | vancityreynolds<a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a></strong>
+                      <div class="info"><strong>Ryan Reynolds | vancityreynolds<a class="facebook-link mob-hide" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a></strong>
                         <p>Owner: @aviationgin and @mintmobile</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
                       <p>$ 5,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
                       <p>4,128,880</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
                       <p>66%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <button class="button-orange">Accept</button>
                       <button class="button-border">Decline</button>
                     </div>
@@ -177,17 +208,21 @@
                       <div class="info"><strong>MALUMA | maluma</strong>
                         <p>MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
-                      <p>$ 5,500.00</p>
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
-                      <p>4,128,880</p>
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
-                      <p>66%</p>
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <button class="button-orange">Accept</button>
                       <button class="button-border">Decline</button>
                     </div>
@@ -198,17 +233,21 @@
                       <div class="info"><strong>NASA | nasa</strong>
                         <p>Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
                       <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
                       <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
                       <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <div class="state rejected">Rejected</div>
                     </div>
                   </div>
@@ -265,89 +304,71 @@
                 <div class="analitics-graphic"></div>
               </div>
               <div class="tabs_item tabs_item__publications" id="tab-5" style="display: none;">
-                <div class="publication_item">
+                <div class="publication_item publication_item__paid">
+                  <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span>
+                    <div class="link"><a href="#">Link to the post</a></div>
+                  </div><a class="message" href="#"><span class="icon icon__mail"></span></a>
                   <div class="photo"><img src="assets/images/cabinet/publication_img.jpg" alt=""></div>
-                  <div class="publication_item_info publication_item_info__paid"><a class="message" href="#"><span class="icon icon__mail"></span></a>
-                    <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span></div><a class="link" href="#">Link to the post</a>
-                    <div class="stats">
-                      <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
-                        <p>1,223,412</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
-                        <p>813</p>
-                      </div>
+                  <div class="stats">
+                    <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
+                      <p>1,223,412</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
+                      <p>13,781</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
+                      <p>13,781</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
+                      <p>813</p>
                     </div>
                   </div>
                 </div>
-                <div class="publication_item">
+                <div class="publication_item publication_item__paid">
+                  <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span>
+                    <div class="link"><a href="#">Link to the post</a></div>
+                  </div><a class="message" href="#"><span class="icon icon__mail"></span></a>
                   <div class="photo"><img src="assets/images/cabinet/publication_img.jpg" alt=""></div>
-                  <div class="publication_item_info publication_item_info__paid"><a class="message" href="#"><span class="icon icon__mail"></span></a>
-                    <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span></div><a class="link" href="#">Link to the post</a>
-                    <div class="stats">
-                      <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
-                        <p>1,223,412</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
-                        <p>813</p>
-                      </div>
+                  <div class="stats">
+                    <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
+                      <p>1,223,412</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
+                      <p>13,781</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
+                      <p>13,781</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
+                      <p>813 </p>
                     </div>
                   </div>
                 </div>
-                <div class="publication_item">
+                <div class="publication_item publication_item__paid">
+                  <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span>
+                    <div class="link"><a href="#">Link to the post</a></div>
+                  </div><a class="message" href="#"><span class="icon icon__mail"></span></a>
                   <div class="photo"><img src="assets/images/cabinet/publication_img.jpg" alt=""></div>
-                  <div class="publication_item_info"><a class="message" href="#"><span class="icon icon__mail"></span></a>
-                    <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span></div><a class="link" href="#">Link to the post</a>
-                    <div class="stats">
-                      <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
-                        <p>1,223,412</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
-                        <p>813</p>
-                      </div>
+                  <div class="stats">
+                    <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
+                      <p>1,223,412</p>
                     </div>
-                  </div>
-                </div>
-                <div class="publication_item">
-                  <div class="photo"><img src="assets/images/cabinet/publication_img.jpg" alt=""></div>
-                  <div class="publication_item_info"><a class="message" href="#"><span class="icon icon__mail"></span></a>
-                    <div class="name">Nikita Bykov<span class="paid_text"><span class="icon icon__check"></span>Paid</span></div><a class="link" href="#">Link to the post</a>
-                    <div class="stats">
-                      <div class="stats_item"><span><img src="assets/images/cabinet/likes.svg" alt="">Likes</span>
-                        <p>1,223,412</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
-                        <p>13,781</p>
-                      </div>
-                      <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
-                        <p>813</p>
-                      </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/comment_icon.svg" alt="">Comments</span>
+                      <p>13,781</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/share_icon.svg" alt="">Shares</span>
+                      <p>13,781</p>
+                    </div>
+                    <div class="stats_item"><span><img src="assets/images/cabinet/target_icon.svg" alt="">People reached</span>
+                      <p>813 </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tabs_item" id="tab-6" style="display: none;">
-                <div class="tab_title">Influencers by your filters</div>
+                <div class="tab_title"><span>Influencers by your filters</span>
+                  <div class="filter-button"><span><img src="assets/images/cabinet/filter_icon.svg" alt=""></span><span>Filter</span></div>
+                </div>
                 <div class="influencers_table">
                   <div class="influencers_table_head">
                     <div class="influencers_table_cell influencers_table_cell__influencer"><span>Influencer</span></div>
@@ -362,17 +383,21 @@
                       <div class="info"><strong>NASA | nasa</strong>
                         <p>Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
                       <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
                       <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
                       <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <button class="button-orange">Invite</button>
                     </div>
                   </div>
@@ -382,17 +407,21 @@
                       <div class="info"><strong>Ryan Reynolds | vancityreynolds</strong>
                         <p>Owner: @aviationgin and @mintmobile</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
-                      <p>$ 5,500.00</p>
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
-                      <p>4,128,880</p>
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
-                      <p>66%</p>
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <button class="button-orange">Invite</button>
                     </div>
                   </div>
@@ -402,17 +431,21 @@
                       <div class="info"><strong>MALUMA | maluma</strong>
                         <p>MI VIDA EN LÁMINAS 😇😈Contrataciones e información: [email] Link Vídeo #FelicesLos4salsa</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
-                      <p>$ 5,500.00</p>
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
-                      <p>4,128,880</p>
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
-                      <p>66%</p>
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <button class="button-orange">Invite</button>
                     </div>
                   </div>
@@ -422,17 +455,21 @@
                       <div class="info"><strong>NASA | nasa</strong>
                         <p>Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:</p>
                       </div>
+                      <div class="links desk-hide"><a class="facebook-link" href="#"><img src="assets/images/cabinet/facebook.svg" alt=""></a><a class="message" href="#">Message</a></div>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
                       <p>$ 1,500.00</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
                       <p>1,914,128</p>
                     </div>
                     <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
                       <p>24%</p>
                     </div>
-                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message" href="#"><span class="icon icon__mail"></span></a>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="message mob-hide" href="#"><span class="icon icon__mail"></span></a>
                       <button class="button-orange">Invite</button>
                     </div>
                   </div>

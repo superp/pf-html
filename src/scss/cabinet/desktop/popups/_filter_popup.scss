@@ -23,9 +23,17 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    order: 2;
 
     > * {
       flex-shrink: 0;
+    }
+
+    .apply-button {
+      span {
+        padding-left: 29px;
+        background: url(../images/cabinet/check_icon.svg) left center no-repeat;
+      }
     }
   }
 
@@ -39,6 +47,7 @@
       margin: 0;
       color: #000;
       font-size: 18px;
+      order: 1;
     }
   }
 }

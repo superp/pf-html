@@ -2,10 +2,13 @@ extends ../_layout
 
 block content
   .top-block
+    .back.desk-hide
+      img(src="assets/images/cabinet/arrow_left.svg", alt="")
+    a.button-next.desk-hide(href="#") Next
     .page-title
       span Create a new campaign
   .main-content
-    .steps
+    .steps.mob-hide
       .steps_item.done
         span Campaign
         span.icon.icon__done
@@ -22,7 +25,7 @@ block content
       .step-title
         span Step 2
         p Campaign Details
-        a.button-next(href="#") Next
+        a.button-next.mob-hide(href="#") Next
       .company-info
         form
           .form-item.form-item__name

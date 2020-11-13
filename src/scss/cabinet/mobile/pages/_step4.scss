@@ -1,0 +1,56 @@
+.tabs {
+  padding: 0 0 10px;
+
+  &__tracking {
+    .tabs_list {
+      .circle {
+        margin-right: 16px;
+      }
+
+      ul {
+        flex-wrap: wrap;
+
+        li {
+          width: 100%;
+          margin-bottom: 16px;
+
+          a {
+            padding: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tracking-item {
+  .code-block {
+    padding: 8px;
+
+    strong {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+
+    &_text {
+      p {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+.send-field {
+  form {
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  button {
+    margin-left: 0;
+  }
+}

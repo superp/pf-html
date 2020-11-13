@@ -1,5 +1,5 @@
 (function() {
-  var initDropMenu, initTabs, initUi;
+  var initDropMenu, initMobileMenu, initTabs, initUi;
 
   initDropMenu = function() {
     return $('.cabinet-navigation_menu').accordion({
@@ -29,10 +29,32 @@
     });
   };
 
+  initMobileMenu = function() {
+    $('.menu-drop-mob').on('click', function(e) {
+      var container, menuId, menuItem, self;
+      self = $(this);
+      container = $('.cabinet-navigation-list');
+      menuId = self.data('menu');
+      if (menuId) {
+        menuItem = container.find(`ul[data-item='${menuId}']`);
+        console.log(menuId, menuItem);
+        if (menuItem) {
+          $('.cabinet-navigation-list ul').removeClass('active');
+          container.addClass('opened');
+          return menuItem.addClass('active');
+        }
+      }
+    });
+    return $('.cabinet-navigation-list .close').on('click', function(e) {
+      return $('.cabinet-navigation-list').removeClass('opened');
+    });
+  };
+
   $(function() {
     initDropMenu();
     initUi();
-    return initTabs();
+    initTabs();
+    return initMobileMenu();
   });
 
 }).call(this);

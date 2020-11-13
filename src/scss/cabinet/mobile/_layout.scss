@@ -1,0 +1,58 @@
+.mob-hide {
+  display: none !important;
+}
+
+.desk-hide {
+  display: block;
+}
+
+body {
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.top-block {
+  border: none;
+  margin-bottom: 8px;
+  padding-top: 64px;
+  position: relative;
+
+  .back {
+    position: absolute;
+    left: 0;
+    top: 25px;
+  }
+
+  .button-next {
+    position: absolute;
+    right: 16px;
+    top: 15px;
+  }
+
+  &__influencers {
+    padding-top: 0;
+    margin-bottom: 0;
+
+    .filter-button {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-title {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.content {
+  border: none;
+  padding: 0;
+}

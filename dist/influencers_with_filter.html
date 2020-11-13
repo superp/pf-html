@@ -42,82 +42,31 @@
           </ul><a class="exit mob-hide" href="#"><span class="icon icon__exit"></span>Exit</a>
         </div>
       </div>
+      <div class="cabinet-navigation-mobile desk-hide">
+        <ul>
+          <li class="menu-drop-mob" data-menu="menu-list-1"><a class="active" href="#"><span class="icon icon__globe"></span>Discovery</a></li>
+          <li class="menu-drop-mob" data-menu="menu-list-2"><a href="#"><span class="icon icon__briefcase"></span>Marketplace</a></li>
+          <li><a href="#"><span class="icon icon__mail"></span>Message</a></li>
+          <li><a href="#"><span class="icon icon__database"></span>Balance</a></li>
+          <li><a href="#"><span class="icon icon__user"></span>Your Profile</a></li>
+        </ul>
+      </div>
+      <div class="cabinet-navigation-list desk-hide">
+        <div class="close"><img src="assets/images/cabinet/arrow_left.svg" alt=""></div>
+        <ul data-item="menu-list-2">
+          <li><a class="active" href="#">Create a new campaign<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Your campaigns<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Influencers at Publicfast<span class="icon icon__arrow"></span></a></li>
+        </ul>
+        <ul data-item="menu-list-1">
+          <li><a href="#">Global influencers<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Request influencers<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Saved influencers<span class="icon icon__arrow"></span></a></li>
+        </ul>
+      </div>
       <div class="container">
-        <div class="top-block">
+        <div class="top-block top-block__influencers">
           <div class="filter-button"><span><img src="assets/images/cabinet/filter_icon.svg" alt=""></span><span>Filter</span></div>
-          <div class="popup-overlay">
-            <div class="filter_popup">
-              <form action="">
-                <div class="form-item form-item__search-results"><span>Finded 100,000 influencers</span>
-                  <div class="buttons"> 
-                    <div class="hide-filter">Hide</div>
-                    <button class="apply-button"><span class="icon icon__check"></span><span>Apply</span></button>
-                  </div>
-                </div>
-                <div class="form-item form-item__search">
-                  <input class="search" type="text">
-                </div>
-                <div class="form-item form-item__budget">
-                  <div class="form-item_subitem">
-                    <label>Total budget</label>
-                    <select>
-                      <option value="">USD ($)</option>
-                      <option value="">EUR (€)</option>
-                      <option value="">CAD ($)</option>
-                    </select>
-                    <input type="text" placeholder="0.00">
-                  </div>
-                  <div class="form-item_subitem">
-                    <label>Price per influencer collaboration</label>
-                    <select>
-                      <option value="">USD ($)</option>
-                      <option value="">EUR (€)</option>
-                      <option value="">CAD ($)</option>
-                    </select>
-                    <input type="text" placeholder="0.00">
-                  </div>
-                </div>
-                <div class="form-item form-item__age">
-                  <label>Age</label>
-                  <input type="text" placeholder="10"><span>-</span>
-                  <input type="text" placeholder="13">
-                </div>
-                <div class="form-item form-item__audience">
-                  <div class="form-item_subitem">
-                    <label>Country</label>
-                    <input class="input_tag" type="text">
-                  </div>
-                  <div class="form-item_subitem">
-                    <label>City</label>
-                    <input class="input_tag" type="text">
-                  </div>
-                </div>
-                <div class="form-item form-item__gender">
-                  <label>Gender</label>
-                  <div class="form-item_subitem">
-                    <input class="checkbox" id="gender_checkbox1" type="checkbox" name="gender_checkbox">
-                    <label for="gender_checkbox1">Male</label>
-                  </div>
-                  <div class="form-item_subitem">
-                    <input class="checkbox" id="gender_checkbox2" type="checkbox" name="gender_checkbox">
-                    <label for="gender_checkbox2">Female</label>
-                  </div>
-                  <div class="form-item_subitem">
-                    <input class="checkbox" id="gender_checkbox3" type="checkbox" name="gender_checkbox">
-                    <label for="gender_checkbox3">Transgender</label>
-                  </div>
-                  <div class="form-item_subitem">
-                    <input class="checkbox" id="gender_checkbox4" type="checkbox" name="gender_checkbox">
-                    <label for="gender_checkbox4">LGBT</label>
-                  </div>
-                </div>
-                <div class="form-item form-item__categories">
-                  <label>Categories</label>
-                  <input class="input_tag" type="text">
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
         <div class="main-content">
           <div class="content content__influencers">
@@ -199,6 +148,79 @@
                   <button class="button-orange">Добавить</button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="popup-overlay">
+            <div class="filter_popup">
+              <form action="">
+                <div class="form-item form-item__search-results">
+                  <div class="buttons"> 
+                    <div class="hide-filter">Hide</div>
+                    <button class="apply-button"><span>Apply</span></button>
+                  </div><span>Finded 100,000 influencers</span>
+                </div>
+                <div class="form-item form-item__search">
+                  <input class="search" type="text">
+                </div>
+                <div class="form-item form-item__budget">
+                  <div class="form-item_subitem">
+                    <label>Total budget</label>
+                    <select>
+                      <option value="">USD ($)</option>
+                      <option value="">EUR (€)</option>
+                      <option value="">CAD ($)</option>
+                    </select>
+                    <input type="text" placeholder="0.00">
+                  </div>
+                  <div class="form-item_subitem">
+                    <label>Price per influencer collaboration</label>
+                    <select>
+                      <option value="">USD ($)</option>
+                      <option value="">EUR (€)</option>
+                      <option value="">CAD ($)</option>
+                    </select>
+                    <input type="text" placeholder="0.00">
+                  </div>
+                </div>
+                <div class="form-item form-item__age">
+                  <label>Age</label>
+                  <input type="text" placeholder="10"><span>-</span>
+                  <input type="text" placeholder="13">
+                </div>
+                <div class="form-item form-item__audience">
+                  <div class="form-item_subitem">
+                    <label>Country</label>
+                    <input class="input_tag" type="text">
+                  </div>
+                  <div class="form-item_subitem">
+                    <label>City</label>
+                    <input class="input_tag" type="text">
+                  </div>
+                </div>
+                <div class="form-item form-item__gender">
+                  <label>Gender</label>
+                  <div class="form-item_subitem">
+                    <input class="checkbox" id="gender_checkbox1" type="checkbox" name="gender_checkbox">
+                    <label for="gender_checkbox1">Male</label>
+                  </div>
+                  <div class="form-item_subitem">
+                    <input class="checkbox" id="gender_checkbox2" type="checkbox" name="gender_checkbox">
+                    <label for="gender_checkbox2">Female</label>
+                  </div>
+                  <div class="form-item_subitem">
+                    <input class="checkbox" id="gender_checkbox3" type="checkbox" name="gender_checkbox">
+                    <label for="gender_checkbox3">Transgender</label>
+                  </div>
+                  <div class="form-item_subitem">
+                    <input class="checkbox" id="gender_checkbox4" type="checkbox" name="gender_checkbox">
+                    <label for="gender_checkbox4">LGBT</label>
+                  </div>
+                </div>
+                <div class="form-item form-item__categories">
+                  <label>Categories</label>
+                  <input class="input_tag" type="text">
+                </div>
+              </form>
             </div>
           </div>
         </div>

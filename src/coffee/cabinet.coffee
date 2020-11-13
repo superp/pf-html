@@ -25,7 +25,28 @@ initTabs = ->
     $(this).addClass('active')
     $('.tabs_content').find(tabId).show()
 
+initMobileMenu = ->
+  $('.menu-drop-mob').on 'click', (e) ->
+    self = $(this)
+    container = $('.cabinet-navigation-list')
+    menuId = self.data('menu')
+
+    if menuId
+      menuItem = container.find("ul[data-item='#{menuId}']")
+      console.log menuId, menuItem
+
+      if menuItem
+        $('.cabinet-navigation-list ul').removeClass('active')
+        container.addClass('opened')
+        menuItem.addClass('active')
+
+
+  $('.cabinet-navigation-list .close').on 'click', (e) ->
+    $('.cabinet-navigation-list').removeClass('opened')
+
+    
 $ ->
   initDropMenu()
   initUi()
   initTabs()
+  initMobileMenu()
