@@ -16,3 +16,8 @@ initMenu = function() {
 $(function() {
   return initMenu();
 });
+  $(function() {
+    return initMenu();
+  });
+
+}).call(this);

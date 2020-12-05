@@ -39,8 +39,9 @@
   }
 
   .message {
-    margin-right: 16px;
+    margin-right: 5px;
     border: 2px solid #c4c4c4;
+    min-width: 56px;
     width: 56px;
     height: 56px;
     color: #c4c4c4;
@@ -279,7 +280,7 @@
     }
 
     &:last-child {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
 
       &:after {
         display: none;
@@ -475,3 +476,34 @@
   line-height: 32px;
 }
 // Analitics END
+
+// DESK responsive
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .analitics-item {
+    width: 48%;
+
+    > strong {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .stats {
+      &_item {
+        width: 50%;
+      }
+    }
+  }
+
+  .publication_item {
+    width: 100%;
+  }
+
+  .influencers_table_cell__action {
+    button {
+      min-width: 65px;
+      font-size: 14px;
+    }
+  }
+}
+
+// DESK responsive END

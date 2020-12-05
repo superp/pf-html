@@ -103,3 +103,9 @@
   font-weight: bold;
   color: #5bd467;
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .campaigns-item {
+    width: 100%;
+  }
+}
