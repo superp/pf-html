@@ -1,0 +1,201 @@
+.top-block__discovery {
+  border-bottom: none;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: calc(100% + 96px);
+    left: -48px;
+    bottom: 0;
+    background-color: #c4c4c4;
+    height: 1px;
+  }
+
+  .apply-button,
+  .filter-button {
+    margin-bottom: 0;
+  }
+}
+
+.tab {
+  &-inst {
+    a.active {
+      color: #ca34ff;
+
+      &:before {
+        background-color: #ca34ff;
+      }
+    }
+  }
+
+  &-youtube {
+    a.active {
+      color: #ff3434;
+
+      &:before {
+        background-color: #ff3434;
+      }
+    }
+  }
+}
+
+.content__discovery {
+  border: none;
+}
+
+.liked,
+.orange-square {
+  margin-right: 10px;
+  border: 2px solid #fd8324;
+  min-width: 56px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 52px;
+  color: #fd8324;
+
+  @include transition(ease all 0.2s);
+  @include border-radius(4px);
+}
+.orange-square:hover {
+  color: #fff;
+  background-color: #fd8324;
+}
+
+.liked {
+  background-color: #fd8324;
+  color: #fff;
+}
+
+.influencers_table {
+  &__discovery {
+    .influencers_table_head {
+      padding-bottom: 10px;
+    }
+
+    .influencers_table_row {
+      border-top: 1px solid #e5e5e5;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .influencers_table_cell {
+      &__influencer {
+        width: 26%;
+      }
+
+      &__reach,
+      &__engagement,
+      &__price {
+        width: 11%;
+      }
+
+      &__email {
+        width: 9%;
+      }
+
+      &__action {
+        width: 32%;
+
+        .button-orange {
+          max-width: 180px;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__saved-lists {
+    .influencers_table_head {
+      padding-bottom: 10px;
+
+      .influencers_table_cell {
+        padding: 0 0 10px 0;
+      }
+    }
+
+    .influencers_table_row {
+      border-top: 1px solid #e5e5e5;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .influencers_table_cell {
+      padding: 24px 0;
+
+      &__name {
+        width: 30%;
+      }
+
+      &__influencers {
+        width: 22%;
+      }
+
+      &__date {
+        width: 22%;
+      }
+
+      &__action {
+        width: 26%;
+
+        .button-orange {
+          max-width: 180px;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.form-item {
+  &__age,
+  &__email,
+  &__gender,
+  &__subscribers,
+  &__engagement {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+  }
+  &__age,
+  &__gender,
+  &__subscribers {
+    padding-right: 16px;
+  }
+
+  &__email,
+  &__engagement {
+    padding-left: 16px;
+  }
+
+  &__email {
+    input {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 11px;
+    }
+  }
+
+  &__gender {
+    max-width: 26%;
+  }
+
+  &__language {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 73%;
+    padding-left: 16px;
+
+    .form-item_subitem {
+      width: 33%;
+    }
+  }
+}

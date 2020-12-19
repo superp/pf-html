@@ -6,6 +6,8 @@
   &:before {
     color: inherit;
     font-family: "pf-html";
+
+    @include transition(ease 0.2s color);
   }
 
   &__globe {
@@ -99,6 +101,41 @@
   &__check {
     &:before {
       content: "O";
+    }
+  }
+
+  &__list_add {
+    &:before {
+      content: "R";
+    }
+  }
+
+  &__heart {
+    &:before {
+      content: "Q";
+    }
+  }
+
+  &__repeat {
+    &:before {
+      content: "S";
+    }
+  }
+
+  &__share {
+    &:before {
+      content: "T";
+    }
+  }
+
+  &__trash {
+    &:before {
+      content: "U";
+    }
+  }
+  &__percent {
+    &:before {
+      content: "V";
     }
   }
 }

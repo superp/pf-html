@@ -66,6 +66,8 @@
     }
   }
 
+  &__subscribers,
+  &__engagement,
   &__age {
     input {
       display: inline-block;
@@ -85,10 +87,6 @@
   &__placement {
     display: flex;
     flex-wrap: wrap;
-
-    // > label {
-    //   width: 100%;
-    // }
 
     .form-item_subitem {
       .checkbox {
@@ -128,6 +126,7 @@
     }
   }
 
+  &__language,
   &__gender {
     .form-item_subitem {
       display: flex;

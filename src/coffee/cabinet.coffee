@@ -24,6 +24,28 @@ initTabs = ->
     
     $(this).addClass('active')
     $('.tabs_content').find(tabId).show()
+  
+  $('.influencer-tabs_list li > a').on 'click', (e) ->
+    $('.influencer-tabs_list li > a').removeClass('active')
+    e.preventDefault()
+
+    tabId = $(this).attr('href')
+
+    $('.influencer-tabs_content .tabs_item').hide()
+    
+    $(this).addClass('active')
+    $('.influencer-tabs_content').find(tabId).show()
+  
+  $('.language-tabs_list li > a').on 'click', (e) ->
+    $('.language-tabs_list li > a').removeClass('active')
+    e.preventDefault()
+
+    tabId = $(this).attr('href')
+
+    $('.language-tabs_content .tabs_item').hide()
+    
+    $(this).addClass('active')
+    $('.language-tabs_content').find(tabId).show()
 
 initMobileMenu = ->
   $('.menu-drop-mob').on 'click', (e) ->

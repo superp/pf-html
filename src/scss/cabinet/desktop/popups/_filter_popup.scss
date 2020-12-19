@@ -1,13 +1,57 @@
+.influencer-popup,
 .filter_popup {
   position: absolute;
   right: 0;
   top: 0;
   background-color: #fff;
   width: 45%;
+  max-width: 768px;
   height: 100%;
   margin-left: 0;
   overflow: scroll;
-  padding-top: 32px;
+  padding-top: 24px;
+
+  &__list {
+    display: block;
+
+    .close {
+      position: absolute;
+      right: 40px;
+      top: 41px;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .buttons {
+      margin-right: 75px;
+    }
+
+    .form-item {
+      &.form-item__search-results {
+        > span {
+          font-size: 24px;
+        }
+      }
+
+      &__search {
+        display: flex;
+        align-items: center;
+
+        input {
+          max-width: 70%;
+        }
+      }
+    }
+
+    .create-list {
+      color: #fd8324;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
 }
 
 .hide-filter {
@@ -28,13 +72,6 @@
     > * {
       flex-shrink: 0;
     }
-
-    .apply-button {
-      span {
-        padding-left: 29px;
-        background: url(../images/cabinet/check_icon.svg) left center no-repeat;
-      }
-    }
   }
 
   &.form-item__search-results {
@@ -48,6 +85,30 @@
       color: #000;
       font-size: 18px;
       order: 1;
+    }
+  }
+
+  &.lists_item {
+    display: flex;
+    align-items: center;
+
+    .checkbox {
+      width: 32px;
+      height: 32px;
+    }
+
+    label {
+      width: auto;
+      margin-bottom: 0;
+      margin-left: 24px;
+    }
+
+    > span {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: normal;
+      margin-bottom: 0;
+      margin-left: auto;
     }
   }
 }

@@ -87,7 +87,7 @@
   }
 
   &__campaign {
-    padding: 60px 0 12px;
+    padding: 60px 0 0;
     width: 100%;
 
     .tabs_list {
@@ -95,7 +95,9 @@
         display: flex;
         width: 100%;
         white-space: nowrap;
-        overflow: scroll;
+        // overflow-x: scroll;
+        // overflow-y: hidden;
+        padding-bottom: 12px;
       }
 
       a {
@@ -112,7 +114,8 @@
           position: absolute;
           background-color: #fd8324;
           left: 0;
-          bottom: -15px;
+          bottom: -14px;
+          z-index: 10;
 
           @include transition(ease 0.25s width);
         }
@@ -123,6 +126,30 @@
 
           &:before {
             width: 100%;
+          }
+        }
+      }
+
+      .tab {
+        &-inst {
+          a:hover,
+          a.active {
+            color: #ca34ff;
+
+            &:before {
+              background-color: #ca34ff;
+            }
+          }
+        }
+
+        &-youtube {
+          a:hover,
+          a.active {
+            color: #ff3434;
+
+            &:before {
+              background-color: #ff3434;
+            }
           }
         }
       }
@@ -204,7 +231,7 @@
 }
 
 .button-orange {
-  width: 205px;
+  width: auto;
   margin-left: 8px;
   flex-shrink: 0;
   background-color: #fd8324;
@@ -217,6 +244,9 @@
   cursor: pointer;
   border: none;
   @include border-radius(4px);
+  padding: 0 30px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {

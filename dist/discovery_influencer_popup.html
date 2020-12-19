@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Publicfast Cabinet</title>
+    <meta charset="utf-8" content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/css/cabinet.css" rel="stylesheet">
+    <script src="vendor/js/jquery-1.11.3.min.js"></script>
+    <script src="vendor/js/tooltipster.min.js" type="text/javascript"></script>
+    <script src="vendor/js/tooltipster.bundle.js" type="text/javascript"></script>
+    <script src="vendor/js/jQuery.tagify.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/accordion.js" type="text/javascript"></script>
+    <script src="assets/js/cabinet.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cabinet-navigation mob-hide">
+        <div class="logo-space">
+          <div class="logo"><a href="#"><img src="assets/images/cabinet/logo.svg" alt=""></a></div>
+        </div>
+        <div class="cabinet-navigation_menu">
+          <ul>
+            <li class="menu-drop active"><span> <span class="icon icon__globe"></span>Discovery<span class="icon icon__arrow"></span></span>
+              <ul class="drop-list">
+                <li class="active"><a href="#">Global influencers</a></li>
+                <li><a href="#">Request influencers</a></li>
+                <li><a href="#">Saved influencers</a></li>
+              </ul>
+            </li>
+            <li class="menu-drop"><span><span class="icon icon__briefcase"></span>Marketplace<span class="icon icon__arrow"></span></span>
+              <ul class="drop-list">
+                <li><a href="#">Create a new campaign</a></li>
+                <li><a href="#">Your campaigns</a></li>
+                <li><a href="#">Influencers at Publicfast</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="icon icon__mail"></span>Message</a></li>
+            <li><a href="#"><span class="icon icon__database"></span>Balance</a></li>
+            <li><a href="#"><span class="icon icon__user"></span>Your Profile</a></li>
+          </ul><a class="exit mob-hide" href="#"><span class="icon icon__exit"></span>Exit</a>
+        </div>
+      </div>
+      <div class="cabinet-navigation-mobile desk-hide">
+        <ul>
+          <li class="menu-drop-mob" data-menu="menu-list-1"><a class="active" href="#"><span class="icon icon__globe"></span>Discovery</a></li>
+          <li class="menu-drop-mob" data-menu="menu-list-2"><a href="#"><span class="icon icon__briefcase"></span>Marketplace</a></li>
+          <li><a href="#"><span class="icon icon__mail"></span>Message</a></li>
+          <li><a href="#"><span class="icon icon__database"></span>Balance</a></li>
+          <li><a href="#"><span class="icon icon__user"></span>Your Profile</a></li>
+        </ul>
+      </div>
+      <div class="cabinet-navigation-list desk-hide">
+        <div class="close"><img src="assets/images/cabinet/arrow_left.svg" alt=""></div>
+        <ul data-item="menu-list-2">
+          <li><a class="active" href="#">Create a new campaign<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Your campaigns<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Influencers at Publicfast<span class="icon icon__arrow"></span></a></li>
+        </ul>
+        <ul data-item="menu-list-1">
+          <li><a href="#">Global influencers<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Request influencers<span class="icon icon__arrow"></span></a></li>
+          <li><a href="#">Saved influencers<span class="icon icon__arrow"></span></a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="top-block top-block__discovery">
+          <div class="back desk-hide"><img src="assets/images/cabinet/arrow_left.svg" alt=""></div>
+          <div class="tabs tabs__campaign">
+            <div class="tabs_list">
+              <ul>
+                <li class="tab-inst"><a href="#tab-1">Instagram</a></li>
+                <li class="tab-youtube"><a class="active" href="#tab-2">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-button"><span><img src="assets/images/cabinet/filter_icon.svg" alt=""></span><span>Filter</span></div>
+          <div class="popup-overlay">
+            <div class="influencer-popup">
+              <div class="close"><span class="icon icon__close"></span></div>
+              <div class="influencer-popup_top">
+                <div class="influencer-popup_info">
+                  <div class="photo"><img src="assets/images/cabinet/nasa_img.png" alt=""></div>
+                  <div class="influencer-popup_info_description"><strong>NASA | nasa</strong>
+                    <p>@nasa</p>
+                  </div>
+                </div><a class="button-orange" href="#">Add to Campaign</a>
+              </div>
+              <div class="tabs influencer-popup_tabs">
+                <div class="influencer-tabs_list">
+                  <ul>
+                    <li><a class="active" href="#influencer_tab-1">Analytics</a></li>
+                    <li><a href="#influencer_tab-2">Publications</a></li>
+                  </ul>
+                </div>
+                <div class="influencer-tabs_content">
+                  <div class="tabs_item" id="influencer_tab-1">
+                    <div class="publications-info">
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Subscribers</div><span>53 602 506</span>
+                      </div>
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Engagement</div><span>35%</span>
+                      </div>
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Audience Authenticity</div><span>65%</span>
+                      </div>
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Price ($)</div><span>75K—150K</span>
+                      </div>
+                    </div>
+                    <div class="influencer_tab_item">         
+                      <div class="item-title">Audience Authenticity</div>
+                      <p> <span> <span class="icon icon__percent"></span></span><strong>58% of the audience looks authentic</strong></p>
+                    </div>
+                    <div class="influencer_tab_item">
+                      <div class="item-title">Average likes</div>
+                      <p> <span> <span class="icon icon__heart"></span></span><strong>21 556 likes per post from followers</strong></p>
+                    </div>
+                    <div class="influencer_tab_item">
+                      <div class="item-title">Audience Type</div>
+                      <div class="type-stats">
+                        <div class="type-stats_bar">
+                          <div class="type-stats_bar_real" style="width:44.4%; left:0%;"></div>
+                          <div class="type-stats_bar_influencers" style="width:24.4%; left:44.4%;"></div>
+                          <div class="type-stats_bar_mass" style="width:22.8%; left:68.8%;"></div>
+                          <div class="type-stats_bar_suspicious" style="width:8.4%; left:91.6%;"></div>
+                        </div>
+                        <div class="type-stats_item">
+                          <div class="bar-color" style="background-color: #349EFF;"></div>
+                          <p>Real People</p><span class="percent">44.4%</span><span class="count">2.1M</span>
+                        </div>
+                        <div class="type-stats_item">
+                          <div class="bar-color" style="background-color: #5BD467;"></div>
+                          <p>Influencers</p><span class="percent">24.4%</span><span class="count">0.4M</span>
+                        </div>
+                        <div class="type-stats_item">
+                          <div class="bar-color" style="background-color: #FF9900;"></div>
+                          <p>Mass followers</p><span class="percent">22.8%</span><span class="count">100.2K</span>
+                        </div>
+                        <div class="type-stats_item">
+                          <div class="bar-color" style="background-color: #111111;"></div>
+                          <p>Suspicious Accounts</p><span class="percent">8.4%</span><span class="count">64.5K</span>
+                        </div>
+                      </div>
+                      <div class="item-title">Audience Gender</div>
+                      <div class="type-stats type-stats__gender">
+                        <div class="type-stats_bar">
+                          <div class="type-stats_bar_female" style="width: 87.4%; left: 0%;"></div>
+                          <div class="type-stats_bar_male" style="width: 12.6%; left: 87.4%;"></div>
+                        </div>
+                        <div class="type-stats_item">
+                          <div class="bar-color" style="background-color: #FFAFFC;"></div>
+                          <p>Females</p><span class="percent">87.4%</span>
+                        </div>
+                        <div class="type-stats_item">
+                          <div class="bar-color" style="background-color: #349EFF;"></div>
+                          <p>Males</p><span class="percent">12.6%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="influencer_tab_item">
+                      <div class="language-tabs_list">
+                        <ul>
+                          <li><a class="active" href="#language_tab-1">Age</a></li>
+                          <li><a href="#language_tab-2">Language</a></li>
+                        </ul>
+                      </div>
+                      <div class="language-tabs_content">
+                        <div class="tabs_item" id="language_tab-1">
+                          <div class="age-graph"></div>
+                        </div>
+                        <div class="tabs_item" id="language_tab-2" style="display: none;">
+                          <div class="language-graph"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="influencer_tab_item influencer_tab_item__growth">
+                      <div class="item-title">Followers Growth</div>
+                      <div class="growth-graph"></div>
+                    </div>
+                    <div class="influencer_tab_item">
+                      <div class="item-title">Top Hashtags</div><a class="hashtag" href="#">#Google<span>12</span></a><a class="hashtag" href="#">#Yandex<span>12</span></a><a class="hashtag" href="#">#Google<span>12</span></a><a class="hashtag" href="#">#Yandex<span>12</span></a><a class="hashtag" href="#">#Google<span>12</span></a><a class="hashtag" href="#">#Yandex<span>12</span></a>
+                    </div>
+                    <div class="influencer_tab_item">
+                      <div class="item-title">Audience Location</div>
+                      <div class="location-graph"></div>
+                    </div>
+                    <div class="influencer_tab_item influencer_tab_item__interests">
+                      <div class="item-title">Audience Interests</div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 71%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 41%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 21%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 71%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 75%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 24%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 71%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 71%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 71%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="interest-item"><strong>Beauty & Fashion</strong>
+                        <div class="interest-item_visual"><strong>71%</strong>
+                          <div class="interest-item_visual_graph">
+                            <div class="interest-item_visual_graph_fill" style="width: 71%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs_item" id="influencer_tab-2" style="display: none;">
+                    <div class="publications-info">
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Subscribers</div><span>53 602 506</span>
+                      </div>
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Engagement</div><span>35%</span>
+                      </div>
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Audience Authenticity</div><span>65%</span>
+                      </div>
+                      <div class="influencer_tab_item">
+                        <div class="item-title">Price ($)</div><span>75K—150K</span>
+                      </div>
+                    </div>
+                    <div class="publications-content">
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image1.png" alt=""></div>
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image2.png" alt=""></div>
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image3.png" alt=""></div>
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image1.png" alt=""></div>
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image3.png" alt=""></div>
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image2.png" alt=""></div>
+                      <div class="publications-content_item"><img src="assets/images/cabinet/image3.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="content content__discovery">
+            <div class="tabs_content">
+              <div class="tabs_item" id="tab-1" style="display: none;">
+                <div class="influencers_table influencers_table__discovery">
+                  <div class="influencers_table_head">
+                    <div class="influencers_table_cell influencers_table_cell__influencer"><span>Influencer</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__reach"><span>Reach/Subsctibers</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__engagement"><span>Engegament</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__price"><span>Price</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__email"><span>Email</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__action"><span> </span></div>
+                  </div>
+                  <div class="influencers_table_row">
+                    <div class="influencers_table_cell influencers_table_cell__influencer">
+                      <div class="photo"><img src="assets/images/cabinet/nasa_img.png" alt=""></div>
+                      <div class="info"><strong>NASA | nasa</strong></div>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__email">
+                      <div class="table-subtitle desk-hide">Email</div>
+                      <p>wy***@mail.ru</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="list_add" href="#"><span class="icon icon__list_add"></span></a>
+                      <button class="button-orange">Add to Campaing</button>
+                    </div>
+                  </div>
+                  <div class="influencers_table_row">
+                    <div class="influencers_table_cell influencers_table_cell__influencer">
+                      <div class="photo"><img src="assets/images/cabinet/nasa_img.png" alt=""></div>
+                      <div class="info"><strong>NASA | nasa</strong></div>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__email">
+                      <div class="table-subtitle desk-hide">Email</div>
+                      <p>wy***@mail.ru</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="liked" href="#"><span class="icon icon__heart"></span></a>
+                      <button class="button-orange">Add to Campaing</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs_item" id="tab-2">
+                <div class="influencers_table influencers_table__discovery">
+                  <div class="influencers_table_head">
+                    <div class="influencers_table_cell influencers_table_cell__influencer"><span>Influencer</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__reach"><span>Reach/Subsctibers</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__engagement"><span>Engegament</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__price"><span>Price</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__email"><span>Email</span></div>
+                    <div class="influencers_table_cell influencers_table_cell__action"><span> </span></div>
+                  </div>
+                  <div class="influencers_table_row">
+                    <div class="influencers_table_cell influencers_table_cell__influencer">
+                      <div class="photo"><img src="assets/images/cabinet/nasa_img.png" alt=""></div>
+                      <div class="info"><strong>NASA | nasa</strong>
+                        <p>Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:</p>
+                      </div>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__email">
+                      <div class="table-subtitle desk-hide">Email</div>
+                      <p>wy***@mail.ru</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="list_add orange-square" href="#"><span class="icon icon__list_add"></span></a>
+                      <button class="button-orange">Add to Campaing</button>
+                    </div>
+                  </div>
+                  <div class="influencers_table_row">
+                    <div class="influencers_table_cell influencers_table_cell__influencer">
+                      <div class="photo"><img src="assets/images/cabinet/nasa_img.png" alt=""></div>
+                      <div class="info"><strong>NASA | nasa</strong>
+                        <p>Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:</p>
+                      </div>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__reach">
+                      <div class="table-subtitle desk-hide">Reach/Subsctibers</div>
+                      <p>1,914,128</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__engagement">
+                      <div class="table-subtitle desk-hide">Engegament</div>
+                      <p>24%</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__price">
+                      <div class="table-subtitle desk-hide">Price</div>
+                      <p>$ 1,500.00</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__email">
+                      <div class="table-subtitle desk-hide">Email</div>
+                      <p>wy***@mail.ru</p>
+                    </div>
+                    <div class="influencers_table_cell influencers_table_cell__action"><a class="liked" href="#"><span class="icon icon__heart"></span></a>
+                      <button class="button-orange">Add to Campaing</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

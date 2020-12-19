@@ -1,0 +1,62 @@
+extends ../_layout
+
+block content
+  .top-block.top-block__inner
+    .back.desk-hide
+      img(src="assets/images/cabinet/arrow_left.svg", alt="")
+    .page-title
+      span Lists
+    .top-block_buttons
+      a.orange-square(href="#")
+        .icon.icon__share
+      .filter-button.filter-button__invite
+        span
+          img(src="assets/images/cabinet/add_file.svg", alt="")
+        span Invite to Campaing
+
+  .main-content
+    .content.content__discovery
+      .influencers_table.influencers_table__saved-lists
+        .influencers_table_head
+          .influencers_table_cell.influencers_table_cell__name
+            span Name
+          .influencers_table_cell.influencers_table_cell__influencers
+            span Influencers
+          .influencers_table_cell.influencers_table_cell__date
+            span Createion date
+          .influencers_table_cell.influencers_table_cell__action
+            span Actions
+          
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__name
+            .photo.photo__preview
+              strong R
+            .info
+              strong Rozetka
+          .influencers_table_cell.influencers_table_cell__influencers
+            .table-subtitle.desk-hide Influencers
+            p 21
+          .influencers_table_cell.influencers_table_cell__date
+            .table-subtitle.desk-hide Createion date
+            p 11.12.2020
+          .influencers_table_cell.influencers_table_cell__action
+            a.orange-square(href="#")
+              span.icon.icon__repeat
+            button.button-orange Add to Campaing
+          
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__name
+            .photo.photo__preview
+              strong P
+            .info
+              strong PariMatch
+          .influencers_table_cell.influencers_table_cell__influencers
+            .table-subtitle.desk-hide Influencers
+            p 21
+          .influencers_table_cell.influencers_table_cell__date
+            .table-subtitle.desk-hide Createion date
+            p 11.12.2020
+          .influencers_table_cell.influencers_table_cell__action
+            a.orange-square(href="#")
+              span.icon.icon__repeat
+            button.button-orange Add to Campaing
