@@ -1,0 +1,106 @@
+.top-block {
+  &_buttons {
+    .create-list {
+      margin: 19px 0px 0 0;
+    }
+
+    .orange-square {
+      height: 40px;
+      line-height: 44px;
+      min-width: 40px;
+      width: 40px;
+      margin: 12px 0 0 0;
+    }
+  }
+
+  &__inner {
+    padding-top: 0;
+
+    .page-title {
+      font-size: 16px;
+      line-height: 24px;
+      color: #000;
+      font-weight: bold;
+      margin: 22px 0 0 49px;
+    }
+  }
+
+  &__discovery {
+    .tabs__campaign {
+      padding-bottom: 0;
+      overflow: visible;
+
+      .tabs_list li {
+        width: 100%;
+
+        a {
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.influencers_table {
+  &__saved-lists {
+    .influencers_table_cell {
+      padding: 14px 16px;
+
+      &__action,
+      &__name {
+        width: 100%;
+      }
+
+      &__influencers,
+      &__date {
+        width: 50%;
+      }
+
+      &__action {
+        position: static;
+        flex-wrap: nowrap;
+
+        .button-orange {
+          width: 100%;
+          max-width: 100%;
+          flex-shrink: 1;
+        }
+      }
+    }
+  }
+
+  &__discovery {
+    .influencers_table_cell {
+      &__action,
+      &__influencer {
+        width: 100%;
+      }
+
+      &__influencer {
+        padding-bottom: 16px;
+      }
+
+      &__engagement,
+      &__price,
+      &__email,
+      &__reach {
+        width: 50%;
+        padding: 4px 16px;
+      }
+
+      &__action {
+        position: static;
+        flex-wrap: nowrap;
+        padding-top: 30px;
+
+        .button-orange {
+          width: 100%;
+          max-width: 100%;
+          flex-shrink: 1;
+        }
+      }
+    }
+  }
+}

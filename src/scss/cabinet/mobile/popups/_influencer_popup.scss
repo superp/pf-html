@@ -1,0 +1,61 @@
+.influencer-popup {
+  padding: 56px 15px 15px;
+
+  .close {
+    top: 15px;
+    right: 15px;
+  }
+
+  .button-orange {
+    position: fixed;
+    width: calc(100% - 30px);
+    bottom: 15px;
+    left: 15px;
+    z-index: 15;
+  }
+
+  &_info {
+    width: 100%;
+  }
+}
+
+.publications-info {
+  flex-wrap: wrap;
+
+  .influencer_tab_item {
+    width: calc(50% - 8px);
+  }
+}
+
+.influencer_tab_item {
+  width: 100%;
+}
+
+.interest-item_visual {
+  width: 55%;
+  padding-right: 0;
+
+  &_graph {
+    width: calc(100% - 35px);
+  }
+}
+
+.publications-content {
+  &_item {
+    width: calc(50% - 8px);
+  }
+}
+
+.filter_popup__list {
+  .buttons {
+    width: calc(100% - 30px);
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .form-item__search {
+    .search {
+      max-width: 50%;
+    }
+  }
+}

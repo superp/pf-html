@@ -203,7 +203,8 @@ $ ->
     chart: {
       type: 'column',
       styleMode: true,
-      colorCount: 4
+      colorCount: 4,
+      height: 300
     },
     title: {
       text: ''

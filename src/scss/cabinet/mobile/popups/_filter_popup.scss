@@ -1,6 +1,48 @@
 .filter_popup {
   width: 100%;
   padding: 20px 16px;
+
+  &__list {
+    @include border-radius(12px 12px 0 0);
+    top: 16px;
+    height: calc(100% - 16px);
+
+    .close {
+      top: 32px;
+      right: 15px;
+    }
+
+    .form-item.form-item__search-results > span {
+      margin-top: 12px;
+    }
+
+    ul {
+      width: calc(100% + 32px);
+      margin: 32px -16px 0;
+      border-top: 1px solid #c4c4c4;
+    }
+
+    li {
+      border-bottom: 1px solid #c4c4c4;
+      padding: 16px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  .popup-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+  }
 }
 
 .form-item {

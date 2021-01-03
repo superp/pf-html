@@ -21,21 +21,25 @@
 
 .tab {
   &-inst {
-    a.active {
-      color: #ca34ff;
+    a {
+      &.active {
+        color: #ca34ff;
+      }
 
       &:before {
-        background-color: #ca34ff;
+        background-color: #ca34ff !important;
       }
     }
   }
 
   &-youtube {
-    a.active {
-      color: #ff3434;
+    a {
+      &.active {
+        color: #ff3434;
+      }
 
       &:before {
-        background-color: #ff3434;
+        background-color: #ff3434 !important;
       }
     }
   }

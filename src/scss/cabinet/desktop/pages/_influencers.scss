@@ -54,7 +54,8 @@
   align-items: center;
   justify-content: center;
   margin: 32px 0 15px auto;
-  padding: 0 30px;
+  padding: 0;
+  min-width: 164px;
   cursor: pointer;
 
   @include border-radius(4px);
@@ -76,7 +77,11 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
-    line-height: 16px;
+    line-height: 56px;
+  }
+
+  img {
+    display: block;
   }
 }
 

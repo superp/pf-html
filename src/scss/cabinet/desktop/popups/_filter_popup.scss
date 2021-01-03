@@ -9,7 +9,17 @@
   height: 100%;
   margin-left: 0;
   overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
   padding-top: 24px;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ff0000;
+  }
 
   &__list {
     display: block;
@@ -23,7 +33,18 @@
     }
 
     .buttons {
-      margin-right: 75px;
+      margin-right: 0;
+      width: calc(100% - 96px);
+      position: absolute;
+      left: 48px;
+      bottom: 48px;
+      z-index: 15;
+
+      button {
+        width: 100%;
+        margin: 0;
+        text-transform: uppercase;
+      }
     }
 
     .form-item {
@@ -42,16 +63,16 @@
         }
       }
     }
-
-    .create-list {
-      color: #fd8324;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 24px;
-      margin-left: auto;
-      cursor: pointer;
-    }
   }
+}
+
+.create-list {
+  color: #fd8324;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .hide-filter {

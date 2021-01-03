@@ -1,4 +1,12 @@
 .form-item {
   padding: 0;
   margin-bottom: 32px;
+
+  &__language {
+    max-width: 100%;
+
+    .form-item_subitem {
+      width: 50%;
+    }
+  }
 }

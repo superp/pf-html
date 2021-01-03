@@ -17,123 +17,44 @@ block content
         img(src="assets/images/cabinet/filter_icon.svg", alt="")
       span Filter
 
-    .popup-overlay(style="display: none;")
-      .filter_popup
+    .popup-overlay
+      .filter_popup.filter_popup__list
         form(action="")
 
           .form-item.form-item__search-results
-            span Finded 100,000 influencers
-            .buttons 
-              .hide-filter
-                | Hide
-              button.apply-button
-                span.icon.icon__check
-                span Apply
+            span Add to Campaign
+            
+            .close
+              span.icon.icon__close
+
           .form-item.form-item__search
             input.search(type="text")
-          .form-item.form-item__budget
-            .form-item_subitem
-              label Total budget
-              select
-                option(value="") USD ($)
-                option(value="") EUR (€)
-                option(value="") CAD ($)
-              input(type="text" placeholder="0.00")
-            .form-item_subitem
-              label Price per influencer collaboration
-              select
-                option(value="") USD ($)
-                option(value="") EUR (€)
-                option(value="") CAD ($)
-              input(type="text" placeholder="0.00")
-                    
-          .form-item.form-item__subscribers
-            label Subscribers
-            input(type="text" placeholder="10")
-            span -
-            input(type="text" placeholder="13")
-          
-          .form-item.form-item__engagement
-            label Engagement (%)
-            input(type="text" placeholder="10")
-            span -
-            input(type="text" placeholder="13")
-
-          .form-item.form-item__audience
-            .form-item_subitem
-              label Country
-              input.input_tag(type="text")
-            .form-item_subitem
-              label City
-              input.input_tag(type="text")
-
-          .form-item.form-item__gender
-            label Gender
-            
-            .form-item_subitem
-              input#gender_checkbox1.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox1") Male
-            .form-item_subitem
-              input#gender_checkbox2.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox2") Female
-            .form-item_subitem
-              input#gender_checkbox3.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox3") Transgender
-            .form-item_subitem
-              input#gender_checkbox4.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox4") LGBT
-          
-          .form-item.form-item__language
-            label Language
-            
-            .form-item_subitem
-              input#language_checkbox1.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox1") English
-            .form-item_subitem
-              input#language_checkbox2.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox2") English
-            .form-item_subitem
-              input#language_checkbox3.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox3") Ukrainian
-            .form-item_subitem
-              input#language_checkbox4.checkbox(type="checkbox" name="gender_checkbox")
-              label(for="gender_checkbox4") Turkish
-            
-            .form-item_subitem
-              input#language_checkbox5.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox5") English
-            .form-item_subitem
-              input#language_checkbox6.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox6") English
-            .form-item_subitem
-              input#language_checkbox7.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox7") Ukrainian
-            .form-item_subitem
-              input#language_checkbox8.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox8") Turkish
-            
-            .form-item_subitem
-              input#language_checkbox9.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox9") English
-            .form-item_subitem
-              input#language_checkbox10.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox10") English
-            .form-item_subitem
-              input#language_checkbox11.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox11") Ukrainian
-            .form-item_subitem
-              input#language_checkbox12.checkbox(type="checkbox" name="language_checkbox")
-              label(for="language_checkbox12") Turkish
-          
-          .form-item.form-item__age
-            label Age
-            input(type="text" placeholder="10")
-            span -
-            input(type="text" placeholder="13")
-
-          .form-item.form-item__email
-            label With Email
-            input#email_checkbox1.checkbox(type="checkbox" name="email_checkbox")
+            button.create-list
+              | + Create list
+          .lists
+            .form-item.lists_item
+              input#rozetka_checkbox.checkbox(type="checkbox" name="lists_checkbox")
+              label(for="rozetka_checkbox") Rozetka
+              span 21 Influencers
+            .form-item.lists_item
+              input#parimatch_checkbox.checkbox(type="checkbox" name="lists_checkbox")
+              label(for="parimatch_checkbox") PariMatch
+              span 33 Influencers
+            .form-item.lists_item
+              input#dmarket_checkbox.checkbox(type="checkbox" name="lists_checkbox")
+              label(for="dmarket_checkbox") DMarket
+              span 1 Influencers
+            .form-item.lists_item
+              input#eva_checkbox.checkbox(type="checkbox" name="lists_checkbox")
+              label(for="eva_checkbox") EVA
+              span 21 Influencers
+            .form-item.lists_item
+              input#mcdonalds_checkbox.checkbox(type="checkbox" name="lists_checkbox")
+              label(for="mcdonalds_checkbox") McDonalds
+              span 21 Influencers
+          .buttons
+            button.apply-button
+              span INVITE TO CAMPAIGN
 
   .main-content
     .content.content__discovery
@@ -238,7 +159,7 @@ block content
                 .table-subtitle.desk-hide Email
                 p wy***@mail.ru
               .influencers_table_cell.influencers_table_cell__action
-                a.list_add.orange-square(href="#")
+                a.list_add(href="#")
                   span.icon.icon__list_add
                 button.button-orange Add to Campaing
               
