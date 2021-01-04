@@ -257,8 +257,6 @@ $ ->
   $('.location-graph').highcharts ({
     chart: {
       type: 'column',
-      styleMode: true,
-      colorCount: 6
       inverted: true,
       height: 250,
     },
@@ -266,20 +264,9 @@ $ ->
       text: ''
     },
     xAxis: {
-      type: 'category',
-      labels: {
-        x: -7,
-        style: {
-          fontFamily : "helvetica"
-          fontSize: "12px"
-        }
-      }
+      visible: false
     },
     yAxis: {
-      lineWidth: 1
-      title: {
-        text: ''
-      },
     },
     legend: {
       enabled: false
@@ -290,21 +277,121 @@ $ ->
     plotOptions: {
       series: {
         pointWidth: 24,
+        dataLabels: {
+          enabled: true,
+          format: '{point.name}'
+        }
       }
     },
-    series: [{
-      data: [
-        ['UA', 62.8],
-        ['RU', 22],
-        ['BY', 12.2],
-        ['PL', 15],
-        ['KZ', 9.2],
-        ['Other', 8],
-      ],
-      dataLabels: {
-        enabled: false,
+    series: [
+      {
+        colorByPoint: true
+        data: [
+          {
+            name: "UA",
+            y: 62.8,
+            drilldown: "UA"
+          },
+          {
+            name: "RU",
+            y: 22,
+            drilldown: "RU"
+          },
+          {
+            name: "BY",
+            y: 12.2,
+            drilldown: "BY"
+          },
+          {
+            name: "PL",
+            y: 15,
+            drilldown: "PL"
+          },
+          {
+            name: "KZ",
+            y: 9.2,
+            drilldown: "KZ"
+          },
+          {
+            name: "Other",
+            y: 8,
+            drilldown: null
+          }
+        ],
       }
-    }]
-  })        
+    ],
+    drilldown: {
+      activeDataLabelStyle: {
+        color: "#828282",
+        fontWeight: "bold",
+        textDecoration: "underline",
+        textOutline: "none"
+      },
+      series: [
+        {
+          name: "Ukraine",
+          id: "UA",
+          data: [
+            [
+              "Kiev",
+              1.1
+            ],
+            [
+              "Kharkiv",
+              4.1
+            ],
+            [
+              "Odessa",
+              2
+            ],
+            [
+              "Chernigov",
+              1.5
+            ],
+          ]
+        },
+        {
+          name: "Russia",
+          id: "RU",
+          data: [
+            [
+                "Kiev",
+                1.1
+            ],
+          ]
+        },
+        {
+          name: "Belorussia",
+          id: "BY",
+          data: [
+            [
+                "v65.0",
+                0.1
+            ],
+          ]
+        },
+        {
+          name: "Poland",
+          id: "PL",
+          data: [
+            [
+                "v65.0",
+                0.1
+            ],
+          ]
+        },
+        {
+          name: "Kazakhstan",
+          id: "KZ",
+          data: [
+            [
+                "v65.0",
+                0.1
+            ],
+          ]
+        }
+      ]
+    }
+  })
 
   # Influecers popup charts END
