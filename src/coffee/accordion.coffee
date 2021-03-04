@@ -10,9 +10,9 @@ $.fn.accordion = (options = {}) ->
 class Accordion
   constructor: (@dom, options = {}) ->
     defaults =
-      item: '.faq_item'
-      opener: '.faq_item_title'
-      content: '.faq_item_content'
+      item: '.faq-item'
+      opener: '.faq-item_title'
+      content: '.faq-item_content'
       activeClass: 'active'
 
     @options = $.extend defaults, options

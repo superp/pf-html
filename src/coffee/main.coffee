@@ -1,4 +1,4 @@
-initMenu = ->  
+initMenu = ->
   $('.menu_btn').on 'click', ->
     $('body').toggleClass('menu-opened')
 
@@ -8,5 +8,9 @@ initMenu = ->
       $('body').removeClass 'menu-opened'
     return
 
+initAccordion = ->
+  $('.faq').accordion()
+
 $ ->
   initMenu()
+  initAccordion()

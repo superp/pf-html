@@ -1,4 +1,4 @@
-var initMenu;
+var initAccordion, initMenu;
 
 initMenu = function() {
   $('.menu_btn').on('click', function() {
@@ -13,6 +13,11 @@ initMenu = function() {
   });
 };
 
+initAccordion = function() {
+  return $('.faq').accordion();
+};
+
 $(function() {
-  return initMenu();
+  initMenu();
+  return initAccordion();
 });

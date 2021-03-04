@@ -1,0 +1,232 @@
+@import "../../mixins/main";
+
+.plans-switch {
+  display: inline-block;
+  vertical-align: middle;
+
+  input {
+    display: none;
+
+    &:checked {
+      + label span {
+        left: calc(100% - 32px);
+      }
+    }
+  }
+
+  label {
+    display: block;
+    position: relative;
+    margin: 0 12px;
+    width: 63px;
+    height: 32px;
+    background-color: #dee3e4;
+    border-radius: 16px;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #000;
+      transition: ease 0.3s all;
+    }
+  }
+}
+
+.pricing-table {
+  position: relative;
+  width: 100%;
+
+  &_plans {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+
+    h3 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &_title {
+      margin-bottom: 24px;
+    }
+
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      line-height: 14px;
+
+      i {
+        display: block;
+        color: #fd8324;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+// TABLE
+.table {
+  width: 100%;
+
+  .button {
+    align-self: flex-end;
+    width: 100%;
+    margin-top: 7px;
+
+    &.orange {
+      @include button("medium", "orange");
+      font-weight: bold;
+    }
+
+    &.dark-grey {
+      @include button("medium", "dark-grey");
+      font-weight: bold;
+    }
+  }
+  &-head {
+    .table-row {
+      align-items: flex-end;
+    }
+
+    .table-cell {
+      padding: 15px 20px 19px;
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      border-right: 1px solid #fd8324;
+      display: flex;
+      font-size: 18px;
+      line-height: 22px;
+      background-color: #000;
+      min-height: 134px;
+      max-height: 134px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+
+      &.most-popular {
+        border: 2px solid #fd8324;
+        max-height: 162px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+
+        p {
+          font-weight: bold;
+        }
+
+        b {
+          display: inline-block;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          padding-left: 17px;
+          background: url(../images/hot_icon.svg) left top no-repeat;
+        }
+      }
+
+      p,
+      span,
+      strong {
+        width: 100%;
+        display: inline-block;
+      }
+
+      strong {
+        margin-top: 4px;
+      }
+
+      span {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      &:first-child {
+        border: none;
+        background-color: transparent;
+        width: 30%;
+      }
+    }
+  }
+
+  &-row {
+    width: 100%;
+    display: flex;
+
+    &.last {
+      .table-cell {
+        border: none !important;
+        background-color: transparent !important;
+      }
+    }
+
+    &.empty {
+      .table-cell {
+        padding: 24px 24px 6px;
+        border: none;
+
+        p {
+          color: #fd8324;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &-cell {
+    width: 17.5%;
+    text-align: center;
+  }
+
+  &-body {
+    .table-cell {
+      padding: 12px 24px;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative;
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &.most-popular {
+        background-color: rgba(#fd8324, 0.2);
+      }
+
+      &:first-child {
+        width: 30%;
+        background-color: #000;
+        color: #fff;
+        text-align: left;
+        border: none;
+      }
+
+      &:nth-child(2):before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 32px;
+        height: 1px;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
+// TABLE END

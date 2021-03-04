@@ -98,7 +98,7 @@ gulp.task('server', function() {
   browserSync({
     startPath: '/dist/index.html',
     notify: false,
-    open: true,
+    open: false,
     server: {
       baseDir: './',
       routes: {
