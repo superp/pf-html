@@ -1,0 +1,166 @@
+extends ../_layout
+
+block content
+  .top-block.top-block__influencers
+    .filter-button
+      span
+        img(src="assets/images/cabinet/filter_icon.svg", alt="")
+      span Filter
+    .popup-overlay(style="display: none;")
+      .filter_popup
+        form(action="")
+
+          .form-item.form-item__search-results
+            span Finded 100,000 influencers
+            .buttons 
+              .hide-filter
+                | Hide
+              button.apply-button
+                span.icon.icon__check
+                span Apply
+          .form-item.form-item__search
+            input.search(type="text")
+          .form-item.form-item__budget
+            .form-item_subitem
+              label Total budget
+              select
+                option(value="") USD ($)
+                option(value="") EUR (€)
+                option(value="") CAD ($)
+              input(type="text" placeholder="0.00")
+            .form-item_subitem
+              label Price per influencer collaboration
+              select
+                option(value="") USD ($)
+                option(value="") EUR (€)
+                option(value="") CAD ($)
+              input(type="text" placeholder="0.00")
+                    
+          .form-item.form-item__age
+            label Age
+            input(type="text" placeholder="10")
+            span -
+            input(type="text" placeholder="13")
+
+          .form-item.form-item__audience
+            .form-item_subitem
+              label Country
+              input.input_tag(type="text")
+            .form-item_subitem
+              label City
+              input.input_tag(type="text")
+
+          .form-item.form-item__gender
+            label Gender
+            
+            .form-item_subitem
+              input#gender_checkbox1.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox1") Male
+            .form-item_subitem
+              input#gender_checkbox2.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox2") Female
+            .form-item_subitem
+              input#gender_checkbox3.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox3") Transgender
+            .form-item_subitem
+              input#gender_checkbox4.checkbox(type="checkbox" name="gender_checkbox")
+              label(for="gender_checkbox4") LGBT
+          
+          .form-item.form-item__categories
+            label Categories
+            input.input_tag(type="text")
+
+  .main-content
+    .content.content__influencers
+    
+      .influencers_table
+        .influencers_table_head
+          .influencers_table_cell.influencers_table_cell__influencer
+            span Профиль
+          .influencers_table_cell.influencers_table_cell__reach
+            span Подписчики
+          .influencers_table_cell.influencers_table_cell__engagement
+            span Вовлечение
+          .influencers_table_cell.influencers_table_cell__publications
+            span Вовлечение
+          .influencers_table_cell.influencers_table_cell__price
+            span Цена ($)
+          .influencers_table_cell.influencers_table_cell__action
+            span
+          
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/nasa_img.png", alt="")
+            .info
+              strong NASA | nasa
+              p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .links.desk-hide
+                a.message(href="#")
+                  | Message
+          .influencers_table_cell.influencers_table_cell__reach
+            .table-subtitle.desk-hide Подписчики
+            p 53 602 506
+          .influencers_table_cell.influencers_table_cell__engagement
+            .table-subtitle.desk-hide Вовлечение
+            p 35%
+          .influencers_table_cell.influencers_table_cell__publications
+            .table-subtitle.desk-hide Вовлечение
+            p 2 820
+          .influencers_table_cell.influencers_table_cell__price
+            .table-subtitle.desk-hide Цена ($)
+            p 75K—150K
+          .influencers_table_cell.influencers_table_cell__action
+            button.button-orange Добавить
+        
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/nasa_img.png", alt="")
+            .info
+              strong NASA | nasa
+              p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+            .links.desk-hide
+                a.message(href="#")
+                  | Message
+          .influencers_table_cell.influencers_table_cell__reach
+            .table-subtitle.desk-hide Подписчики
+            p 53 602 506
+          .influencers_table_cell.influencers_table_cell__engagement
+            .table-subtitle.desk-hide Вовлечение
+            p 35%
+          .influencers_table_cell.influencers_table_cell__publications
+            .table-subtitle.desk-hide Вовлечение
+            p 2 820
+          .influencers_table_cell.influencers_table_cell__price
+            .table-subtitle.desk-hide Цена ($)
+            p 75K—150K
+          .influencers_table_cell.influencers_table_cell__action
+            button.button-orange Добавить
+        
+        .influencers_table_row
+          .influencers_table_cell.influencers_table_cell__influencer
+            .photo
+              img(src="assets/images/cabinet/nasa_img.png", alt="")
+            .info
+              strong NASA | nasa
+              p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+            .links.desk-hide
+                a.message(href="#")
+                  | Message
+          .influencers_table_cell.influencers_table_cell__reach
+            .table-subtitle.desk-hide Подписчики
+            p 53 602 506
+          .influencers_table_cell.influencers_table_cell__engagement
+            .table-subtitle.desk-hide Вовлечение
+            p 35%
+          .influencers_table_cell.influencers_table_cell__publications
+            .table-subtitle.desk-hide Вовлечение
+            p 2 820
+          .influencers_table_cell.influencers_table_cell__price
+            .table-subtitle.desk-hide Цена ($)
+            p 75K—150K
+          .influencers_table_cell.influencers_table_cell__action
+            button.button-orange Добавить
+  
+  include ../popups/_verify_popup

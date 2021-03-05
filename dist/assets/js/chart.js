@@ -388,3 +388,48 @@ $(function() {
 });
 
 // Influecers popup charts END
+s: [
+          {
+            name: "Ukraine",
+            id: "UA",
+            data: [["Kiev",
+          1.1],
+          ["Kharkiv",
+          4.1],
+          ["Odessa",
+          2],
+          ["Chernigov",
+          1.5]]
+          },
+          {
+            name: "Russia",
+            id: "RU",
+            data: [["Kiev",
+          1.1]]
+          },
+          {
+            name: "Belorussia",
+            id: "BY",
+            data: [["v65.0",
+          0.1]]
+          },
+          {
+            name: "Poland",
+            id: "PL",
+            data: [["v65.0",
+          0.1]]
+          },
+          {
+            name: "Kazakhstan",
+            id: "KZ",
+            data: [["v65.0",
+          0.1]]
+          }
+        ]
+      }
+    });
+  });
+
+  // Influecers popup charts END
+
+}).call(this);

@@ -60,3 +60,12 @@ Accordion = class Accordion {
 };
 
 window.Accordion = Accordion;
+t.slideToggle(300);
+      return item.toggleClass(this.options.activeClass);
+    }
+
+  };
+
+  window.Accordion = Accordion;
+
+}).call(this);

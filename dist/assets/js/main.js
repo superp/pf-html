@@ -21,3 +21,9 @@ $(function() {
   initMenu();
   return initAccordion();
 });
+) {
+    initMenu();
+    return initAccordion();
+  });
+
+}).call(this);

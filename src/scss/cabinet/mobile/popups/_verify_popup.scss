@@ -1,0 +1,23 @@
+.popup_verify.popup-overlay {
+  .popup {
+    display: block;
+
+    h3 {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+
+    &_content {
+      p {
+        font-size: 13px;
+      }
+
+      &_bottom {
+        p {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

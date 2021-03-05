@@ -73,3 +73,15 @@ $(function() {
   initTabs();
   return initMobileMenu();
 });
+igation-list').removeClass('opened');
+    });
+  };
+
+  $(function() {
+    initDropMenu();
+    initUi();
+    initTabs();
+    return initMobileMenu();
+  });
+
+}).call(this);
