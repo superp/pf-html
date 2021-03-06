@@ -1,0 +1,173 @@
+.auth-page {
+  margin: 45px 0 70px;
+
+  .content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.auth-form {
+  flex-shrink: 0;
+  max-width: 480px;
+  padding: 48px 52px;
+  background-color: #fff;
+  @include border-radius(8px);
+  @include box-shadow(0px 4px 8px rgba(#000, 0.25));
+  margin-right: 20px;
+
+  form {
+    margin-top: 25px;
+  }
+
+  .phone_input {
+    position: relative;
+
+    input {
+      padding-left: 90px;
+    }
+  }
+
+  .select2-container {
+    min-width: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    line-height: 24px;
+
+    a {
+      color: #0885f9;
+      padding: 0 4px;
+    }
+  }
+
+  .orange {
+    width: 100%;
+    margin-top: 27px;
+    @include button("big", "orange");
+  }
+
+  .form-item {
+    margin-bottom: 6px;
+
+    label {
+      display: block;
+      line-height: 24px;
+
+      i {
+        padding-left: 4px;
+      }
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid #c4c4c4;
+      height: 42px;
+      line-height: 40px;
+      padding: 0 10px;
+      @include border-radius(4px);
+    }
+  }
+
+  .agreement {
+    padding-top: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    p {
+      padding-top: 3px;
+      line-height: 20px;
+      color: #757575;
+    }
+  }
+
+  .checkbox {
+    flex-shrink: 0;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #c4c4c4;
+    @include border-radius(4px);
+
+    &:checked {
+      background: url(../images/checked.svg) center no-repeat;
+      background-size: 15px;
+    }
+  }
+}
+
+.auth-block {
+  margin-left: 20px;
+  width: 100%;
+  max-width: 430px;
+}
+
+.auth_logo {
+  margin-bottom: 33px;
+}
+// Testimonials
+.testimonial-item {
+  display: flex;
+  max-width: 430px;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  background-color: #fff;
+  @include box-shadow(0px 4px 8px rgba(#000, 0.25));
+  @include border-radius(8px);
+
+  &_image {
+    margin-right: 35px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    @include border-radius(50%);
+  }
+
+  &_content {
+    > p {
+      font-style: italic;
+    }
+  }
+
+  &_info {
+    margin-top: 20px;
+    strong {
+      display: block;
+    }
+
+    b {
+      padding-left: 6px;
+    }
+  }
+}
+// Testimonials END
+
+.brands {
+  max-width: 100%;
+
+  &_item {
+    max-width: 100px;
+    margin: 0 10px;
+
+    &_image {
+      display: flex;
+      align-items: center;
+      height: 80px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

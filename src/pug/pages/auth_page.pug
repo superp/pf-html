@@ -1,0 +1,91 @@
+extends ../_layout
+
+block content
+
+  .auth-page
+    .content-wrap
+      .auth-form
+        //- .auth_logo
+        //-   img(src="assets/images/black_logo.svg", alt="")
+        h3 Create Advertiser's Account
+        p
+          | Already have an account?
+          a(href="#")  Log in
+        form(action="")
+          .form-item
+            label
+              | Your Name
+              sup *
+            input(type="text")
+          .form-item
+            label
+              | Business email
+              sup *
+            input(type="email")
+          .form-item
+            label
+              | Password
+              sup *
+              i (min. 8 characters)
+            input(type="password")
+          .form-item
+            label
+              | Phone number
+              sup *
+              i (we’ll send SMS with code to verify)
+            .phone_input
+              select
+                option(value="AU") +44
+                option(value="AU") +44
+                option(value="AU") +44
+              input(type="text")
+          .agreement
+            input.checkbox(type="checkbox")
+            p
+              | I confirm that I've read, and agree to comply with the
+              a(href="#") Terms & Conditions
+              | and
+              a(href="#") Privacy Policy.
+          .button.orange Create Account
+    
+      .auth-block
+        .testimonials
+          .testimonial-item
+            .testimonial-item_image
+              img(src="assets/images/reynolds_img.png", alt="")
+            .testimonial-item_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illo libero aspernatur voluptatum atque commodi numquam.
+              .testimonial-item_info
+                strong Nikolas Flekeda
+                p 
+                  | Chief Marketing Officer,
+                  b MGID 
+          .testimonial-item
+            .testimonial-item_image
+              img(src="assets/images/reynolds_img.png", alt="")
+            .testimonial-item_content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illo libero aspernatur voluptatum atque commodi numquam.
+              .testimonial-item_info
+                strong Nikolas Flekeda
+                p
+                  | Chief Marketing Officer,
+                  b MGID
+        .brands
+          .brands_item
+            .brands_item_image
+              img(src="assets/images/brands/m&m.svg", alt="")
+          .brands_item
+            .brands_item_image
+              img(src="assets/images/brands/21st.png", alt="")
+          .brands_item
+            .brands_item_image
+              img(src="assets/images/brands/allset.png", alt="")
+          .brands_item
+            .brands_item_image
+              img(src="assets/images/brands/danone.png", alt="")
+          .brands_item
+            .brands_item_image
+              img(src="assets/images/brands/lenovo.png  ", alt="")
+          .brands_item
+            .brands_item_image
+              img(src="assets/images/brands/samsung.png  ", alt="")
