@@ -1,5 +1,9 @@
 @import "../../mixins/main";
 
+.pricing {
+  margin: 30px 0 40px;
+}
+
 .plans-switch {
   display: inline-block;
   vertical-align: middle;
@@ -43,7 +47,7 @@
   &_plans {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 15px;
     width: 30%;
 
     h3 {
@@ -77,7 +81,39 @@
 
 // TABLE
 .table {
-  width: 100%;
+  width: 70%;
+
+  &-block {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__left {
+    width: 30%;
+    color: #fff;
+    margin-top: 162px;
+
+    .table-row {
+      background-color: #000;
+      border: none;
+
+      &.last {
+        background-color: transparent;
+      }
+    }
+
+    .table-cell {
+      width: 100%;
+      text-align: left;
+      border: none !important;
+    }
+  }
+
+  &__right {
+    .table-row.empty .table-cell {
+      padding: 24px 24px 26px;
+    }
+  }
 
   .button {
     align-self: flex-end;
@@ -154,12 +190,6 @@
       &:last-child {
         border: none;
       }
-
-      &:first-child {
-        border: none;
-        background-color: transparent;
-        width: 30%;
-      }
     }
   }
 
@@ -189,13 +219,14 @@
   }
 
   &-cell {
-    width: 17.5%;
+    width: 25%;
     text-align: center;
+    min-height: 44px;
   }
 
   &-body {
     .table-cell {
-      padding: 12px 24px;
+      padding: 10px 24px;
       border-bottom: 1px solid #e5e5e5;
       position: relative;
 
@@ -208,24 +239,24 @@
         background-color: rgba(#fd8324, 0.2);
       }
 
-      &:first-child {
-        width: 30%;
-        background-color: #000;
-        color: #fff;
-        text-align: left;
-        border: none;
-      }
+      // &:first-child {
+      //   width: 30%;
+      //   background-color: #000;
+      //   color: #fff;
+      //   text-align: left;
+      //   border: none;
+      // }
 
-      &:nth-child(2):before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        width: 32px;
-        height: 1px;
-        background-color: #f5f5f5;
-      }
+      // &:nth-child(2):before {
+      //   content: "";
+      //   display: block;
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: -1px;
+      //   width: 32px;
+      //   height: 1px;
+      //   background-color: #f5f5f5;
+      // }
     }
   }
 }

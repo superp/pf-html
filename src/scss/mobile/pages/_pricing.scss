@@ -1,0 +1,49 @@
+.pricing {
+  margin: 20px 0;
+
+  .content-wrap {
+    padding: 0;
+  }
+}
+.pricing-table {
+  &_plans {
+    position: static;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+}
+
+.table {
+  &-block {
+    overflow: hidden;
+  }
+
+  &__left {
+    width: 50%;
+    flex-shrink: 0;
+    margin-top: 151px;
+  }
+
+  &__right {
+    overflow-x: scroll;
+    .table-cell {
+      width: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+  }
+
+  &-head {
+    .table-cell {
+      font-size: 16px;
+
+      &.most-popular {
+        max-height: 151px;
+      }
+    }
+  }
+}
