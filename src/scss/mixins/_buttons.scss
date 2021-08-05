@@ -14,7 +14,7 @@
   letter-spacing: 0.4px;
 
   @include transition(0.25s all ease-in);
-  @include border-radius(5px) @if $button-size == "big" {
+  @if $button-size == "big" {
     font-size: 14px;
     height: 60px;
     line-height: 60px;

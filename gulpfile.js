@@ -1,13 +1,14 @@
-var gulp  = require('gulp'),
+const { series, parallel} = require('gulp');
+
+var gulp = require('gulp'),
     gutil = require('gulp-util'),
     watch = require('gulp-watch'),
     del = require('del'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     prefix = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
-    coffee = require('gulp-coffee');
     flatten = require('gulp-flatten'),
     pug = require('gulp-pug'),
     vfs = require('vinyl-fs');
@@ -17,36 +18,9 @@ var gulp  = require('gulp'),
     changed = require('gulp-changed');
     cached = require('gulp-cached');
     gulpif = require('gulp-if');
-    // debug = require('gulp-debug');
     filter = require('gulp-filter');
 
-    imagemin = require('gulp-imagemin');
-
-gulp.task('sass', function() {
-  gulp.src(['src/scss/**/*.scss', 'src/scss/**/*.sass'])
-    .pipe(sass().on('error', gutil.log))
-    .pipe(gulp.dest('./dist/assets/css'))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('watch:sass', function(){
-  gulp.watch(['src/scss/**/*.scss'], ['sass']);
-});
-
-gulp.task('coffee', function() {
-  gulp.src(['src/coffee/**/*.coffee'])
-    .pipe(coffee({ bare: true }).on('error', gutil.log))
-    .pipe(gulp.dest('dist/assets/js'))
-});
-
-gulp.task('watch:coffee', function(){
-  gulp.src('src/coffee/**/*.coffee')
-    .pipe(watch('src/coffee/**/*.coffee').on('error', gutil.log))
-    .pipe(coffee())
-    .pipe(gulp.dest('dist/assets/js'));
-});
-
-gulp.task('pug', function() {
+gulp.task('pug', () => {
   return vfs.src('src/pug/**/*.pug')
     .pipe(changed('html', {extension: '.html'}))
 
@@ -64,40 +38,25 @@ gulp.task('pug', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('imagemin', function () {
-  
-  return gulp.src(['dist/assets/images/**/*.jpg', 'dist/assets/images/**/*.jpeg', 'dist/assets/images/**/*.gif', 'dist/assets/images/**/*.png'])
-    .pipe(imagemin([
-        imagemin.gifsicle({interlaced: true}),
-        imagemin.jpegtran({progressive: true}),
-        imagemin.optipng({optimizationLevel: 5}),
-        imagemin.svgo({
-          plugins: [
-              {removeViewBox: true},
-              {cleanupIDs: false}
-          ]
-      })
-    ]))
-    .pipe(gulp.dest('dist/assets/images/'));
+function styles() {
+  return gulp.src('./src/scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist/assets/css'))
+    .pipe(browserSync.stream());
+};
+
+exports.styles = styles;
+gulp.task ('watcher', () => {
+  gulp.watch('./src/scss/**/*.scss', (done) => {series([styles])(done)});
+
+  gulp.watch(['src/pug/**/parts/*.pug'], series(['pug']))
+  gulp.watch(['src/pug/**/*.pug', '!src/pug/**/parts/*.pug'], series(['pug']))
 });
 
-gulp.task('cache', function() {
-    global.isWatching = true;
-});
-
-gulp.task('nocache', function() {
-    global.isWatching = false;
-});
-
-gulp.task('watch:pug', function(){
-  gulp.watch(['src/pug/**/parts/*.pug'], ['cache', 'pug']);
-  gulp.watch(['src/pug/**/*.pug', '!src/pug/**/parts/*.pug'], ['nocache', 'pug']);
-});
-
-gulp.task('server', function() {
-  browserSync({
+gulp.task('server', () => {
+  browserSync.init({
     startPath: '/dist/index.html',
-    notify: false,
+    notify: true,
     open: false,
     server: {
       baseDir: './',
@@ -108,23 +67,10 @@ gulp.task('server', function() {
   });
 });
 
-gulp.task('build', [
-  'sass',
-  'pug',
-  'coffee',
-  ]);
-
-gulp.task('clear', function(){
-  return del([
-    '/**/*'
-  ]);
-});
-
-gulp.task('default', [
-  // 'cache',
-  'build',
-  'watch:sass',
-  'watch:pug',
-  'watch:coffee',
-  'server'
-]);
+exports.default = series(
+  [
+    styles,
+    'pug',
+    parallel('server', 'watcher'),
+  ]
+);

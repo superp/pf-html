@@ -1,0 +1,199 @@
+.price-popup {
+  max-width: 96%;
+  padding: 25px;
+  min-height: 1px;
+
+  .close {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+  }
+
+  &_content {
+    &_block {
+      flex-wrap: wrap;
+
+      &_item {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &_title {
+    margin-bottom: 20px;
+
+    span {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 35px;
+      margin-top: 8px;
+    }
+  }
+
+  button {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  // Popup 2 styles
+  &__big {
+    padding: 20px;
+
+    .price-popup_content_block_item {
+      max-width: 100%;
+    }
+
+    .price-block {
+      padding: 10px 20px;
+
+      p {
+        b {
+          font-size: 16px;
+          line-height: 22px;
+          padding-right: 4px;
+        }
+
+        span {
+          font-size: 35px;
+          line-height: 42px;
+        }
+
+        i {
+          padding-left: 4px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .price-advantages {
+      margin-top: 0;
+      flex-wrap: wrap;
+    }
+  }
+
+  // Popup 3 styles
+  &__mid {
+    .price-popup_content_block_item {
+      max-width: 100%;
+    }
+
+    .price-block {
+      max-width: 100%;
+      padding: 10px 20px;
+
+      p {
+        b {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        span {
+          font-size: 35px;
+          line-height: 42px;
+        }
+
+        i {
+          font-size: 10px;
+          line-height: 14px;
+        }
+      }
+
+      .risk {
+        margin-top: 14px;
+      }
+    }
+  }
+}
+
+.price {
+  &-block {
+    max-width: 100%;
+    padding: 15px;
+
+    p {
+      font-size: 25px;
+      line-height: 32px;
+
+      span {
+        font-size: 42px;
+        line-height: 42px;
+      }
+    }
+
+    .risk {
+      margin-top: 25px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &-image {
+    display: none;
+  }
+
+  &-advantages {
+    margin-top: 20px;
+
+    &_list {
+      &__double {
+        flex-wrap: wrap;
+        margin: 20px 0;
+
+        ul {
+          padding-left: 0;
+          margin: 0;
+          max-width: 100%;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    span {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    li {
+      padding: 5px 0;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  &-counter {
+    text-align: center;
+    margin: 10px 0;
+
+    p {
+      font-size: 9px;
+      line-height: 12px;
+
+      span {
+        padding: 0 5px;
+      }
+    }
+
+    &_item {
+      padding: 6px;
+      margin: 6px 2px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &_colon {
+      font-size: 16px;
+      line-height: 30px;
+      margin: 6px 0;
+    }
+  }
+}

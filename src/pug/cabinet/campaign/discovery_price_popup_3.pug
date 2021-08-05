@@ -1,0 +1,152 @@
+extends ../_layout
+
+block content
+  .top-block.top-block__discovery
+    .back.desk-hide
+      img(src="assets/images/cabinet/arrow_left.svg", alt="")
+    .tabs.tabs__campaign
+      .tabs_list
+        ul
+          li.tab-inst
+            a(href="#tab-1") Instagram
+          li.tab-youtube
+            a.active(href="#tab-2") Youtube
+    
+    .filter-button
+      span
+        img(src="assets/images/cabinet/filter_icon.svg", alt="")
+      span Filter
+
+    .popup-overlay
+      include ../popups/_price_popup_3
+            
+  .main-content
+    .content.content__discovery
+      .tabs_content
+        .tabs_item#tab-1(style="display: none;")
+       
+          .influencers_table.influencers_table__discovery
+            .influencers_table_head
+              .influencers_table_cell.influencers_table_cell__influencer
+                span Influencer
+              .influencers_table_cell.influencers_table_cell__reach
+                span Reach/Subsctibers
+              .influencers_table_cell.influencers_table_cell__engagement
+                span Engegament
+              .influencers_table_cell.influencers_table_cell__price
+                span Price
+              .influencers_table_cell.influencers_table_cell__email
+                span Email
+              .influencers_table_cell.influencers_table_cell__action
+                span 
+              
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+              .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
+                p 24%
+              .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__email
+                .table-subtitle.desk-hide Email
+                p wy***@mail.ru
+              .influencers_table_cell.influencers_table_cell__action
+                a.list_add(href="#")
+                  span.icon.icon__list_add
+                button.button-orange Add to Campaing
+              
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+              .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
+                p 24%
+              .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__email
+                .table-subtitle.desk-hide Email
+                p wy***@mail.ru
+              .influencers_table_cell.influencers_table_cell__action
+                a.liked(href="#")
+                  span.icon.icon__heart
+                button.button-orange Add to Campaing
+
+        .tabs_item#tab-2
+       
+          .influencers_table.influencers_table__discovery
+            .influencers_table_head
+              .influencers_table_cell.influencers_table_cell__influencer
+                span Influencer
+              .influencers_table_cell.influencers_table_cell__reach
+                span Reach/Subsctibers
+              .influencers_table_cell.influencers_table_cell__engagement
+                span Engegament
+              .influencers_table_cell.influencers_table_cell__price
+                span Price
+              .influencers_table_cell.influencers_table_cell__email
+                span Email
+              .influencers_table_cell.influencers_table_cell__action
+                span 
+              
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+                  p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
+                p 24%
+              .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__email
+                .table-subtitle.desk-hide Email
+                p wy***@mail.ru
+              .influencers_table_cell.influencers_table_cell__action
+                a.list_add.orange-square(href="#")
+                  span.icon.icon__list_add
+                button.button-orange Add to Campaing
+              
+            .influencers_table_row
+              .influencers_table_cell.influencers_table_cell__influencer
+                .photo
+                  img(src="assets/images/cabinet/nasa_img.png", alt="")
+                .info
+                  strong NASA | nasa
+                  p Explore the universe and discover our home planet. 🌍🚀 ⁣ Uncover more info about our images:
+              .influencers_table_cell.influencers_table_cell__reach
+                .table-subtitle.desk-hide Reach/Subsctibers
+                p 1,914,128
+              .influencers_table_cell.influencers_table_cell__engagement
+                .table-subtitle.desk-hide Engegament
+                p 24%
+              .influencers_table_cell.influencers_table_cell__price
+                .table-subtitle.desk-hide Price
+                p $ 1,500.00
+              .influencers_table_cell.influencers_table_cell__email
+                .table-subtitle.desk-hide Email
+                p wy***@mail.ru
+              .influencers_table_cell.influencers_table_cell__action
+                a.liked(href="#")
+                  span.icon.icon__heart
+                button.button-orange Add to Campaing
