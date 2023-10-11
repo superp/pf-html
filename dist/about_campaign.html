@@ -150,7 +150,9 @@
                   <a class="active" href="#tab-1">About campaing</a>
                 </li>
                 <li>
-                  <a href="#tab-2">Influencers in campaing</a>
+                  <a href="#tab-2" id="influencers-tab"
+                    >Influencers in campaing</a
+                  >
                 </li>
                 <li><a href="#tab-3">Messages</a></li>
                 <li><a href="#tab-4">Analytics</a></li>
@@ -176,6 +178,35 @@
                 ></use>
               </svg>
             </button>
+          </div>
+          <div class="influencers-wallet hide" id="influencers-wallet">
+            <ul class="influencers-wallet-list">
+              <li class="influencers-wallet-item">
+                <p class="influencers-wallet-text">Total price</p>
+                <p class="influencers-wallet-amount">
+                  <span class="influencers-wallet-currency">₴</span>
+                  1853.13
+                </p>
+              </li>
+              <li class="influencers-wallet-item">
+                <p class="influencers-wallet-text">Your balance</p>
+                <p class="influencers-wallet-amount">
+                  <span class="influencers-wallet-currency">₴</span>
+                  0.0
+                </p>
+              </li>
+              <li class="influencers-wallet-item">
+                <p class="influencers-wallet-text">Total to pay</p>
+                <p class="influencers-wallet-amount">
+                  <span class="influencers-wallet-currency">₴</span>
+                  1853.13
+                </p>
+              </li>
+            </ul>
+            <div class="influencers-wallet-btn-wrap">
+              <button class="influencers-wallet-btn pay-btn">Pay</button>
+              <button class="influencers-wallet-btn cancel-btn">Cancel</button>
+            </div>
           </div>
         </div>
         <div class="main-content">
@@ -417,7 +448,7 @@
               </div>
               <div class="tabs_item" id="tab-2" style="display: none">
                 <div class="tab_title">Influencers in campaing</div>
-                <div class="influencers_filter">
+                <div class="influencers_filter sub-filter">
                   <span class="current desk-hide">All</span
                   ><span class="icon icon__arrow desk-hide"></span>
                   <ul>
@@ -425,6 +456,65 @@
                     <li><a href="#">Waiting</a></li>
                     <li><a href="#">Approved</a></li>
                     <li><a href="#">Rejected</a></li>
+                  </ul>
+                </div>
+                <div class="influencers_table-sort_wrap">
+                  <ul class="influencers_table-sort_list">
+                    <li class="influencers_table-sort_item decline-btn">
+                      <p class="influencers_table-sort_text decline-btn">
+                        Decline all
+                      </p>
+                    </li>
+                    <li class="influencers_table-sort_item">
+                      <svg
+                        class="influencers_table-sort_item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-arrow_drop_down"
+                        ></use>
+                      </svg>
+                      <p class="influencers_table-sort_text">
+                        Newest applications
+                      </p>
+                    </li>
+                    <li class="influencers_table-sort_item">
+                      <svg
+                        class="influencers_table-sort_item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-arrow_drop_down"
+                        ></use>
+                      </svg>
+                      <p class="influencers_table-sort_text">Score</p>
+                    </li>
+                    <li class="influencers_table-sort_item">
+                      <svg
+                        class="influencers_table-sort_item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-arrow_drop_down"
+                        ></use>
+                      </svg>
+                      <p class="influencers_table-sort_text">Total reach</p>
+                    </li>
+                    <li class="influencers_table-sort_item">
+                      <svg
+                        class="influencers_table-sort_item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-arrow_drop_down"
+                        ></use>
+                      </svg>
+                      <p class="influencers_table-sort_text">Total price</p>
+                    </li>
                   </ul>
                 </div>
                 <div class="influencers_table">
@@ -435,7 +525,7 @@
                       <span>Influencer</span>
                     </div>
                     <div
-                      class="influencers_table_cell influencers_table_cell__price"
+                      class="influencers_table_cell influencers_table_cell__price influencers_table_cell__price-title"
                     >
                       <span>Price</span>
                     </div>
@@ -455,7 +545,7 @@
                       <span>Action</span>
                     </div>
                   </div>
-                  <div class="influencers_table_row">
+                  <div class="influencers_table_row flex-start">
                     <div
                       class="influencers_table_cell influencers_table_cell__influencer"
                     >
@@ -485,22 +575,210 @@
                     <div
                       class="influencers_table_cell influencers_table_cell__price"
                     >
-                      <div class="table-subtitle desk-hide">Price</div>
-                      <p>$ 1,500.00</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <p class="influencers_table_item-title">Total</p>
+                          <div class="table-subtitle desk-hide">Price</div>
+                          <p class="influencers_table_item-count">$ 1,500.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Post</li>
+                              <li>Story</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-tiktok"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-telegram"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-linkedin"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-youtube"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Mention</li>
+                              <li>Review</li>
+                              <li>Tutorial</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitch"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__reach"
                     >
-                      <div class="table-subtitle desk-hide">
-                        Reach/Subsctibers
-                      </div>
-                      <p>1,914,128</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">
+                            Reach/Subsctibers
+                          </div>
+                          <p>1,914,128</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__engagement"
                     >
-                      <div class="table-subtitle desk-hide">Engegament</div>
-                      <p>24%</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">Engegament</div>
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__action"
@@ -511,7 +789,7 @@
                       <div class="state approved">Approved</div>
                     </div>
                   </div>
-                  <div class="influencers_table_row">
+                  <div class="influencers_table_row flex-start">
                     <div
                       class="influencers_table_cell influencers_table_cell__influencer"
                     >
@@ -543,22 +821,210 @@
                     <div
                       class="influencers_table_cell influencers_table_cell__price"
                     >
-                      <div class="table-subtitle desk-hide">Price</div>
-                      <p>$ 5,500.00</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <p class="influencers_table_item-title">Total</p>
+                          <div class="table-subtitle desk-hide">Price</div>
+                          <p class="influencers_table_item-count">$ 1,500.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Post</li>
+                              <li>Story</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-tiktok"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-telegram"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-linkedin"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-youtube"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Mention</li>
+                              <li>Review</li>
+                              <li>Tutorial</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitch"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__reach"
                     >
-                      <div class="table-subtitle desk-hide">
-                        Reach/Subsctibers
-                      </div>
-                      <p>4,128,880</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">
+                            Reach/Subsctibers
+                          </div>
+                          <p>1,914,128</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__engagement"
                     >
-                      <div class="table-subtitle desk-hide">Engegament</div>
-                      <p>66%</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">Engegament</div>
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__action"
@@ -570,7 +1036,7 @@
                       <button class="button-border">Decline</button>
                     </div>
                   </div>
-                  <div class="influencers_table_row">
+                  <div class="influencers_table_row flex-start">
                     <div
                       class="influencers_table_cell influencers_table_cell__influencer"
                     >
@@ -598,22 +1064,210 @@
                     <div
                       class="influencers_table_cell influencers_table_cell__price"
                     >
-                      <div class="table-subtitle desk-hide">Price</div>
-                      <p>$ 1,500.00</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <p class="influencers_table_item-title">Total</p>
+                          <div class="table-subtitle desk-hide">Price</div>
+                          <p class="influencers_table_item-count">$ 1,500.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Post</li>
+                              <li>Story</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-tiktok"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-telegram"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-linkedin"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-youtube"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Mention</li>
+                              <li>Review</li>
+                              <li>Tutorial</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitch"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__reach"
                     >
-                      <div class="table-subtitle desk-hide">
-                        Reach/Subsctibers
-                      </div>
-                      <p>1,914,128</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">
+                            Reach/Subsctibers
+                          </div>
+                          <p>1,914,128</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__engagement"
                     >
-                      <div class="table-subtitle desk-hide">Engegament</div>
-                      <p>24%</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">Engegament</div>
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__action"
@@ -625,7 +1279,7 @@
                       <button class="button-border">Decline</button>
                     </div>
                   </div>
-                  <div class="influencers_table_row">
+                  <div class="influencers_table_row flex-start">
                     <div
                       class="influencers_table_cell influencers_table_cell__influencer"
                     >
@@ -650,22 +1304,210 @@
                     <div
                       class="influencers_table_cell influencers_table_cell__price"
                     >
-                      <div class="table-subtitle desk-hide">Price</div>
-                      <p>$ 1,500.00</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <p class="influencers_table_item-title">Total</p>
+                          <div class="table-subtitle desk-hide">Price</div>
+                          <p class="influencers_table_item-count">$ 1,500.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Post</li>
+                              <li>Story</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-tiktok"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-telegram"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-linkedin"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-youtube"
+                              ></use>
+                            </svg>
+                            <div class="influencers_table-social-item-desc">
+                              ?
+                            </div>
+                            <ul class="social-item-desc-list">
+                              <li>Mention</li>
+                              <li>Review</li>
+                              <li>Tutorial</li>
+                            </ul>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <div class="influencers_table_item-icon-wrap">
+                            <svg
+                              class="about-info-platforms-social-icon"
+                              width="20"
+                              height="20"
+                            >
+                              <use
+                                href="./assets/images/icons/symbol-defs.svg#icon-twitch"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p class="influencers_table_item-count">$ 600.00</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__reach"
                     >
-                      <div class="table-subtitle desk-hide">
-                        Reach/Subsctibers
-                      </div>
-                      <p>1,914,128</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">
+                            Reach/Subsctibers
+                          </div>
+                          <p>1,914,128</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>600,000</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__engagement"
                     >
-                      <div class="table-subtitle desk-hide">Engegament</div>
-                      <p>24%</p>
+                      <ul class="influencers_table_list">
+                        <li class="influencers_table_item">
+                          <div class="table-subtitle desk-hide">Engegament</div>
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                        <li class="influencers_table_item">
+                          <p>24%</p>
+                        </li>
+                      </ul>
                     </div>
                     <div
                       class="influencers_table_cell influencers_table_cell__action"

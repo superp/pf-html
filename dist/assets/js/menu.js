@@ -19,6 +19,10 @@
   const mobileMenuRef = document.querySelector("[data-menu]");
 
   menuBtnRef.addEventListener("click", (event) => {
+    if (document.body.className !== "modal-open") {
+      return;
+    }
+
     let li = event.target.closest("li");
     if (!li) return;
     const expanded =
