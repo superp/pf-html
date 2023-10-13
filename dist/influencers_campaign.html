@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Publicfast Cabinet</title>
+    <meta
+      charset="utf-8"
+      content="width=device-width, minimum-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="assets/css/cabinet.css" rel="stylesheet" />
+    <link href="assets/css/components/base.css" rel="stylesheet" />
+    <link
+      href="assets/css/components/influencers_campaign.css"
+      rel="stylesheet"
+    />
+    <script src="vendor/js/jquery-1.11.3.min.js"></script>
+    <script src="vendor/js/tooltipster.min.js" type="text/javascript"></script>
+    <script
+      src="vendor/js/tooltipster.bundle.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="vendor/js/jQuery.tagify.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/accordion.js" type="text/javascript"></script>
+    <script src="assets/js/cabinet.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cabinet-navigation mob-hide">
+        <div class="logo-space">
+          <div class="logo">
+            <a href="#"><img src="assets/images/cabinet/logo.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="cabinet-navigation_menu">
+          <ul>
+            <li class="menu-drop active">
+              <span>
+                <span class="icon icon__globe"></span>Discovery<span
+                  class="icon icon__arrow"
+                ></span
+              ></span>
+              <ul class="drop-list">
+                <li class="active"><a href="#">Global influencers</a></li>
+                <li><a href="#">Request influencers</a></li>
+                <li><a href="#">Saved influencers</a></li>
+              </ul>
+            </li>
+            <li class="menu-drop">
+              <span
+                ><span class="icon icon__briefcase"></span>Marketplace<span
+                  class="icon icon__arrow"
+                ></span
+              ></span>
+              <ul class="drop-list">
+                <li><a href="#">Create a new campaign</a></li>
+                <li><a href="#">Your campaigns</a></li>
+                <li><a href="#">Influencers at Publicfast</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__mail"></span>Message</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__database"></span>Balance</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__user"></span>Your Profile</a>
+            </li>
+          </ul>
+          <a class="exit mob-hide" href="#"
+            ><span class="icon icon__exit"></span>Exit</a
+          >
+        </div>
+      </div>
+      <div class="cabinet-navigation-mobile desk-hide">
+        <ul>
+          <li class="menu-drop-mob" data-menu="menu-list-1">
+            <a class="active" href="#"
+              ><span class="icon icon__globe"></span>Discovery</a
+            >
+          </li>
+          <li class="menu-drop-mob" data-menu="menu-list-2">
+            <a href="#"
+              ><span class="icon icon__briefcase"></span>Marketplace</a
+            >
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__mail"></span>Message</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__database"></span>Balance</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__user"></span>Your Profile</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cabinet-navigation-list desk-hide">
+        <div class="close">
+          <img src="assets/images/cabinet/arrow_left.svg" alt="" />
+        </div>
+        <ul data-item="menu-list-1">
+          <li>
+            <a class="active" href="#"
+              >Global influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Saved influencers <span class="icon icon__arrow"></span
+            ></a>
+          </li>
+        </ul>
+        <ul data-item="menu-list-2">
+          <li>
+            <a href="#"
+              >Global influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Request influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Saved influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="back-wrap">
+          <a href="#" class="back-link">
+            <svg class="back-icon" width="20" height="20">
+              <use
+                href="./assets/images/icons/symbol-defs.svg#icon-arrow"
+              ></use>
+            </svg>
+            Назад к кампаниям
+          </a>
+        </div>
+        <div class="header">
+          <p class="header-title">
+            Menu.ua (сервис доставки еды) — установки приложения
+          </p>
+        </div>
+        <div class="main">
+          <table class="table">
+            <tr class="tr tr-head">
+              <td class="td column_1">
+                <div class="tr-head__container">
+                  <img
+                    src="./assets//images/cabinet/image2.png"
+                    alt="photo"
+                    width="72"
+                    height="72"
+                    class="tr-head__img"
+                  />
+                  <div class="tr-head__text-wrap">
+                    <p class="tr-head__title">Vasilii Troitskii</p>
+                    <p class="tr-head__text">Рейтинг: 58</p>
+                  </div>
+                </div>
+              </td>
+              <td class="td column_2">
+                <ul class="tr-head__list">
+                  <li class="tr-head__item">
+                    <p class="tr-head__title">₴ 152.5</p>
+                    <p class="tr-head__text">Цена</p>
+                  </li>
+                  <li class="tr-head__item">
+                    <p class="tr-head__title">22.12 – 31.01.20</p>
+                    <p class="tr-head__text">Сроки кампании</p>
+                  </li>
+                  <li>
+                    <div class="about-info-platforms-wrap">
+                      <ul class="about-info-platforms-social-list">
+                        <li
+                          class="about-info-platforms-social-item about-info-platforms-social-item-desc"
+                        >
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                          <div class="social-item-desc">?</div>
+                          <ul class="social-item-desc-list">
+                            <li>Post</li>
+                            <li>Story</li>
+                          </ul>
+                        </li>
+                        <li class="about-info-platforms-social-item">
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-tiktok"
+                            ></use>
+                          </svg>
+                        </li>
+                        <li class="about-info-platforms-social-item">
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-twitter"
+                            ></use>
+                          </svg>
+                        </li>
+                        <li class="about-info-platforms-social-item">
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-facebook"
+                            ></use>
+                          </svg>
+                        </li>
+                        <li class="about-info-platforms-social-item">
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-telegram"
+                            ></use>
+                          </svg>
+                        </li>
+                        <li class="about-info-platforms-social-item">
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-linkedin"
+                            ></use>
+                          </svg>
+                        </li>
+                        <li
+                          class="about-info-platforms-social-item about-info-platforms-social-item-desc"
+                        >
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-youtube"
+                            ></use>
+                          </svg>
+                          <div class="social-item-desc">?</div>
+                          <ul class="social-item-desc-list">
+                            <li>Mention</li>
+                            <li>Review</li>
+                            <li>Tutorial</li>
+                          </ul>
+                        </li>
+                        <li class="about-info-platforms-social-item">
+                          <svg
+                            class="about-info-platforms-social-icon"
+                            width="40"
+                            height="40"
+                          >
+                            <use
+                              href="./assets/images/icons/symbol-defs.svg#icon-twitch"
+                            ></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <p class="about-info-platforms-title">Platforms</p>
+                    </div>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="tr tr-body">
+              <td class="td column_1">
+                <p class="tr-body__title">История бренда:</p>
+              </td>
+              <td class="td column_2">
+                <p class="tr-body__text">
+                  Привет! Menu.ua - это сервис доставки еды из ресторанов,
+                  который запустился в октябре этого года в Киеве. Да, мы знаем,
+                  что на рынке есть немало конкурентов, но активно боремся за
+                  свое место под солнцем. Для этого у нас есть все инструменты и
+                  огромное желание стать первыми. Сервис Menu.ua входит в
+                  международную компанию Menu Group с проектами в Армении,
+                  Грузии, Беларуси. Мы уже доставляем заказы из более 150
+                  заведений Киева. Количество ресторанов и городов постоянно
+                  увеличивается. До сентября 2020 года мы планируем начать
+                  работу в Харькове, Одессе и Львове. А уже в конце февраля
+                  сервис запустится в Днепре.
+                </p>
+              </td>
+            </tr>
+            <tr class="tr tr-body">
+              <td class="td column_1">
+                <p class="tr-body__title">Информация о продукте:</p>
+              </td>
+              <td class="td column_2">
+                <p class="tr-body__text">
+                  Для осуществления нашего "прорыва" у нас есть следующие
+                  преимущества: 1. Бесплатная доставка (во всех ресторанах и на
+                  неограниченное время) 2. Моб. приложение и сайт (увы, наше
+                  слабое место - отсутствие мобильной версии сайта) 3. На
+                  платформе уже более 150 ресторанов (в том числе KFC, Pesto
+                  Cafe, Pizza House, Тануки, This is Pivbar, Мястория, Mei Wei,
+                  The Burger, Багато Лосося, Рибку з'їсти, Nebos, Тесто Сыр и
+                  тетка Белла, Contrabanda и даже Київська перепічка!) 4.
+                  Широкая зона покрытия (радиус до 7 км), у других сервисов - до
+                  3 км. 5. Онлайн статус заказов в приложении (приходят
+                  уведомления) 6. Оплата картой или наличными 7. Доставляем с 8
+                  утра и до 1 ночи(!) 8. Все наши курьеры оформлены официально и
+                  на полный день. Мы контролируем их опрятность, вежливость и
+                  уважительное отношение к клиентам 9. Среднее время доставки -
+                  до 40-50 минут Наш сайт: https://www.menu.ua/ Наше приложение:
+                  https://menu-ua.onelink.me/Vokg
+                </p>
+              </td>
+            </tr>
+            <tr class="tr tr-body">
+              <td class="td column_1">
+                <p class="tr-body__title">Комментарий заказчика:</p>
+              </td>
+              <td class="td column_2">
+                <p class="tr-body__text">
+                  Цель нашей кампании: получить установки мобильного приложения
+                  и рассказать всем, кто пользуется доставкой еды о том, что в
+                  Киеве есть новый сервис Menu.ua с бесплатной доставкой. Что
+                  просим от вас: - рассказать о нашем сервисе в сториз (для
+                  инстаграм) или в посте (для фб) - прикрепить ссылку в сториз/к
+                  посту на скачивание приложения (ссылку с вашей меткой вышлем
+                  дополнительно!) - показать видеоскрин приложения со
+                  скроллингом ресторанов - обязательно упомянуть бесплатную
+                  доставку и другие преимущества на выбор - по желанию упомянуть
+                  KFC (если этот ресторан вам интересен) - по желанию сделать
+                  заказ в счет бюджета на сотрудничество и убедиться в уровне
+                  сервиса :) Важно: ссылку на скачивание приложения
+                  (универсальную для iOS и Android) мы вышлем вам дополнительно.
+                  В ней будет ваша метка и мы сможем отследить эффективность и
+                  дать вам обратную связь.
+                </p>
+              </td>
+            </tr>
+            <tr class="tr tr-body">
+              <td class="td column_1">
+                <p class="tr-body__title">Запрещенные упоминания:</p>
+              </td>
+              <td class="td column_2">
+                <p class="tr-body__text">Raketa</p>
+              </td>
+            </tr>
+            <tr class="tr tr-body">
+              <td class="td column_1">
+                <p class="tr-body__title">Ссылки:</p>
+              </td>
+              <td class="td column_2">
+                <ul class="about-info-platforms-social-list campaign-link">
+                  <li
+                    class="about-info-platforms-social-item about-info-platforms-social-item-desc campaign-link"
+                  >
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                      <div class="social-item-desc">?</div>
+                      <ul class="social-item-desc-list">
+                        <li>Post</li>
+                        <li>Story</li>
+                      </ul>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="about-info-platforms-social-item campaign-link">
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-tiktok"
+                        ></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="about-info-platforms-social-item campaign-link">
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="about-info-platforms-social-item campaign-link">
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="about-info-platforms-social-item campaign-link">
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-telegram"
+                        ></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="about-info-platforms-social-item campaign-link">
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li
+                    class="about-info-platforms-social-item about-info-platforms-social-item-desc campaign-link"
+                  >
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-youtube"
+                        ></use>
+                      </svg>
+                      <div class="social-item-desc">?</div>
+                      <ul class="social-item-desc-list">
+                        <li>Mention</li>
+                        <li>Review</li>
+                        <li>Tutorial</li>
+                      </ul>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="about-info-platforms-social-item campaign-link">
+                    <div class="campaign-link__wrap">
+                      <svg
+                        class="about-info-platforms-social-icon"
+                        width="40"
+                        height="40"
+                      >
+                        <use
+                          href="./assets/images/icons/symbol-defs.svg#icon-twitch"
+                        ></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="campaign-link__text"
+                      >http://bit.ly/38gbBD3</a
+                    >
+                    <svg
+                      class="about-info-platforms-social-icon copy"
+                      width="40"
+                      height="40"
+                    >
+                      <use
+                        href="./assets/images/icons/symbol-defs.svg#icon-copy"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <div class="loan-wrap">
+            <button type="button" class="loan-btn" data-modal-open>
+              Отправить заявку на сотрудничество
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__close-icon" width="18px" height="18px">
+            <use
+              href="./assets/images/icons/symbol-defs.svg#icon-modal-close-btn"
+            ></use>
+          </svg>
+        </button>
+        <p class="modal-title">Цена</p>
+        <p class="modal-text">Вы можете изменить предлогаемую цену</p>
+        <div class="modal-input-wrap">
+          <p class="modal-placeholder">Facebook</p>
+          <input type="text" class="modal-input" />
+        </div>
+        <button type="button" class="modal-send-loan-btn">
+          Отправить заявку
+        </button>
+      </div>
+    </div>
+    <script src="./assets/js/modal.js"></script>
+  </body>
+</html>

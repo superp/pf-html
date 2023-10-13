@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Publicfast Cabinet</title>
+    <meta
+      charset="utf-8"
+      content="width=device-width, minimum-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="assets/css/cabinet.css" rel="stylesheet" />
+    <link href="assets/css/components/base.css" rel="stylesheet" />
+    <link
+      href="assets/css/components/influencers_campaigns.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/css/components/influencers_campaigns.css"
+      rel="stylesheet"
+    />
+    <script src="vendor/js/jquery-1.11.3.min.js"></script>
+    <script src="vendor/js/tooltipster.min.js" type="text/javascript"></script>
+    <script
+      src="vendor/js/tooltipster.bundle.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="vendor/js/jQuery.tagify.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/accordion.js" type="text/javascript"></script>
+    <script src="assets/js/cabinet.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cabinet-navigation mob-hide">
+        <div class="logo-space">
+          <div class="logo">
+            <a href="#"><img src="assets/images/cabinet/logo.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="cabinet-navigation_menu">
+          <ul>
+            <li class="menu-drop active">
+              <span>
+                <span class="icon icon__globe"></span>Discovery<span
+                  class="icon icon__arrow"
+                ></span
+              ></span>
+              <ul class="drop-list">
+                <li class="active"><a href="#">Global influencers</a></li>
+                <li><a href="#">Request influencers</a></li>
+                <li><a href="#">Saved influencers</a></li>
+              </ul>
+            </li>
+            <li class="menu-drop">
+              <span
+                ><span class="icon icon__briefcase"></span>Marketplace<span
+                  class="icon icon__arrow"
+                ></span
+              ></span>
+              <ul class="drop-list">
+                <li><a href="#">Create a new campaign</a></li>
+                <li><a href="#">Your campaigns</a></li>
+                <li><a href="#">Influencers at Publicfast</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__mail"></span>Message</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__database"></span>Balance</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__user"></span>Your Profile</a>
+            </li>
+          </ul>
+          <a class="exit mob-hide" href="#"
+            ><span class="icon icon__exit"></span>Exit</a
+          >
+        </div>
+      </div>
+      <div class="cabinet-navigation-mobile desk-hide">
+        <ul>
+          <li class="menu-drop-mob" data-menu="menu-list-1">
+            <a class="active" href="#"
+              ><span class="icon icon__globe"></span>Discovery</a
+            >
+          </li>
+          <li class="menu-drop-mob" data-menu="menu-list-2">
+            <a href="#"
+              ><span class="icon icon__briefcase"></span>Marketplace</a
+            >
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__mail"></span>Message</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__database"></span>Balance</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__user"></span>Your Profile</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cabinet-navigation-list desk-hide">
+        <div class="close">
+          <img src="assets/images/cabinet/arrow_left.svg" alt="" />
+        </div>
+        <ul data-item="menu-list-1">
+          <li>
+            <a class="active" href="#"
+              >Global influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Saved influencers <span class="icon icon__arrow"></span
+            ></a>
+          </li>
+        </ul>
+        <ul data-item="menu-list-2">
+          <li>
+            <a href="#"
+              >Global influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Request influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Saved influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="header">
+          <p class="header__title">Мои компании</p>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link active">Список</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link">Календарь</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main">
+          <ul class="campaigns__list">
+            <li class="campaigns__item active">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay active">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info active">Кампания активна</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item active">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay active">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info active">Кампания активна</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item active">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay active">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info active">Кампания активна</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info">Кампания завершена</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info">Кампания завершена</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info">Кампания завершена</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info">Кампания завершена</p>
+                </div>
+              </div>
+            </li>
+            <li class="campaigns__item">
+              <img
+                src="./assets/images/cabinet/image2.png"
+                alt="campaign"
+                width="136"
+                height="136"
+                class="campaigns__item-img"
+              />
+              <div class="campaigns__item-wrap">
+                <a href="#" class="campaigns__link">
+                  <p class="campaigns__item-title">
+                    Menu.ua (сервис доставки еды) — установки приложения
+                  </p>
+                </a>
+                <p class="campaigns__item-term">12.02.2020 — 31.03.2020</p>
+                <div class="campaigns__item-btn_wrap">
+                  <button type="button" class="campaigns__item-btn-pay">
+                    Оплата за пост
+                  </button>
+                  <p class="campaigns__item-info">Кампания завершена</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
