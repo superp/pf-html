@@ -4131,11 +4131,17 @@ body {
 
 .influencers-wallet {
   position: absolute;
-  top: 27px;
-  right: 0;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 270px;
+  height: 100%;
+  padding-top: 50px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 40px;
+  background-color: #272727;
 }
 
 .influencers-wallet.hide {
@@ -4144,21 +4150,31 @@ body {
 
 .influencers-wallet-list {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
+.influencers-wallet-cancel-btn,
 .influencers-wallet-item {
   font-size: 18px;
   line-height: 22px;
   font-weight: normal;
+  color: #ffffff;
+}
+
+.influencers-wallet-cancel-btn {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .influencers-wallet-amount {
   font-weight: 700;
+  color: #ffffff;
 }
 
 .influencers-wallet-btn-wrap {
   display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
@@ -4180,6 +4196,10 @@ body {
 
 .influencers-wallet-btn.pay-btn {
   background-color: #5bd467;
+  color: #ffffff;
+}
+
+.influencers-wallet-btn.cancel-btn {
   color: #ffffff;
 }
 

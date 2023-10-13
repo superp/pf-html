@@ -58,5 +58,15 @@
         <symbol id="icon-arrow_drop_down" viewBox="0 0 24 24">
             <path d="M6.984 9.984h10.031l-5.016 5.016z"></path>
         </symbol>
+
+        <symbol id="icon-copy" viewBox="0 0 32 32">
+            <path fill="#fd8324" style="fill: var(--color1, #fd8324)" d="M6.4 0h19.2c3.535 0 6.4 2.865 6.4 6.4v19.2c0 3.535-2.865 6.4-6.4 6.4h-19.2c-3.535 0-6.4-2.865-6.4-6.4v-19.2c0-3.535 2.865-6.4 6.4-6.4z"></path>
+            <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M22.4 13.6h-7.2c-0.884 0-1.6 0.716-1.6 1.6v7.2c0 0.884 0.716 1.6 1.6 1.6h7.2c0.884 0 1.6-0.716 1.6-1.6v-7.2c0-0.884-0.716-1.6-1.6-1.6z"></path>
+            <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M10.4 18.4h-0.8c-0.424 0-0.831-0.169-1.131-0.469s-0.469-0.707-0.469-1.131v-7.2c0-0.424 0.169-0.831 0.469-1.131s0.707-0.469 1.131-0.469h7.2c0.424 0 0.831 0.169 1.131 0.469s0.469 0.707 0.469 1.131v0.8"></path>
+        </symbol>
+
+        <symbol id="icon-modal-close-btn" viewBox="0 0 32 32">
+            <path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+        </symbol>
     </defs>
 </svg>

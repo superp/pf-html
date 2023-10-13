@@ -1,0 +1,156 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 40px 33px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.header__nav-link {
+  cursor: pointer;
+  color: #828282;
+  transition: 250ms color linear;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  color: #ff3434;
+}
+
+.header__nav-link.active {
+  color: #ff3434;
+}
+
+.main {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.campaigns__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media screen and (max-width: 1599px) {
+  .campaigns__list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.campaigns__item {
+  background-color: #e5e5e5;
+  width: calc((100% - 24px) / 2);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 32px;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 980px) {
+  .campaigns__item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .campaigns__item {
+    width: 100%;
+  }
+}
+
+.campaigns__item.active {
+  background-color: transparent;
+}
+
+.campaigns__item-img {
+  border-radius: 8px;
+}
+
+.campaigns__item-wrap {
+  width: 100%;
+}
+
+.campaigns__item-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.campaigns__item-term {
+  margin-top: 40px;
+}
+
+.campaigns__item-btn_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  margin-top: 25px;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 800px) {
+  .campaigns__item-btn_wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.campaigns__item-btn-pay,
+.campaigns__item-info {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.campaigns__item-btn-pay {
+  color: #828282;
+}
+
+.campaigns__item-btn-pay.active {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fd8324;
+  cursor: pointer;
+  transition: border-color 250ms linear;
+}
+
+.campaigns__item-btn-pay.active:hover,
+.campaigns__item-btn-pay.active:focus {
+  border-color: #fd8324;
+}
+
+.campaigns__item-info {
+  color: #ff3434;
+}
+
+.campaigns__item-info.active {
+  border-width: 1px;
+  padding: 5px;
+  color: #5bd467;
+}
