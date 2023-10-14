@@ -10,7 +10,7 @@
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenuRef.classList.toggle("is-open");
-    document.body.classList.toggle("modal-open");
+    document.body.classList.toggle("tab-menu-open");
   });
 })();
 
@@ -19,7 +19,7 @@
   const mobileMenuRef = document.querySelector("[data-menu]");
 
   menuBtnRef.addEventListener("click", (event) => {
-    if (document.body.className !== "modal-open") {
+    if (document.body.className !== "tab-menu-open") {
       return;
     }
 
@@ -32,6 +32,6 @@
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenuRef.classList.toggle("is-open");
-    document.body.classList.toggle("modal-open");
+    document.body.classList.toggle("tab-menu-open");
   });
 })();
