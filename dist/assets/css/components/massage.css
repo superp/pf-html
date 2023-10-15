@@ -137,6 +137,13 @@
   }
 }
 
+.message__dialog-close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
 .message__dialog-top-info-wrap {
   display: flex;
   align-items: center;
