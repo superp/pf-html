@@ -24,12 +24,15 @@ initTabs = function () {
     tabId = $(this).attr("href");
     $(".tabs_item").hide();
     $(this).addClass("active");
-    if (tabId === "#tab-2") {
-      document.getElementById("influencers-wallet").classList.remove("hide");
-    } else {
-      document.getElementById("influencers-wallet").classList.add("hide");
+    try {
+      if (tabId === "#tab-2") {
+        document.getElementById("influencers-wallet").classList.remove("hide");
+      } else {
+        document.getElementById("influencers-wallet").classList.add("hide");
+      }
+    } finally {
+      return $(".tabs_content").find(tabId).show();
     }
-    return $(".tabs_content").find(tabId).show();
   });
   $(".influencer-tabs_list li > a").on("click", function (e) {
     var tabId;
