@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Publicfast Cabinet</title>
+    <meta
+      charset="utf-8"
+      content="width=device-width, minimum-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="assets/css/cabinet.css" rel="stylesheet" />
+    <link href="assets/css/components/finnance-brand.css" rel="stylesheet" />
+    <script src="vendor/js/jquery-1.11.3.min.js"></script>
+    <script src="vendor/js/tooltipster.min.js" type="text/javascript"></script>
+    <script
+      src="vendor/js/tooltipster.bundle.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="vendor/js/jQuery.tagify.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="assets/js/chart.js" type="text/javascript"></script>
+    <script src="assets/js/accordion.js" type="text/javascript"></script>
+    <script src="assets/js/cabinet.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cabinet-navigation mob-hide">
+        <div class="logo-space">
+          <div class="logo">
+            <a href="#"><img src="assets/images/cabinet/logo.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="cabinet-navigation_menu">
+          <ul>
+            <li class="menu-drop active">
+              <span>
+                <span class="icon icon__globe"></span>Discovery<span
+                  class="icon icon__arrow"
+                ></span
+              ></span>
+              <ul class="drop-list">
+                <li class="active"><a href="#">Global influencers</a></li>
+                <li><a href="#">Request influencers</a></li>
+                <li><a href="#">Saved influencers</a></li>
+              </ul>
+            </li>
+            <li class="menu-drop">
+              <span
+                ><span class="icon icon__briefcase"></span>Marketplace<span
+                  class="icon icon__arrow"
+                ></span
+              ></span>
+              <ul class="drop-list">
+                <li><a href="#">Create a new campaign</a></li>
+                <li><a href="#">Your campaigns</a></li>
+                <li><a href="#">Influencers at Publicfast</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__mail"></span>Message</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__database"></span>Balance</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon__user"></span>Your Profile</a>
+            </li>
+          </ul>
+          <a class="exit mob-hide" href="#"
+            ><span class="icon icon__exit"></span>Exit</a
+          >
+        </div>
+      </div>
+      <div class="cabinet-navigation-mobile desk-hide">
+        <ul>
+          <li class="menu-drop-mob" data-menu="menu-list-1">
+            <a class="active" href="#"
+              ><span class="icon icon__globe"></span>Discovery</a
+            >
+          </li>
+          <li class="menu-drop-mob" data-menu="menu-list-2">
+            <a href="#"
+              ><span class="icon icon__briefcase"></span>Marketplace</a
+            >
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__mail"></span>Message</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__database"></span>Balance</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon icon__user"></span>Your Profile</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cabinet-navigation-list desk-hide">
+        <div class="close">
+          <img src="assets/images/cabinet/arrow_left.svg" alt="" />
+        </div>
+        <ul data-item="menu-list-1">
+          <li>
+            <a class="active" href="#"
+              >Global influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Saved influencers <span class="icon icon__arrow"></span
+            ></a>
+          </li>
+        </ul>
+        <ul data-item="menu-list-2">
+          <li>
+            <a href="#"
+              >Global influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Request influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Saved influencers<span class="icon icon__arrow"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="top-block">
+          <div class="tabs tabs__campaign">
+            <div class="tabs_list" id="tabs-container" data-menu>
+              <ul data-menu-tab>
+                <li>
+                  <a class="active" href="#tab-1">Subscription</a>
+                </li>
+                <li>
+                  <a href="#tab-2">Finance</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="tabs-btn"
+              aria-expanded="false"
+              aria-controls="tabs-container"
+              data-menu-button
+            >
+              <svg class="tabs-open" width="40" height="40">
+                <use
+                  href="./assets/images/icons/symbol-defs.svg#icon-menu-open"
+                ></use>
+              </svg>
+              <svg class="tabs-close" width="40" height="40">
+                <use
+                  href="./assets/images/icons/symbol-defs.svg#icon-menu-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="content content__campaign">
+            <div class="tabs_content">
+              <div class="tabs_item" id="tab-1">
+                <div class="wallet-wrap">
+                  <ul class="wallet-list">
+                    <li class="wallet-item">
+                      <p class="wallet-item-title">Current Subscription</p>
+                      <p class="wallet-item-count current">
+                        Publicfast Plus/mo
+                      </p>
+                    </li>
+                    <li class="wallet-item">
+                      <p class="wallet-item-title">Balance</p>
+                      <p class="wallet-item-count balance">
+                        <span class="wallet-item-currency">$</span>
+                        2400.00
+                      </p>
+                    </li>
+                    <li class="wallet-item">
+                      <p class="wallet-item-title">Reserved</p>
+                      <p class="wallet-item-count reserved">
+                        <span class="wallet-item-currency">$</span>
+                        12000023.00
+                      </p>
+                    </li>
+                  </ul>
+                  <button type="button" class="wallet-btn">Add funds</button>
+                </div>
+                <div class="table-wrap">
+                  <table class="table">
+                    <tr class="table-row">
+                      <th class="table-head column-1">Influencers</th>
+                      <th class="table-head column-2">Date</th>
+                      <th class="table-head column-3">Campaign</th>
+                      <th class="table-head column-4">Price</th>
+                      <th class="table-head column-5">Status</th>
+                      <th class="table-head column-6"></th>
+                    </tr>
+                    <tr class="table-row">
+                      <td class="column-1">
+                        <div class="column-wrap column-1-wrap">
+                          <img
+                            src="./assets/images/cabinet/nasa_img.png"
+                            alt="logo"
+                            width="76"
+                            height="76"
+                          />
+                          <div class="column-1-text-wrap">
+                            <p class="column-1-text">NASA</p>
+                            <p class="column-1-text slash">|</p>
+                            <p class="column-1-text">nasa</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="column-2">
+                        <p class="column-2-text">10.05.2023</p>
+                      </td>
+                      <td class="column-3">
+                        <p class="column-3-text">REFACE</p>
+                      </td>
+                      <td class="column-4">
+                        <p class="column-4-text"><span>$</span>100.00</p>
+                      </td>
+                      <td class="column-5">
+                        <p class="column-5-text paid">Paid</p>
+                      </td>
+                      <td class="column-6"></td>
+                    </tr>
+                    <tr class="table-row">
+                      <td class="column-1">
+                        <div class="column-wrap column-1-wrap">
+                          <img
+                            src="./assets/images/cabinet/nasa_img.png"
+                            alt="logo"
+                            width="76"
+                            height="76"
+                          />
+                          <div class="column-1-text-wrap">
+                            <p class="column-1-text">NASA</p>
+                            <p class="column-1-text slash">|</p>
+                            <p class="column-1-text">nasa</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="column-2">
+                        <p class="column-2-text">10.05.2023</p>
+                      </td>
+                      <td class="column-3">
+                        <p class="column-3-text">REFACE</p>
+                      </td>
+                      <td class="column-4">
+                        <p class="column-4-text"><span>$</span>100.00</p>
+                      </td>
+                      <td class="column-5">
+                        <p class="column-5-text reserved">Reserved</p>
+                      </td>
+                      <td class="column-6"></td>
+                    </tr>
+                    <tr class="table-row">
+                      <td class="column-1">
+                        <div class="column-wrap column-1-wrap">
+                          <img
+                            src="./assets/images/cabinet/nasa_img.png"
+                            alt="logo"
+                            width="76"
+                            height="76"
+                          />
+                          <div class="column-1-text-wrap">
+                            <p class="column-1-text">NASA</p>
+                            <p class="column-1-text slash">|</p>
+                            <p class="column-1-text">nasa</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="column-2">
+                        <p class="column-2-text">10.05.2023</p>
+                      </td>
+                      <td class="column-3">
+                        <p class="column-3-text">REFACE</p>
+                      </td>
+                      <td class="column-4">
+                        <p class="column-4-text"><span>$</span>100.00</p>
+                      </td>
+                      <td class="column-5">
+                        <p class="column-5-text returned">Returned</p>
+                      </td>
+                      <td class="column-6"></td>
+                    </tr>
+                    <tr class="table-row">
+                      <td class="column-1">
+                        <div class="column-wrap column-1-wrap">
+                          <img
+                            src="./assets/images/cabinet/nasa_img.png"
+                            alt="logo"
+                            width="76"
+                            height="76"
+                          />
+                          <div class="column-1-text-wrap">
+                            <p class="column-1-text">NASA</p>
+                            <p class="column-1-text slash">|</p>
+                            <p class="column-1-text">nasa</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="column-2">
+                        <p class="column-2-text">10.05.2023</p>
+                      </td>
+                      <td class="column-3">
+                        <p class="column-3-text">REFACE</p>
+                      </td>
+                      <td class="column-4">
+                        <p class="column-4-text"><span>$</span>100.00</p>
+                      </td>
+                      <td class="column-5">
+                        <p class="column-5-text paid">Paid</p>
+                      </td>
+                      <td class="column-6"></td>
+                    </tr>
+                    <tr class="table-row">
+                      <td class="column-1">
+                        <div class="column-wrap column-1-wrap">
+                          <img
+                            src="./assets/images/cabinet/nasa_img.png"
+                            alt="logo"
+                            width="76"
+                            height="76"
+                          />
+                          <div class="column-1-text-wrap">
+                            <p class="column-1-text">NASA</p>
+                            <p class="column-1-text slash">|</p>
+                            <p class="column-1-text">nasa</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="column-2">
+                        <p class="column-2-text">10.05.2023</p>
+                      </td>
+                      <td class="column-3">
+                        <p class="column-3-text">REFACE</p>
+                      </td>
+                      <td class="column-4">
+                        <p class="column-4-text"><span>$</span>100.00</p>
+                      </td>
+                      <td class="column-5">
+                        <p class="column-5-text paid">Paid</p>
+                      </td>
+                      <td class="column-6"></td>
+                    </tr>
+                    <tr class="table-row">
+                      <td class="column-1">
+                          <div class="column-1-text-wrap add-money">
+                            <p class="column-1-text add-money">Add money</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="column-2">
+                        <p class="column-2-text">10.05.2023</p>
+                      </td>
+                      <td class="column-3">
+                        <p class="column-3-text">REFACE</p>
+                      </td>
+                      <td class="column-4">
+                        <p class="column-4-text"><span>$</span>100.00</p>
+                      </td>
+                      <td class="column-5">
+                        <p class="column-5-text paid">Paid</p>
+                      </td>
+                      <td class="column-6">
+                        
+                        <button type="button" class="column-6-btn">
+                          VIew Invoice
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="tabs_item" id="tab-2" style="display: none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>

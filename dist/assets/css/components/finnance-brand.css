@@ -1,0 +1,203 @@
+.main-content {
+  width: 100%;
+}
+
+.content__campaign {
+  padding: 0;
+}
+
+.wallet-wrap {
+  padding: 12px 6px 12px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.wallet-list {
+  display: flex;
+  gap: 14px;
+}
+
+.wallet-item {
+  min-width: 190px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.wallet-item-title {
+  color: #828282;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.wallet-item-count {
+  margin-top: 16px;
+}
+
+.wallet-item-count.current {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.wallet-item-count.balance {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.wallet-item-count.reserved {
+  font-size: 24px;
+  line-height: 28px;
+  color: #828282;
+}
+
+.wallet-btn {
+  padding: 20px 40px;
+  background-color: #5bd467;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 250ms linear;
+}
+
+.wallet-btn:hover {
+  background-color: #49ba54;
+}
+
+.table-wrap {
+  padding: 26px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.column-1 {
+  width: 26%;
+}
+
+.column-2 {
+  width: 11%;
+}
+
+.column-3 {
+  width: 12%;
+}
+
+.column-4 {
+  width: 11%;
+}
+
+.column-5 {
+  width: 25%;
+}
+
+.column-6 {
+  width: 15%;
+}
+
+@media screen and (max-width: 1340px) {
+  .column-1 {
+    width: 30%;
+  }
+
+  .column-5 {
+    width: 12%;
+  }
+
+  .column-6 {
+    width: auto;
+    text-align: center;
+  }
+}
+
+.table-head {
+  padding: 16px 0;
+  text-align: left;
+  font-weight: 700;
+  line-height: 16px;
+  color: #828282;
+}
+
+.table-row {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.column-wrap {
+  padding: 32px 0;
+}
+
+.column-1-wrap {
+  display: flex;
+  gap: 24px;
+}
+
+.column-1-text-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column-1-text-wrap.add-money {
+  padding: 32px 0;
+  justify-content: center;
+}
+
+.column-1-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+}
+
+.column-1-text.add-money {
+  display: flex;
+  align-items: center;
+  height: 76px;
+}
+
+.column-1-text.slash {
+  margin: 0 5px;
+}
+
+.column-2-text,
+.column-3-text,
+.column-4-text,
+.column-5-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.column-3-text,
+.column-5-text {
+  text-transform: uppercase;
+}
+
+.column-5-text.paid {
+  color: #5bd467;
+}
+
+.column-5-text.reserved {
+  color: #828282;
+}
+
+.column-5-text.returned {
+  color: #fd8324;
+}
+
+.column-6-btn {
+  cursor: pointer;
+  padding: 19px 32px;
+  color: #ffffff;
+  background-color: #fd8324;
+  border-radius: 4px;
+  transition: background-color 250ms linear;
+}
+
+.column-6-btn:hover {
+  background-color: #fd6e00;
+}
