@@ -1,0 +1,400 @@
+.main-content {
+  width: 100%;
+}
+
+.content__campaign {
+  padding: 0;
+}
+
+.tabs__campaign .tabs_list a:before {
+  bottom: -15px;
+}
+
+.tabs_item-profile-about {
+  display: flex;
+  gap: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+  .tabs_item-profile-about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-info-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.photo-info-wrap {
+  width: 232px;
+}
+
+.photo-img-wrap {
+  width: 150px;
+}
+
+.photo-img {
+  height: 205px;
+  width: 150px;
+  background-color: rgba(128, 128, 128, 0.548);
+}
+
+.photo-edit-btn {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #828282;
+  font-weight: 700;
+  transition: color 250ms linear;
+}
+
+.photo-edit-btn:hover {
+  color: #000000;
+}
+
+.photo-img__edit-icon {
+  fill: currentColor;
+}
+
+.photo-wallet-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo-wallet-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-wallet-item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.photo-wallet-amount {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.photo-wallet-title {
+  margin-top: 5px;
+  color: #828282;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo-wallet-info {
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  width: 14px;
+  height: 14px;
+  background-color: #82828283;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-wallet-info:hover .photo-wallet-info-text {
+  display: block;
+}
+
+.photo-wallet-info-text {
+  display: none;
+  position: absolute;
+  background-color: #82828283;
+  height: 60px;
+  width: 100px;
+  top: 7px;
+  right: -105px;
+}
+
+.form-wrap {
+  width: 100%;
+}
+
+.form-input-wrap {
+  position: relative;
+  display: flex;
+}
+
+.form-input-wrap:not(:first-child) {
+  margin-top: 30px;
+}
+
+.form-label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-input-text-wrap {
+  width: 30%;
+}
+
+.form-text {
+  font-size: 15px;
+  max-width: 180px;
+  color: #828282;
+  line-height: 18px;
+}
+
+.form-input {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #82828252;
+  width: 70%;
+  padding: 15px;
+}
+
+.input-add-icon-wrap {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+  transform: translateY(50%);
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.modal__form-agreement-link {
+  font-size: 16px;
+}
+
+.checkbox-input {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: #82828252;
+}
+
+.modal__form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal__form-label--checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 380px) {
+  .modal__form-agreement-link {
+    font-size: 12px;
+  }
+}
+
+.modal__form-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal__form-input--checkbox:checked + .modal__form-checkbox {
+  background-color: gray;
+}
+
+.form-btn-wrap {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .form-btn-wrap {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.form-btn {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px;
+  width: 200px;
+  background-color: gray;
+}
+
+.form-btn.save {
+  cursor: pointer;
+  background-color: #5bd467;
+  color: #ffffff;
+  transition: background-color 250ms linear;
+}
+
+.form-btn.save:hover {
+  background-color: #49ba54;
+}
+
+@media screen and (max-width: 1050px) {
+  .form-input-wrap {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+}
+
+.social-wrap {
+  display: flex;
+}
+
+.social-wrap:not(:first-child) {
+  margin-top: 40px;
+}
+
+.social-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-title-wrap {
+  width: 20%;
+}
+
+.social-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.social-links-wrap {
+  width: 80%;
+}
+
+.social-links-icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.514);
+}
+
+.social-links-icon-wrap.facebook-active {
+  background-color: #4460a0ad;
+}
+
+.social-links-close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.social-links-info {
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.social-links-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+  background-color: #fd8324;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.social-links-add-btn:hover {
+  background-color: #fd6e00;
+}
+
+.social-links-add-btn.hide {
+  display: none;
+}
+
+.social-refresh-btn {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+  max-width: 200px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.social-links-item {
+  width: calc((100% - 30px) / 4);
+}
+
+@media screen and (max-width: 1430px) {
+  .social-links-item {
+    width: calc((100% - 30px) / 3);
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .social-links-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .social-links-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .social-links-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .social-wrap {
+    flex-direction: column;
+  }
+
+  .social-links-wrap,
+  .social-title-wrap {
+    width: 100%;
+  }
+}
