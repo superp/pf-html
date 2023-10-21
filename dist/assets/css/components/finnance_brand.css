@@ -77,55 +77,74 @@
   border-collapse: collapse;
 }
 
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .column-1 {
   width: 26%;
 }
 
 .column-2 {
-  width: 11%;
+  width: 18%;
 }
 
 .column-3 {
-  width: 12%;
+  width: 20%;
 }
 
 .column-4 {
-  width: 11%;
+  width: 18%;
 }
 
 .column-5 {
-  width: 25%;
+  width: 44%;
 }
 
 .column-6 {
   width: 15%;
 }
 
-@media screen and (max-width: 1340px) {
-  .column-1 {
-    width: 30%;
-  }
-
-  .column-5 {
-    width: 12%;
-  }
-
-  .column-6 {
-    width: auto;
-    text-align: center;
-  }
-}
-
 .table-head {
   padding: 16px 0;
+}
+
+.column-title {
   text-align: left;
   font-weight: 700;
   line-height: 16px;
   color: #828282;
 }
 
+.column-title-desk-hide {
+  display: none;
+  margin-bottom: 10px;
+}
+
 .table-row {
+  display: flex;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.table-row-wrap {
+  display: flex;
+  width: 59%;
+}
+
+@media screen and (max-width: 1400px) {
+  .table-head {
+    display: none;
+  }
+
+  .column-title-desk-hide {
+    display: block;
+  }
 }
 
 .column-wrap {
@@ -190,6 +209,7 @@
 }
 
 .column-6-btn {
+  width: 150px;
   cursor: pointer;
   padding: 19px 32px;
   color: #ffffff;
@@ -200,4 +220,77 @@
 
 .column-6-btn:hover {
   background-color: #fd6e00;
+}
+
+@media screen and (max-width: 1400px) {
+  .table-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+  }
+
+  .table-row-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .column-1 {
+    width: 100%;
+  }
+
+  .column-1-wrap {
+    justify-content: center;
+  }
+
+  .column-5 {
+    width: 12%;
+  }
+
+  .column-6 {
+    width: auto;
+    text-align: center;
+  }
+
+  .column-title-desk-hide {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wallet-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5 {
+    width: 25%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .table-row-wrap {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wallet-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
