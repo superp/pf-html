@@ -15,10 +15,11 @@
 })();
 
 ((event) => {
-  const menuBtnRef = document.querySelector("[data-menu-tab]");
+  const menuTabRef = document.querySelector("[data-menu-tab]");
   const mobileMenuRef = document.querySelector("[data-menu]");
+  const menuBtnRef = document.querySelector("[data-menu-button]");
 
-  menuBtnRef.addEventListener("click", (event) => {
+  menuTabRef.addEventListener("click", (event) => {
     if (document.body.className !== "tab-menu-open") {
       return;
     }
@@ -26,10 +27,12 @@
     let li = event.target.closest("li");
     if (!li) return;
     const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+      menuTabRef.getAttribute("aria-expanded") === "true" || false;
 
+    menuTabRef.classList.toggle("is-open");
     menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+    menuTabRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenuRef.classList.toggle("is-open");
     document.body.classList.toggle("tab-menu-open");

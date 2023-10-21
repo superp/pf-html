@@ -135,10 +135,14 @@ body {
 
 .main-content {
   display: flex;
-  flex-shrink: 0;
   align-items: start;
-  max-width: 1600px;
+  width: 100%;
   padding-bottom: 100px;
+}
+
+.tabs_item-1,
+.tabs_item-6 {
+  max-width: 1600px;
 }
 
 .content {
@@ -3444,15 +3448,7 @@ body {
 .influencers_table_cell__action .state.rejected {
   color: #ff3434;
 }
-.influencers_table_cell__price {
-  width: 15%;
-}
-.influencers_table_cell__reach {
-  width: 16.5%;
-}
-.influencers_table_cell__engagement {
-  width: 6.7%;
-}
+
 .influencers_table_cell__action {
   width: 27.9%;
 }
@@ -4167,9 +4163,16 @@ body {
 }
 
 .influencers_table-sort_list {
+  margin-top: 20px;
   margin-left: auto;
   display: flex;
   gap: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+  .influencers_table-sort_list {
+    display: none;
+  }
 }
 
 .influencers_table-sort_item {
@@ -4213,7 +4216,7 @@ body {
 }
 
 .influencers_table_cell__price.influencers_table_cell__price-title {
-  padding-left: 95px;
+  /* padding-left: 95px; */
 }
 
 .influencers-wallet {
@@ -4484,6 +4487,12 @@ body.modal-open {
 .post-confirm__links-wrap {
   display: flex;
   margin-top: 60px;
+}
+
+.influencers_table_row-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 38.2%;
 }
 
 @media screen and (max-width: 1230px) {
@@ -4972,10 +4981,6 @@ input[type="file"] {
     position: static;
     margin: 24px 0;
   }
-
-  .influencers_table_head {
-    display: none;
-  }
   .influencers_table_row {
     border: 1px solid #e5e5e5;
     margin-bottom: 16px;
@@ -5007,12 +5012,9 @@ input[type="file"] {
     width: 10%;
   }
   .influencers_table_cell__action {
+    margin-top: 20px;
     padding: 0 16px 16px;
     width: 50%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    flex-wrap: wrap;
     align-items: flex-end;
   }
   .influencers_table_cell__action button {
@@ -5025,12 +5027,7 @@ input[type="file"] {
   .influencers_table .info {
     width: calc(100% - 96px);
   }
-  .influencers_table .table-subtitle {
-    display: block;
-    color: #828282;
-    font-size: 14px;
-    line-height: 20px;
-  }
+
   .influencers_table .photo {
     align-self: flex-start;
   }
@@ -5831,5 +5828,79 @@ input[type="file"] {
   }
   .publication_item__name-warp .link {
     margin-top: 10px;
+  }
+}
+
+.influencers_table_cell__price {
+  width: 40%;
+}
+.influencers_table_cell__reach {
+  width: 30%;
+}
+.influencers_table_cell__engagement {
+  width: 20%;
+}
+
+@media screen and (max-width: 1500px) {
+  .influencers_table_row.flex-start {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .influencers_table_row-wrap,
+  .influencers_table_cell__influencer,
+  .influencers_table_cell__name {
+    width: 480px;
+  }
+
+  .influencers_table_head {
+    display: none;
+  }
+  .influencers_table .table-subtitle {
+    display: block;
+    color: #828282;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .influencers_table_cell__action {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .influencers_table_row-wrap,
+  .influencers_table_cell__influencer,
+  .influencers_table_cell__name {
+    width: 320px;
+  }
+
+  .influencers_table_item-title,
+  .influencers_table_item-count {
+    font-size: 14px;
+  }
+
+  .influencers_table_item p {
+    font-size: 14px;
+  }
+
+  .about-info-platforms-social-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .influencers_table_cell__reach,
+  .influencers_table_cell__price,
+  .influencers_table_cell__publications,
+  .influencers_table_cell__engagement {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .influencers_table_row-wrap {
+    width: 320px;
+    justify-content: center;
   }
 }
