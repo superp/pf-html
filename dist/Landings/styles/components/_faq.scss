@@ -1,0 +1,34 @@
+.faq {
+  padding-top: 145px;
+  padding-bottom: 125px;
+
+  @media screen and (max-width: 870px) {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+
+.faq__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.faq__list {
+  margin-top: 22px;
+  max-width: 334px;
+}
+
+.faq__item:not(:first-child) {
+  margin-top: 15px;
+}
+
+.faq__item-title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.faq__item-text {
+  margin-top: 10px;
+  line-height: 1.2;
+}

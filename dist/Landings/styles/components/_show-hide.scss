@@ -1,0 +1,35 @@
+.show-more-btn,
+.show-less-btn {
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+
+.show-more-btn:hover,
+.show-less-btn:hover {
+  color: #fd8324;
+}
+
+.show-more-btn {
+  @media screen and (min-width: 470px) {
+    display: none;
+  }
+}
+
+.show-more-btn-dropdown,
+.show-less-btn-dropdown {
+  display: block;
+}
+
+.show-less-btn {
+  display: none;
+}
+
+.more-text {
+  @media screen and (max-width: 470px) {
+    display: none;
+  }
+}
+
+.more-text-dropdown {
+  display: none;
+}

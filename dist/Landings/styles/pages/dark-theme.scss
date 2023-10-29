@@ -1,0 +1,100 @@
+@import "../components/fonts";
+@import "../components/base";
+
+@import "../components/show-hide";
+
+@import "../components/header";
+@import "../components/banner";
+@import "../components/searching";
+@import "../components/discover";
+@import "../components//testimonials";
+@import "../components/opportunities";
+@import "../components/faq";
+@import "../components/footer";
+
+body {
+  position: relative;
+  background-color: #0c0c0c;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+}
+
+.banner__partner-icon {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.body__vector {
+  position: absolute;
+  left: -36px;
+  top: 220px;
+  width: 100%;
+  height: 563px;
+  z-index: -1;
+  stroke-width: 242px;
+  stroke: #fd8324;
+  fill: none;
+  filter: blur(132px);
+
+  @media screen and (max-width: 870px) {
+    display: none;
+  }
+}
+
+.body__ellipse-1 {
+  position: absolute;
+  top: -175px;
+  right: -175px;
+  width: 350px;
+  height: 350px;
+  border-radius: 350px;
+  background: rgba(253, 131, 36, 0.6);
+
+  filter: blur(150px);
+  @media screen and (min-width: 870px) {
+    display: none;
+  }
+}
+
+.body__ellipse-2 {
+  position: absolute;
+  bottom: 814px;
+  right: -20%;
+  width: 771px;
+  height: 771px;
+  border-radius: 771px;
+  background: rgba(255, 155, 78, 0.4);
+
+  filter: blur(248px);
+
+  @media screen and (max-width: 1200px) {
+    right: -35%;
+  }
+
+  @media screen and (max-width: 870px) {
+    right: -175px;
+    width: 350px;
+    height: 350px;
+
+    filter: blur(150px);
+  }
+}
+
+.body__ellipse-3 {
+  position: absolute;
+  bottom: 218px;
+  left: -189px;
+  width: 350px;
+  height: 350px;
+  border-radius: 350px;
+  background: rgba(253, 131, 36, 0.4);
+
+  filter: blur(150px);
+  @media screen and (min-width: 870px) {
+    display: none;
+  }
+}
