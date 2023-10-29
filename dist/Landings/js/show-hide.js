@@ -6,6 +6,7 @@ function showHideFunction(parentClass, index = 0) {
   var showLessBtn = elements[index].getElementsByClassName("show-less-btn")[0];
 
   if (moreText.style.display === "none" || moreText.style.display === "") {
+    console.log(moreText);
     moreText.style.display = "inline";
     showMoreBtn.style.display = "none";
     showLessBtn.style.display = "inline";

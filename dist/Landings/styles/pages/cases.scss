@@ -1,0 +1,296 @@
+@import "../components/fonts";
+@import "../components/base";
+
+@import "../components/show-hide";
+
+@import "../components/header";
+
+@import "../components/footer";
+
+body {
+  background-color: #f4f3ef;
+}
+
+.container {
+  @media screen and (min-width: 768px) {
+    overflow: hidden;
+  }
+}
+
+.menu__icon {
+  fill: #fd8324;
+}
+
+.menu-container.is-open {
+  background-color: #f4f3ef;
+  z-index: 10;
+}
+
+.menu-container.is-open .nav {
+  z-index: 10;
+}
+
+.menu__btn.is-open {
+  z-index: 1000;
+}
+
+.header {
+  padding: 81px 0;
+}
+
+.dropdown-wrap {
+  background-color: #f4f3ef;
+}
+
+.auth-container {
+  display: flex;
+  gap: 8px;
+}
+
+.auth__btn {
+  display: none;
+}
+
+.auth__icon {
+  fill: #000000;
+  stroke: #000000;
+}
+
+.auth__btn--login,
+.auth__btn--signin,
+.auth__btn--login-desk-hide,
+.auth__btn--signin-desk-hide {
+  width: 119px;
+  padding: 9px 32px;
+  border: 1px solid #fd8324;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.auth__btn--login,
+.auth__btn--signin {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.auth__btn--login,
+.auth__btn--login-desk-hide {
+  color: #fd8324;
+  transition: all 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #fd8324;
+    color: #ffffff;
+  }
+}
+
+.auth__btn--signin,
+.auth__btn--signin-desk-hide {
+  color: #ffffff;
+  background-color: #fd8324;
+  transition: all 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #fd8324;
+  }
+}
+
+.cases {
+  text-align: end;
+}
+
+.input-wrap {
+  position: relative;
+  right: -125px;
+  display: inline;
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    right: 0;
+  }
+}
+
+.cases__input {
+  width: 882px;
+  padding: 48px 138px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  background-color: rgba(253, 131, 36, 0.6);
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 32px;
+  line-height: normal;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    border-radius: 0;
+    padding: 24px 55px;
+    font-size: 15px;
+
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+}
+
+.search__btn {
+  position: absolute;
+  left: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media screen and (max-width: 768px) {
+    left: 15px;
+  }
+}
+
+.search__icon {
+  fill: rgba(255, 255, 255, 0.8);
+
+  @media screen and (max-width: 768px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.show-more-btn {
+  @media screen and (min-width: 470px) {
+    display: inline;
+  }
+}
+
+.more-text {
+  display: none;
+}
+
+.cases__item {
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: box-shadow 250ms linear;
+
+  &:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &:not(:first-child) {
+    margin-top: 45px;
+  }
+}
+
+.cases__list-wrap {
+  display: flex;
+  gap: 45px;
+  margin-top: 40px;
+  @media screen and (min-width: 1180px) {
+    position: relative;
+    top: -134px;
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 63vh;
+    overflow-y: scroll;
+  }
+}
+
+.left-list {
+  width: 452px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.middle-list {
+  width: 422px;
+  padding-top: 188px;
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+
+.right-list {
+  width: 474px;
+  padding-top: 188px;
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+
+.cases__img {
+  width: 100%;
+}
+
+.left-list .big-item .cases__img {
+  height: 489px;
+}
+
+.left-list .small-item .cases__img {
+  height: 349px;
+}
+
+.middle-list .item-1 .cases__img {
+  height: 165px;
+}
+
+.middle-list .item-2 .cases__img {
+  height: 300px;
+}
+
+.middle-list .item-3 .cases__img {
+  height: 455px;
+}
+
+.middle-list .item-4 .cases__img {
+  height: 165px;
+}
+
+.middle-list .item-5 .cases__img {
+  height: 258px;
+}
+
+.right-list .item-1 .cases__img {
+  height: 372px;
+}
+
+.right-list .item-2 .cases__img {
+  height: 218px;
+}
+
+.right-list .item-3 .cases__img {
+  height: 375px;
+}
+
+.right-list .item-4 .cases__img {
+  height: 218px;
+}
+
+.right-list .item-5 .cases__img {
+  height: 163px;
+}
+
+.cases__item-text-wrap {
+  padding: 30px;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cases__text {
+  font-size: 12px;
+}
