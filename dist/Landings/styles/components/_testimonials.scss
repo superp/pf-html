@@ -1,0 +1,120 @@
+.testimonials {
+  padding: 10px 0 114px 0;
+
+  @media screen and (max-width: 870px) {
+    padding: 22px 0;
+  }
+
+  @media screen and (max-width: 821px) {
+    position: relative;
+  }
+}
+
+.testimonials__title {
+  border-top: 1px solid #fd8324;
+  padding-top: 10px;
+  color: #fd8324;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.testimonials__title {
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
+}
+
+.testimonials__list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials__item {
+  width: 301px;
+  z-index: 2;
+
+  @media screen and (max-width: 1000px) {
+    width: 230px;
+  }
+
+  @media screen and (max-width: 821px) {
+    width: 100%;
+  }
+}
+
+.testimonials__img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials__position {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #fd8324;
+  font-size: 11px;
+}
+
+.testimonials__name {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.testimonials__btn {
+  margin-top: 30px;
+  padding: 8px 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #fd8324;
+  border-radius: 2px;
+  transition: box-shadow 250ms linear;
+
+  @media screen and (max-width: 530px) {
+    margin: 25px auto 0 auto;
+    display: block;
+    border-radius: 21px;
+  }
+}
+
+.testimonials__btn:hover,
+.testimonials__btn:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 25px 0px #fd8324;
+}
+
+.testimonials__text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.testimonials__list--mob-wrap {
+  position: relative;
+  @media screen and (min-width: 821px) {
+    display: none;
+  }
+}
+
+.testimonials__item--mob {
+  position: relative;
+  padding: 0 15px;
+}
+
+.testimonials__item-nav-prev-btn,
+.testimonials__item-nav-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  @media screen and (min-width: 820px) {
+    display: none;
+  }
+}
+
+.testimonials__item-nav-prev-btn {
+  left: 0;
+}
+
+.testimonials__item-nav-next-btn {
+  right: 0;
+}
