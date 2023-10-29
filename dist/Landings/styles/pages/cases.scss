@@ -13,7 +13,7 @@ body {
 
 .container {
   @media screen and (min-width: 768px) {
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 
@@ -39,7 +39,12 @@ body {
 }
 
 .dropdown-wrap {
-  background-color: #f4f3ef;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+.dropdown-btn {
+  z-index: 1000;
 }
 
 .auth-container {
@@ -105,11 +110,26 @@ body {
   text-align: end;
 }
 
-.input-wrap {
+.cases__wrap {
   position: relative;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.input-wrap {
+  position: absolute;
   right: -125px;
   display: inline;
-  z-index: 1;
+  z-index: 0;
+
+  @media screen and (max-width: 1000px) {
+    position: relative;
+    right: 0px;
+  }
   @media screen and (max-width: 768px) {
     right: 0;
   }
@@ -136,12 +156,15 @@ body {
   @media screen and (max-width: 768px) {
     width: 100%;
     border-radius: 0;
-    padding: 24px 55px;
     font-size: 15px;
-
+    padding: 24px 55px;
     &::placeholder {
       font-size: 15px;
     }
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 700px;
   }
 }
 
@@ -151,8 +174,14 @@ body {
   top: 50%;
   transform: translateY(-50%);
 
+  @media screen and (max-width: 1000px) {
+    right: 15px;
+    left: auto;
+  }
+
   @media screen and (max-width: 768px) {
     left: 15px;
+    right: auto;
   }
 }
 
@@ -194,12 +223,14 @@ body {
 .cases__list-wrap {
   display: flex;
   gap: 45px;
-  margin-top: 40px;
-  @media screen and (min-width: 1180px) {
-    position: relative;
-    top: -134px;
-    margin-top: 0px;
-  }
+  // overflow: hidden;
+  position: relative;
+  // margin-top: 40px;
+  // @media screen and (min-width: 1180px) {
+  //   position: relative;
+  //   top: -134px;
+  //   margin-top: 0px;
+  // }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

@@ -489,12 +489,6 @@ body {
   background-color: #f4f3ef;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    overflow: hidden;
-  }
-}
-
 .menu__icon {
   fill: #fd8324;
 }
@@ -517,7 +511,12 @@ body {
 }
 
 .dropdown-wrap {
-  background-color: #f4f3ef;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+.dropdown-btn {
+  z-index: 1000;
 }
 
 .auth-container {
@@ -583,11 +582,28 @@ body {
   text-align: end;
 }
 
-.input-wrap {
+.cases__wrap {
   position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .cases__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.input-wrap {
+  position: absolute;
   right: -125px;
   display: inline;
-  z-index: 1;
+  z-index: 0;
+}
+@media screen and (max-width: 1000px) {
+  .input-wrap {
+    position: relative;
+    right: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   .input-wrap {
@@ -614,11 +630,16 @@ body {
   .cases__input {
     width: 100%;
     border-radius: 0;
-    padding: 24px 55px;
     font-size: 15px;
+    padding: 24px 55px;
   }
   .cases__input::placeholder {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .cases__input {
+    width: 700px;
   }
 }
 
@@ -628,9 +649,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .search__btn {
+    right: 15px;
+    left: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .search__btn {
     left: 15px;
+    right: auto;
   }
 }
 
@@ -670,14 +698,7 @@ body {
 .cases__list-wrap {
   display: flex;
   gap: 45px;
-  margin-top: 40px;
-}
-@media screen and (min-width: 1180px) {
-  .cases__list-wrap {
-    position: relative;
-    top: -134px;
-    margin-top: 0px;
-  }
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .cases__list-wrap {
