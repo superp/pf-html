@@ -597,7 +597,7 @@ body {
   position: absolute;
   right: -125px;
   display: inline;
-  z-index: 0;
+  z-index: 1;
 }
 @media screen and (max-width: 1000px) {
   .input-wrap {
@@ -685,7 +685,7 @@ body {
 .cases__item {
   border-radius: 5px;
   overflow: hidden;
-  cursor: pointer;
+  position: relative;
   transition: box-shadow 250ms linear;
 }
 .cases__item:hover {
@@ -693,6 +693,12 @@ body {
 }
 .cases__item:not(:first-child) {
   margin-top: 45px;
+}
+
+.cases__item-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .cases__list-wrap {
@@ -795,6 +801,15 @@ body {
   padding: 30px;
   text-align: start;
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cases__item-link {
+  margin-left: 3px;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+.cases__item-link:hover {
+  color: #fd8324;
 }
 
 .cases__text {

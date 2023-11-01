@@ -27,7 +27,11 @@
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-item dropdown-btn">
+              <li
+                class="nav-item dropdown-btn"
+                onmouseover="setZindex(0)"
+                onmouseout="setZindex(1)"
+              >
                 <a href="#" class="nav-item__link">Best creators</a>
                 <div class="dropdown-wrap">
                   <div class="dropdown-list-wrap">
@@ -214,7 +218,11 @@
                   </div>
                 </div>
               </li>
-              <li class="nav-item dropdown-btn">
+              <li
+                class="nav-item dropdown-btn"
+                onmouseover="setZindex(0)"
+                onmouseout="setZindex(1)"
+              >
                 <a href="#" class="nav-item__link">Solution</a>
                 <div class="dropdown-wrap solution">
                   <div class="dropdown-list-wrap solutions">
@@ -456,7 +464,7 @@
       <section class="cases">
         <div class="container cases__container">
           <div class="cases__wrap">
-            <div class="input-wrap">
+            <div class="input-wrap" id="input">
               <input
                 type="text"
                 placeholder="Project name or service..."
@@ -479,26 +487,17 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-left-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-left-list', 0)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-left-list', 0)"
-                        id="showLessBtn"
-                        >...less</span
-                      >
+                      began as early as March 2020
+                      <a href="#" class="cases__item-link">read more...</a>
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item small-item">
                   <img
@@ -509,26 +508,17 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-left-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-left-list', 1)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-left-list', 1)"
-                        id="showLessBtn"
-                        >...less</span
-                      >
+                      began as early as March 2020
+                      <a href="#" class="cases__item-link">read more...</a>
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item big-item">
                   <img
@@ -539,26 +529,17 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-left-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-left-list', 2)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-left-list', 2)"
-                        id="showLessBtn"
-                        >...less</span
-                      >
+                      began as early as March 2020
+                      <a href="#" class="cases__item-link">read more...</a>
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item small-item">
                   <img
@@ -569,26 +550,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-left-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-left-list', 3)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-left-list', 3)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
               </div>
               <div class="cases__list middle-list">
@@ -601,26 +576,17 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-middle-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 0)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 0)"
-                        id="showLessBtn"
-                        >...less</span
-                      >
+                      began as early as March 2020
+                      <a href="#" class="cases__item-link">read more...</a>
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-2">
                   <img
@@ -631,26 +597,17 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-middle-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 1)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 1)"
-                        id="showLessBtn"
-                        >...less</span
-                      >
+                      began as early as March 2020
+                      <a href="#" class="cases__item-link">read more...</a>
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-3">
                   <img
@@ -661,26 +618,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-middle-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 2)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 2)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-4">
                   <img
@@ -691,26 +642,17 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-middle-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 3)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 3)"
-                        id="showLessBtn"
-                        >...less</span
-                      >
+                      began as early as March 2020
+                      <a href="#" class="cases__item-link">read more...</a>
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-5">
                   <img
@@ -721,26 +663,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-middle-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 4)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 4)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
               </div>
               <div class="cases__list right-list">
@@ -753,26 +689,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-right-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-right-list', 0)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-right-list', 0)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-2">
                   <img
@@ -783,26 +713,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-right-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-right-list', 1)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-right-list', 1)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-3">
                   <img
@@ -813,26 +737,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-right-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-right-list', 2)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-right-list', 2)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-4">
                   <img
@@ -843,26 +761,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-right-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-right-list', 3)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-right-list', 3)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
                 <div class="cases__item item-5">
                   <img
@@ -873,26 +785,20 @@
                   <div class="cases__item-text-wrap">
                     <p class="cases__text cases__text-middle-list">
                       The reform of the market and preparations for its opening
-                      began as early as March 2020 read
-                      <span
-                        class="show-more-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 4)"
-                        id="showMoreBtn"
-                        >more...</span
-                      >
-                      <span class="more-text" id="more-text">
-                        . The algorithm do your job and propose perfect
-                        candidates who not only fit the budget, but share your
-                        brand values as well.</span
-                      >
-                      <span
-                        class="show-less-btn"
-                        onclick="showHideFunction('cases__text-middle-list', 4)"
-                        id="showLessBtn"
-                        >...less</span
+                      began as early as March 2020<a
+                        href="#"
+                        class="cases__item-link"
+                        >read more...</a
                       >
                     </p>
                   </div>
+                  <img
+                    src="../images/cases-logo.png"
+                    alt="Logo"
+                    class="cases__item-logo"
+                    width="38"
+                    height="18"
+                  />
                 </div>
               </div>
             </div>
@@ -988,5 +894,6 @@
     <script src="../js/menu.js"></script>
     <script src="../js/slick.js"></script>
     <script src="../js/show-hide.js"></script>
+    <script src="../js/input-zindex.js"></script>
   </body>
 </html>
