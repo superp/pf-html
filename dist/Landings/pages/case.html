@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.png"
+    />
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" href="../styles/pages/case.css" />
+    <title>Publicfast</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo">
+          <svg class="logo__icon" width="30" height="30">
+            <use href="../images/icons/sprite.svg#icon-logo"></use>
+          </svg>
+          <p class="logo__title">Publicfast</p>
+        </a>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item dropdown-btn">
+                <a href="#" class="nav-item__link">Best creators</a>
+                <div class="dropdown-wrap">
+                  <div class="dropdown-list-wrap">
+                    <p class="dropdown-list-title">
+                      By Category
+                      <svg class="auth__icon" width="22" height="15">
+                        <use
+                          href="../images/icons/sprite.svg#icon-category"
+                        ></use>
+                      </svg>
+                    </p>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Lifestyle Bloggers</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Travel Bloggers</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Micro Influencers Instagram</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Fitness Influencers Instagram</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Beauty Influencers</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Instagram Beauty Blogs</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Skin Care Influencers</a
+                        >
+                      </div>
+                      <div
+                        class="show-more-btn dropdown-item show-more-btn-dropdown"
+                        onclick="showHideFunction('dropdown-list')"
+                        id="showMoreBtn"
+                      >
+                        more...
+                      </div>
+                      <div class="more-text more-text-dropdown" id="more-text">
+                        <div class="dropdown-item dropdown-item-first">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Beauty Bloggers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Mom Influencers on Instagram</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Lifestyle Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Travel Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Food Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Makeup Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Beauty Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Fashion Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Instagram Skincare Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Food Influencers</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Parent Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Fitness Influencers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Fashion Influencers</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="show-less-btn dropdown-item show-less-btn-dropdown"
+                        onclick="showHideFunction('dropdown-list')"
+                        id="showLessBtn"
+                      >
+                        less
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-list-wrap">
+                    <p class="dropdown-list-title">
+                      By Social Media
+                      <svg class="auth__icon" width="24" height="22">
+                        <use
+                          href="../images/icons/sprite.svg#icon-social"
+                        ></use>
+                      </svg>
+                    </p>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Facebook Influencers</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Twitter Influencers</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Twitter Influencers</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Youtube Influencers</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Instagram Influencers</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-list-wrap">
+                    <p class="dropdown-list-title">
+                      By Followers
+                      <svg class="auth__icon" width="22" height="22">
+                        <use
+                          href="../images/icons/sprite.svg#icon-followers"
+                        ></use>
+                      </svg>
+                    </p>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Nano Influencers Instagram</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Nano Influencers Instagram</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Nano Influencers</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown-btn">
+                <a href="#" class="nav-item__link">Solution</a>
+                <div class="dropdown-wrap solution">
+                  <div class="dropdown-list-wrap solutions">
+                    <p class="dropdown-list-title">
+                      Apps
+                      <!-- <svg class="auth__icon" width="22" height="15">
+                        <use
+                          href="../images/icons/sprite.svg#icon-category"
+                        ></use>
+                      </svg> -->
+                    </p>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Business</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Education</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Entertaiment</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Finance</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Food & Drink</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Game</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Health & Fitness</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Kids</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Lifestyle</a>
+                      </div>
+                      <div
+                        class="show-more-btn dropdown-item show-more-btn-dropdown"
+                        onclick="showHideFunction('solutions')"
+                        id="showMoreBtn"
+                      >
+                        more...
+                      </div>
+                      <div class="more-text more-text-dropdown" id="more-text">
+                        <div class="dropdown-item dropdown-item-first">
+                          <a href="#" class="dropdown-link"
+                            >Magazine & Newspapers</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Music</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Photo & Video</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Productivity</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"> Shopping</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link"
+                            >Social networking</a
+                          >
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Sports</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Trave</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Utikities</a>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="#" class="dropdown-link">Weather</a>
+                        </div>
+                      </div>
+                      <div
+                        class="show-less-btn dropdown-item show-less-btn-dropdown"
+                        onclick="showHideFunction('solutions')"
+                        id="showLessBtn"
+                      >
+                        less
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-list-wrap">
+                    <p class="dropdown-list-title">
+                      Industry
+                      <!-- <svg class="auth__icon" width="24" height="22">
+                        <use
+                          href="../images/icons/sprite.svg#icon-social"
+                        ></use>
+                      </svg> -->
+                    </p>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">E-commerce</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Beauty & Personal care</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Fashion</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Consumer goods</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Finance</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                          Food, Beverage & Spirits</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Media & Entertainment</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Concumer Electronicks</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Sports & Fitness</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-list-wrap">
+                    <p class="dropdown-list-title">
+                      For team
+                      <!-- <svg class="auth__icon" width="22" height="22">
+                        <use
+                          href="../images/icons/sprite.svg#icon-followers"
+                        ></use>
+                      </svg> -->
+                    </p>
+                    <div class="dropdown-list">
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Startups</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Agencies</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Small team</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link"
+                          >Global Organization</a
+                        >
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">PR managers</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">Marketing managers</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">PPC managers</a>
+                      </div>
+                      <div class="dropdown-item">
+                        <a href="#" class="dropdown-link">SMM manager</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item__link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item__link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item__link">Cases</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item__link">For Influencers</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="auth-container--desk-hide">
+            <button type="button" class="auth__btn">
+              <p class="auth__btn-text">Create free account</p>
+              <svg class="auth__icon" width="15" height="12">
+                <use href="../images/icons/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button type="button" class="auth__btn--login-desk-hide">
+              Login
+            </button>
+            <button type="button" class="auth__btn--signin-desk-hide">
+              Sign Up
+            </button>
+          </div>
+        </div>
+        <div class="auth-container">
+          <button type="button" class="auth__btn">
+            <p class="auth__btn-text">Create free account</p>
+            <svg class="auth__icon" width="15" height="12">
+              <use href="../images/icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button type="button" class="auth__btn--login">Login</button>
+          <button type="button" class="auth__btn--signin">Sign Up</button>
+        </div>
+        <button
+          type="button"
+          class="menu__btn"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu__icon" width="26" height="19">
+            <use
+              class="menu-btn__icon-open"
+              href="../images/icons/sprite.svg#icon-menu-open"
+            ></use>
+            <use
+              class="menu-btn__icon-close"
+              href="../images/icons/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="go-back">
+        <div class="container go-back__container">
+          <button type="button" class="go-back__btn">
+            <img
+              src="../images/go-back.png"
+              alt="go-back"
+              width="26"
+              height="18"
+            />
+            <span>Back to Cases</span>
+          </button>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="container banner__container">
+          <h1 class="banner__title">
+            The name of
+            <span class="banner__title--colored">company</span>
+          </h1>
+          <p class="banner__date">01.01.2023 - 01.01.2023</p>
+          <p class="banner__text">
+            Hundreds of thousands of influencers sounds like days of search and
+            guesswork indeed, but not on Publicfast. Let the algorithm do your
+            job and propose perfect candidates who not only fit the budget, but
+            share your brand values as well.
+          </p>
+        </div>
+      </section>
+      <section class="stats">
+        <div class="container stats__container">
+          <ul class="stats__list">
+            <li class="stats__item">
+              <p class="stats__item-title">creators</p>
+              <p class="stats__item-amount">9999</p>
+            </li>
+            <li class="stats__item">
+              <p class="stats__item-title">quantity</p>
+              <p class="stats__item-amount">9999</p>
+            </li>
+            <li class="stats__item">
+              <p class="stats__item-title">publications</p>
+              <p class="stats__item-amount">9999</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container info__container">
+          <ul class="info__list">
+            <li class="info__item">
+              <div class="info__item-text-wrap">
+                <p class="info__item-title">problems</p>
+                <p class="info__item-text">
+                  <span class="info__item-text-parah">
+                    Let data tell you what your top reps do differently and
+                    provide the roadmap to closed won revenue - on day one.
+                  </span>
+                  <span class="info__item-text-parah-di">
+                    Accelerate ramp time, decrease the time to revenue
+                    generation, and improve your rep tenure. Let data tell you
+                    what your top reps do differently and provide the roadmap to
+                    closed won revenue - on day one.
+                    <span
+                      class="show-more-btn"
+                      onclick="showHideFunction('info__item-text-wrap', 0)"
+                      id="showMoreBtn"
+                      >more...</span
+                    >
+                  </span>
+                  <span class="more-text" id="more-text">
+                    <span class="info__item-text-parah mt">
+                      Accelerate ramp time, decrease the time to revenue
+                      generation, and improve your rep tenure.Let data tell you
+                      what your top reps do differently and provide the roadmap
+                      to closed won revenue - on day one. Accelerate ramp time,
+                      decrease the time to revenue generation, and improve your
+                      rep tenure.
+                    </span>
+                    <span class="info__item-text-parah">
+                      Accelerate ramp time, decrease the time to revenue
+                      generation, and improve your rep tenure.Let data tell you
+                      what your top reps do differently and provide the roadmap
+                      to closed won revenue - on day one. Accelerate ramp time,
+                      decrease the time to revenue generation, and improve your
+                      rep tenure.
+                    </span>
+                  </span>
+                  <span
+                    class="show-less-btn"
+                    onclick="showHideFunction('info__item-text-wrap', 0)"
+                    id="showLessBtn"
+                    >...less</span
+                  >
+                </p>
+              </div>
+              <video
+                src="#"
+                controls
+                width="540"
+                height="463"
+                class="info__video"
+              ></video>
+              <p class="info__item-title-desk-hide">problems</p>
+            </li>
+            <li class="info__item">
+              <div class="info__item-text-wrap">
+                <p class="info__item-title">Solution</p>
+                <p class="info__item-text">
+                  <span class="info__item-text-parah">
+                    Let data tell you what your top reps do differently and
+                    provide the roadmap to closed won revenue - on day one.
+                  </span>
+                  <span>
+                    Accelerate ramp time, decrease the time to revenue
+                    generation, and improve your rep tenure. Let data tell you
+                    what your top reps do differently and provide the roadmap to
+                    closed won revenue - on day one.
+                    <span
+                      class="show-more-btn"
+                      onclick="showHideFunction('info__item-text-wrap', 1)"
+                      id="showMoreBtn"
+                      >more...</span
+                    >
+                  </span>
+                  <span class="more-text" id="more-text">
+                    <span class="info__item-text-parah mt">
+                      Accelerate ramp time, decrease the time to revenue
+                      generation, and improve your rep tenure.Let data tell you
+                      what your top reps do differently and provide the roadmap
+                      to closed won revenue - on day one. Accelerate ramp time,
+                      decrease the time to revenue generation, and improve your
+                      rep tenure.
+                    </span>
+                    <span class="info__item-text-parah">
+                      Accelerate ramp time, decrease the time to revenue
+                      generation, and improve your rep tenure.Let data tell you
+                      what your top reps do differently and provide the roadmap
+                      to closed won revenue - on day one. Accelerate ramp time,
+                      decrease the time to revenue generation, and improve your
+                      rep tenure.
+                    </span>
+                  </span>
+                  <span
+                    class="show-less-btn"
+                    onclick="showHideFunction('info__item-text-wrap', 1)"
+                    id="showLessBtn"
+                    >...less</span
+                  >
+                </p>
+              </div>
+              <video
+                src="#"
+                controls
+                width="540"
+                height="463"
+                class="info__video"
+              ></video>
+              <p class="info__item-title-desk-hide">Solution</p>
+            </li>
+            <li class="info__item">
+              <div class="info__item-text-wrap">
+                <p class="info__item-title">result</p>
+                <p class="info__item-text">
+                  <span class="info__item-text-parah">
+                    Let data tell you what your top reps do differently and
+                    provide the roadmap to closed won revenue - on day one.
+                  </span>
+                  <span>
+                    Accelerate ramp time, decrease the time to revenue
+                    generation, and improve your rep tenure. Let data tell you
+                    what your top reps do differently and provide the roadmap to
+                    closed won revenue - on day one.
+                    <span
+                      class="show-more-btn"
+                      onclick="showHideFunction('info__item-text-wrap', 2)"
+                      id="showMoreBtn"
+                      >more...</span
+                    >
+                  </span>
+                  <span class="more-text" id="more-text">
+                    <span class="info__item-text-parah mt">
+                      Accelerate ramp time, decrease the time to revenue
+                      generation, and improve your rep tenure.Let data tell you
+                      what your top reps do differently and provide the roadmap
+                      to closed won revenue - on day one. Accelerate ramp time,
+                      decrease the time to revenue generation, and improve your
+                      rep tenure.
+                    </span>
+                    <span class="info__item-text-parah">
+                      Accelerate ramp time, decrease the time to revenue
+                      generation, and improve your rep tenure.Let data tell you
+                      what your top reps do differently and provide the roadmap
+                      to closed won revenue - on day one. Accelerate ramp time,
+                      decrease the time to revenue generation, and improve your
+                      rep tenure.
+                    </span>
+                  </span>
+                  <span
+                    class="show-less-btn"
+                    onclick="showHideFunction('info__item-text-wrap', 2)"
+                    id="showLessBtn"
+                    >...less</span
+                  >
+                </p>
+              </div>
+              <video
+                src="#"
+                controls
+                width="540"
+                height="463"
+                class="info__video"
+              ></video>
+              <p class="info__item-title-desk-hide">result</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="publication">
+        <div class="container publication__container">
+          <h2 class="publication__title">Публiкацii вiд блогерiв</h2>
+          <div class="publication__list-wrap">
+            <div class="publication__list">
+              <div class="publication__item">
+                <img
+                  src="../images/discover-default-img.png"
+                  alt="publication"
+                  width="432"
+                  height="371"
+                  class="publication__img"
+                />
+              </div>
+              <div class="publication__item">
+                <img
+                  src="../images/discover-default-img.png"
+                  alt="publication"
+                  width="432"
+                  height="371"
+                  class="publication__img"
+                />
+              </div>
+              <div class="publication__item">
+                <img
+                  src="../images/discover-default-img.png"
+                  alt="publication"
+                  width="432"
+                  height="371"
+                  class="publication__img"
+                />
+              </div>
+              <div class="publication__item">
+                <img
+                  src="../images/discover-default-img.png"
+                  alt="publication"
+                  width="432"
+                  height="371"
+                  class="publication__img"
+                />
+              </div>
+            </div>
+            <div class="publication__nav-desk">
+              <button
+                type="button"
+                class="publication__item-nav-prev-btn desk hidden"
+                id="prev"
+                data-prev
+              >
+                <svg
+                  class="publication__item-nav-prev-icon"
+                  width="110"
+                  height="25"
+                >
+                  <use href="../images/icons/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button type="button" class="publication__item-nav-next-btn desk">
+                <svg
+                  class="publication__item-nav-next-icon"
+                  width="110"
+                  height="25"
+                >
+                  <use href="../images/icons/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="publication__nav-mob">
+              <button type="button" class="publication__item-nav-prev-btn mob">
+                <svg
+                  class="publication__item-nav-next-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use
+                    href="../images/icons/sprite.svg#icon-mob-arrow-left"
+                  ></use>
+                </svg>
+              </button>
+              <p class="publication__item-nav-page">01</p>
+              <button type="button" class="publication__item-nav-next-btn mob">
+                <svg
+                  class="publication__item-nav-next-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use
+                    href="../images/icons/sprite.svg#icon-mob-arrow-left"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="response">
+        <div class="container response__container">
+          <h2 class="response__title">Вiдгук</h2>
+          <div class="response__wrap">
+            <img
+              src="../images/discover-default-img.png"
+              alt="response"
+              width="432"
+              height="371"
+              class="response__img"
+            />
+            <div class="response__text-wrap">
+              <p class="response__text-title">
+                Зображений тайтл над прямою мовою
+              </p>
+              <p class="response__text">
+                “I can attest that Publicfast data has become MORE valuable to
+                our sales team in this climate. Activities are a leading
+                indicator to pipe and we can’t get enough leading indicators
+                right now. I can attest that Publicfast data has become MORE
+                valuable to our sales team in this climate. Activities are a
+                leading indicator to pipe and we can’t get enough leading
+                indicators right now.”
+              </p>
+              <a href="#" class="response__link">Позиція</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo-wrap">
+          <a href="#" class="logo">
+            <svg class="logo__icon" width="30" height="30">
+              <use href="../images/icons/sprite.svg#icon-logo"></use>
+            </svg>
+            <p class="logo__title">Publicfast</p>
+          </a>
+          <p class="footer__logo-period">2017-2023 Publicfast</p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__list-wrap">
+            <p class="footer__list-title">INFLUENCERS</p>
+            <div class="footer__list-sub-wrap">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link"> facebook INFLUENCERS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">twitter INFLUENCERS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">tik tok INFLUENCERS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">youtube INFLUENCERS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">instagram INFLUENCERS</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">PRICING</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">BLOG</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">cases</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__list-wrap">
+            <p class="footer__list-title">CONTACTS</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">linkedin</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">facebook</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">terms & privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">contact us</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__list--desk-hide">
+            <li class="footer__item">
+              <a href="#" class="footer__link">PRICING</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">BLOG</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">cases</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/show-hide.js"></script>
+  </body>
+</html>
