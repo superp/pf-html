@@ -14,3 +14,18 @@ if (document.body.offsetWidth < 821) {
     nextArrow: $(".discover__item-nav-next-btn-light"),
   });
 }
+
+if (document.body.offsetWidth > 960) {
+  $(".publication__list").slick({
+    lazyLoad: "ondemand",
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $(".publication__item-nav-prev-btn"),
+    nextArrow: $(".publication__item-nav-next-btn"),
+  });
+} else {
+  $(".publication__list").slick({
+    prevArrow: $(".publication__item-nav-prev-btn"),
+    nextArrow: $(".publication__item-nav-next-btn"),
+  });
+}
