@@ -294,3 +294,252 @@
     gap: 20px;
   }
 }
+
+.wallet-btn--filter {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+}
+
+.finance__wrap {
+  display: flex;
+  padding: 35px 0;
+  gap: 135px;
+}
+
+@media screen and (max-width: 1920px) {
+  .finance__wrap {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1890px) {
+  .finance__wrap {
+    flex-direction: column;
+  }
+}
+
+.price-table {
+  width: 711px;
+}
+
+@media screen and (max-width: 1090px) {
+  .price-table {
+    width: 100%;
+  }
+}
+
+.finance__column-1 {
+  width: 44%;
+}
+
+.finance__column-2 {
+  width: 26%;
+}
+
+.finance__column-3 {
+  width: 30%;
+}
+
+.price-table__head {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 33px 20px 20px 20px;
+  text-align: center;
+}
+
+.price-table__head .price-head__popular {
+  display: none;
+}
+
+.price-table__head-row {
+  display: flex;
+}
+
+.price-table__head.price-table__head--empty {
+  background-color: #ffffff;
+}
+
+.price-table__head--popular {
+  border: 2px solid #fd8324;
+  position: relative;
+}
+
+.price-table__head--popular .price-head__popular {
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  line-height: normal;
+}
+
+.price-head__title {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.price-head__price {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price-head__period {
+  font-size: 10px;
+  line-height: normal;
+}
+
+.price-head__btn {
+  margin-top: 27px;
+  padding: 9px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fd8324;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.price-table__row {
+  display: flex;
+}
+
+.price-table__row-line--value {
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  justify-content: center;
+}
+
+.price-table__row-line--value.no-border {
+  border: none;
+}
+
+.price-table__row-line--title {
+  background-color: #000000;
+  padding: 24px 5px 12px 12px;
+}
+
+.price-table__row-line--sub-title {
+  background-color: #000000;
+  padding: 14px 5px 12px 12px;
+}
+
+.price-table__row-top-title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fd8324;
+}
+
+.price-table__row-top-sub-title {
+  font-size: 16px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.price-table__row-line-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+}
+
+.price-table__row-line-text--popular {
+  background-color: #fd832433;
+}
+
+.inv__table {
+  padding-top: 110px;
+  width: 765px;
+}
+
+@media screen and (max-width: 1090px) {
+  .inv__table {
+    width: 100%;
+  }
+}
+
+.inv__table-row-head {
+  display: flex;
+  padding: 7px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.inv__column-1 {
+  width: 25%;
+}
+
+.inv__column-2 {
+  width: 20%;
+}
+
+.inv__column-3 {
+  width: 17%;
+}
+
+.inv__column-4 {
+  width: 12%;
+}
+
+.inv__column-5 {
+  width: 26%;
+}
+
+.inv__table-column-name--pl {
+  padding-left: 37px;
+}
+
+.inv__table-column-name--pl-extra {
+  padding-left: 55px;
+}
+
+.inv__table-column-name-text {
+  font-weight: 700;
+  color: #828282;
+}
+
+.inv__table-row {
+  display: flex;
+  align-items: center;
+  padding: 55px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.inv__table-company-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.inv__table-company-date,
+.inv__table-company-amount,
+.inv__table-company-status {
+  font-size: 18px;
+  line-height: normal;
+}
+
+.inv__table-company-status {
+  text-transform: uppercase;
+}
+
+.inv__table-company-status--paid {
+  color: #5bd467;
+}
+
+.inv__table-column-btn {
+  padding: 19px 32px;
+  background-color: #fd8324;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
